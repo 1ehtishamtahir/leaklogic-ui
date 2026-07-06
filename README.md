@@ -1,10 +1,3 @@
-Here is the updated **README.md** content. It includes the project overview, current backend status, what we have built so far, how to run it, and the next steps.
-
-It follows your PRD direction: CSV upload, four leak detectors, dollar-ranked findings, and an LLM layer that only explains structured backend results instead of inventing numbers. 
-
-Copy this into your root `README.md`.
-
-````markdown
 # Profit Leak Hunter — AI Business Auditor
 
 Profit Leak Hunter is an AI-powered business auditor that helps small and mid-size businesses find hidden profit leaks from CSV data.
@@ -750,13 +743,4 @@ to:
 
 ```text
 Here are the exact places where profit is leaking, ranked by dollar impact.
-```
-````
-
-After saving this as `README.md`, run:
-
-```powershell
-git add README.md
-git commit -m "Add project README with backend progress"
-git push
 ```
