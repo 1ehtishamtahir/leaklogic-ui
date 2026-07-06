@@ -1,7 +1,9 @@
 from typing import Annotated
+from pathlib import Path
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 
 from app.services.pipeline import run_analysis
 
@@ -27,6 +29,23 @@ def health():
         "service": "profit-leak-hunter-api",
         "version": "0.1.0",
     }
+
+
+@app.get("/sample-data/{filename}")
+async def get_sample_data(filename: str):
+    """
+    Serve sample CSV files for demo purposes
+    
+    Args:
+        filename: name of the CSV file (e.g., 'sales.csv', 'refunds.csv', 'suppliers.csv', 'inventory.csv')
+    """
+    sample_data_dir = Path(__file__).parent / "sample_data"
+    file_path = sample_data_dir / filename
+    
+    if not file_path.exists():
+        raise HTTPException(status_code=404, detail=f"Sample file not found: {filename}")
+    
+    return FileResponse(file_path, media_type="text/csv", filename=filename)
 
 
 @app.post("/analyze")

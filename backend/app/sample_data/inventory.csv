@@ -1,7 +1,19 @@
 date,sku,product,stock_level,unit_cost
-2026-01-05,SWB-001,Smart Water Bottle,200,22
-2026-04-20,SWB-001,Smart Water Bottle,120,31
-2026-01-08,TB-001,Trail Backpack,90,55
-2026-04-08,TB-001,Trail Backpack,70,56
-2026-01-10,CL-001,Camping Lantern,300,18
-2026-04-10,CL-001,Camping Lantern,295,18
+2019-01-31,SKU-750-67-8,Health and beauty,635,30.23
+2019-02-28,SKU-750-67-8,Health and beauty,665,30.23
+2019-03-31,SKU-750-67-8,Health and beauty,835,30.23
+2019-01-31,SKU-226-31-3,Electronic accessories,832,31.88
+2019-02-28,SKU-226-31-3,Electronic accessories,782,31.88
+2019-03-31,SKU-226-31-3,Electronic accessories,812,31.88
+2019-01-31,SKU-631-41-3,Home and lifestyle,2736,30.44
+2019-02-28,SKU-631-41-3,Home and lifestyle,1640,30.44
+2019-03-31,SKU-631-41-3,Home and lifestyle,2912,30.44
+2019-01-31,SKU-373-73-7,Sports and travel,937,31.56
+2019-02-28,SKU-373-73-7,Sports and travel,565,31.56
+2019-03-31,SKU-373-73-7,Sports and travel,797,31.56
+2019-01-31,SKU-692-92-5,Food and beverages,812,30.84
+2019-02-28,SKU-692-92-5,Food and beverages,872,30.84
+2019-03-31,SKU-692-92-5,Food and beverages,695,30.84
+2019-01-31,SKU-351-62-0,Fashion accessories,840,31.4
+2019-02-28,SKU-351-62-0,Fashion accessories,737,31.4
+2019-03-31,SKU-351-62-0,Fashion accessories,677,31.4

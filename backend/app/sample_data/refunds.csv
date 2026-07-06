@@ -1,4 +1,28 @@
 date,order_id,product,sku,refund_amount,reason
-2026-01-20,ORD-001,Smart Water Bottle,SWB-001,50,Damaged item
-2026-04-20,ORD-003,Smart Water Bottle,SWB-001,500,Leakage complaint
-2026-04-22,ORD-004,Smart Water Bottle,SWB-001,500,Leakage complaint
+2019-02-07,583-41-4548,Home and lifestyle,SKU-583-41-4,58.345,Damaged
+2019-01-25,191-10-6171,Fashion accessories,SKU-191-10-6,138.67,Quality issue
+2019-02-11,534-53-3526,Sports and travel,SKU-534-53-3,189.52,Changed mind
+2019-01-23,767-05-1286,Home and lifestyle,SKU-767-05-1,251.31,Damaged
+2019-01-29,343-61-3544,Sports and travel,SKU-343-61-3,133.35000000000002,Damaged
+2019-01-29,233-67-5758,Health and beauty,SKU-233-67-5,20.175,Quality issue
+2019-02-27,318-68-5053,Health and beauty,SKU-318-68-5,230.97,Changed mind
+2019-01-16,659-65-8956,Fashion accessories,SKU-659-65-8,25.68,Changed mind
+2019-02-02,845-51-0542,Food and beverages,SKU-845-51-0,209.475,Damaged
+2019-01-02,504-35-8843,Sports and travel,SKU-504-35-8,21.235,Not as described
+2019-02-16,587-03-7455,Fashion accessories,SKU-587-03-7,342.265,Damaged
+2019-02-18,597-78-7908,Fashion accessories,SKU-597-78-7,135.32999999999998,Damaged
+2019-02-07,626-43-7888,Fashion accessories,SKU-626-43-7,241.64000000000001,Damaged
+2019-01-11,478-06-7835,Fashion accessories,SKU-478-06-7,44.845,Damaged
+2019-01-05,628-34-3388,Fashion accessories,SKU-628-34-3,82.14,Quality issue
+2019-02-18,652-49-6720,Electronic accessories,SKU-652-49-6,30.475,Changed mind
+2019-02-26,518-71-6847,Food and beverages,SKU-518-71-6,79.80000000000001,Quality issue
+2019-02-10,685-64-1609,Fashion accessories,SKU-685-64-1,150.70000000000002,Quality issue
+2019-02-14,235-46-8343,Food and beverages,SKU-235-46-8,138.3,Quality issue
+2019-03-29,829-34-3910,Health and beauty,SKU-829-34-3,713.8,Not effective
+2019-03-23,333-73-7901,Health and beauty,SKU-333-73-7,439.35999999999996,Product defect
+2019-03-30,731-59-7531,Health and beauty,SKU-731-59-7,580.56,Quality issue
+2019-03-19,568-90-5112,Health and beauty,SKU-568-90-5,264.56,Product defect
+2019-03-26,797-88-0493,Health and beauty,SKU-797-88-0,257.08000000000004,Allergic reaction
+2019-03-28,333-23-2632,Health and beauty,SKU-333-23-2,70.55999999999999,Allergic reaction
+2019-03-06,885-17-6250,Health and beauty,SKU-885-17-6,79.74000000000001,Product defect
+2019-03-05,608-04-3797,Health and beauty,SKU-608-04-3,202.56,Product defect
