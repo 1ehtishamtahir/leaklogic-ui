@@ -1,0 +1,7 @@
+date,order_id,product,sku,quantity,unit_price,discount_amount,revenue
+2026-01-05,ORD-001,Smart Water Bottle,SWB-001,10,50,0,500
+2026-01-12,ORD-002,Smart Water Bottle,SWB-001,10,50,0,500
+2026-04-05,ORD-003,Smart Water Bottle,SWB-001,20,50,0,1000
+2026-04-12,ORD-004,Smart Water Bottle,SWB-001,20,50,0,1000
+2026-01-08,ORD-005,Trail Backpack,TB-001,10,100,0,1000
+2026-04-08,ORD-006,Trail Backpack,TB-001,14,100,420,980

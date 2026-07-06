@@ -1,0 +1,7 @@
+date,supplier_name,product,sku,unit_cost,purchase_volume
+2026-01-05,AquaSource Manufacturing,Smart Water Bottle,SWB-001,22,100
+2026-01-20,AquaSource Manufacturing,Smart Water Bottle,SWB-001,22,120
+2026-04-05,AquaSource Manufacturing,Smart Water Bottle,SWB-001,31,140
+2026-04-20,AquaSource Manufacturing,Smart Water Bottle,SWB-001,31,160
+2026-01-08,TrailPro Supplies,Trail Backpack,TB-001,55,80
+2026-04-08,TrailPro Supplies,Trail Backpack,TB-001,56,100

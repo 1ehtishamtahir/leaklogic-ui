@@ -1,0 +1,4 @@
+date,order_id,product,sku,refund_amount,reason
+2026-01-20,ORD-001,Smart Water Bottle,SWB-001,50,Damaged item
+2026-04-20,ORD-003,Smart Water Bottle,SWB-001,500,Leakage complaint
+2026-04-22,ORD-004,Smart Water Bottle,SWB-001,500,Leakage complaint
