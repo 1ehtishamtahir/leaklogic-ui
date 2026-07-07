@@ -31,3 +31,6 @@ reports/
 Thumbs.db
 .vscode/
 .idea/
+
+backend/.env
+frontend/.env.local
