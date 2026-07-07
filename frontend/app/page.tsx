@@ -1,14 +1,14 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
-import { BarChart3, ShieldCheck, Sparkles } from "lucide-react";
 import UploadSection from "@/components/UploadSection";
 import ResultsDashboard from "@/components/ResultsDashboard";
+import HeroSection from "@/components/HeroSection";
+import FeaturesSection from "@/components/FeaturesSection";
 import { AnalysisResult } from "@/types";
 
 export default function Home() {
-  const [analysisResult, setAnalysisResult] =
-    useState<AnalysisResult | null>(null);
+  const [analysisResult, setAnalysisResult] = useState<AnalysisResult | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
 
   const handleAnalysisComplete = (result: AnalysisResult) => {
@@ -22,36 +22,46 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,_rgba(37,99,235,0.22),_transparent_35%),radial-gradient(circle_at_top_right,_rgba(16,185,129,0.16),_transparent_30%)]" />
-
-      <header className="border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
-          <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-600 shadow-lg shadow-blue-600/20">
-              <BarChart3 className="h-6 w-6" />
+    <div className="min-h-screen" style={{ background: '#0F0F10' }}>
+      {/* Header - Astral Style */}
+      <header className="sticky top-0 z-50 border-b" style={{
+        background: 'rgba(15, 15, 16, 0.95)',
+        backdropFilter: 'blur(20px)',
+        borderColor: 'rgba(39, 39, 42, 0.5)',
+      }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
+                  <span className="text-white font-black text-xl">L</span>
+                </div>
+                <div>
+                  <h1 className="text-xl font-black text-white">
+                    LEAKLOGIC
+                  </h1>
+                  <p className="text-xs text-primary uppercase tracking-wider font-semibold">
+                    ENTERPRISE UI
+                  </p>
+                </div>
+              </div>
+              <div className="hidden md:flex items-center gap-2 ml-8">
+                <div className="px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-400 hover:text-white hover:bg-white/5 transition-all cursor-pointer">
+                  CORE
+                </div>
+                <div className="px-3 py-1.5 rounded-lg text-sm font-semibold bg-primary/10 text-primary border border-primary/30">
+                  DASHBOARD
+                </div>
+              </div>
             </div>
-
-            <div>
-              <h1 className="text-lg font-bold tracking-tight sm:text-xl">
-                Profit Leak Hunter
-              </h1>
-              <p className="text-xs text-slate-400">
-                AI Business Auditor
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-3">
-            <div className="hidden items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1.5 text-xs font-medium text-emerald-300 sm:flex">
-              <ShieldCheck className="h-4 w-4" />
-              Grounded analysis
-            </div>
-
             {analysisResult && (
               <button
                 onClick={handleReset}
-                className="rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10"
+                className="px-4 py-2 text-sm font-bold text-white rounded-lg transition-all duration-300"
+                style={{
+                  background: 'rgba(99, 102, 241, 0.15)',
+                  border: '1px solid rgba(99, 102, 241, 0.3)',
+                }}
               >
                 New Analysis
               </button>
@@ -60,26 +70,36 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="mx-auto max-w-7xl px-5 py-10 sm:px-8 lg:py-14">
+      {/* Main Content */}
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {!analysisResult ? (
-          <UploadSection
-            onAnalysisComplete={handleAnalysisComplete}
-            isAnalyzing={isAnalyzing}
-            setIsAnalyzing={setIsAnalyzing}
-          />
+          <>
+            <HeroSection />
+            <FeaturesSection />
+            <div id="upload" className="py-8">
+              <UploadSection
+                onAnalysisComplete={handleAnalysisComplete}
+                isAnalyzing={isAnalyzing}
+                setIsAnalyzing={setIsAnalyzing}
+              />
+            </div>
+          </>
         ) : (
-          <ResultsDashboard result={analysisResult} />
+          <div className="py-8">
+            <ResultsDashboard result={analysisResult} />
+          </div>
         )}
       </main>
 
-      <footer className="border-t border-white/10 bg-slate-950/80">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-6 text-sm text-slate-400 sm:flex-row sm:px-8">
-          <p>Built for AMD Developer Hackathon: ACT II</p>
-
-          <div className="flex items-center gap-2">
-            <Sparkles className="h-4 w-4 text-blue-400" />
-            <span>Unicorn Track</span>
-          </div>
+      {/* Footer */}
+      <footer className="mt-16 border-t" style={{
+        background: 'rgba(15, 15, 16, 0.95)',
+        borderColor: 'rgba(39, 39, 42, 0.5)',
+      }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <p className="text-center text-sm text-slate-500">
+            Built for AMD Developer Hackathon: ACT II - Unicorn Track
+          </p>
         </div>
       </footer>
     </div>
