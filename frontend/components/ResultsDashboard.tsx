@@ -48,7 +48,7 @@ export default function ResultsDashboard({ result }: ResultsDashboardProps) {
   };
 
   return (
-    <div className="max-w-6xl mx-auto animate-fade-in">
+    <div className="px-4 sm:px-6 lg:px-8 animate-fade-in">
       {/* Summary Section */}
       <div className="bg-gradient-to-r from-danger via-danger/90 to-warning rounded-xl shadow-card shadow-glow-danger p-8 mb-8 text-white">
         <div className="flex items-start justify-between mb-4">

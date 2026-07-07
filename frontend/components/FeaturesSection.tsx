@@ -56,7 +56,7 @@ const getColorClasses = (color: string) => {
 export default function FeaturesSection() {
   return (
     <div className="py-16 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full text-sm font-semibold"
@@ -72,7 +72,7 @@ export default function FeaturesSection() {
           <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
             POWERFUL FEATURES
           </h2>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-400">
             Everything you need to identify and fix profit leaks in your business
           </p>
         </div>

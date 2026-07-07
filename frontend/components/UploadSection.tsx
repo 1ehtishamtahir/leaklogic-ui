@@ -151,13 +151,13 @@ export default function UploadSection({
   ];
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="px-4 sm:px-6 lg:px-8">
       {/* Hero Section */}
       <div className="text-center mb-12 animate-fade-in">
         <h2 className="text-4xl font-bold text-white mb-4">
           Find Hidden Profit Leaks in Your Business
         </h2>
-        <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+        <p className="text-lg text-slate-300">
           Upload your business data and let our AI auditor identify where
           you&apos;re losing money without realizing it.
         </p>

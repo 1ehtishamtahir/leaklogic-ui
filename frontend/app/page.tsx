@@ -29,7 +29,7 @@ export default function Home() {
         backdropFilter: 'blur(20px)',
         borderColor: 'rgba(39, 39, 42, 0.5)',
       }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-3">
@@ -71,17 +71,22 @@ export default function Home() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main>
         {!analysisResult ? (
           <>
+            {/* Hero Section - Full Width, No Padding */}
             <HeroSection />
-            <FeaturesSection />
-            <div id="upload" className="py-8">
-              <UploadSection
-                onAnalysisComplete={handleAnalysisComplete}
-                isAnalyzing={isAnalyzing}
-                setIsAnalyzing={setIsAnalyzing}
-              />
+            
+            {/* Features and Upload - Full Width, No Container */}
+            <div>
+              <FeaturesSection />
+              <div id="upload" className="py-8">
+                <UploadSection
+                  onAnalysisComplete={handleAnalysisComplete}
+                  isAnalyzing={isAnalyzing}
+                  setIsAnalyzing={setIsAnalyzing}
+                />
+              </div>
             </div>
           </>
         ) : (
@@ -96,7 +101,7 @@ export default function Home() {
         background: 'rgba(15, 15, 16, 0.95)',
         borderColor: 'rgba(39, 39, 42, 0.5)',
       }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="px-4 sm:px-6 lg:px-8 py-6">
           <p className="text-center text-sm text-slate-500">
             Built for AMD Developer Hackathon: ACT II - Unicorn Track
           </p>
