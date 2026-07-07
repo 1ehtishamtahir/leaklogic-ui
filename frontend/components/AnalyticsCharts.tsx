@@ -27,10 +27,10 @@ const revenueData = [
 
 // Donut chart data
 const verticalSplitData = [
-  { name: 'SAAS', value: 350, color: '#6366F1' },
-  { name: 'SERVICES', value: 280, color: '#10B981' },
-  { name: 'LICENSES', value: 320, color: '#F59E0B' },
-  { name: 'CUSTOM', value: 300, color: '#EF4444' },
+  { name: 'SALES', value: 350, color: '#6366F1' },
+  { name: 'REFUNDS', value: 180, color: '#10B981' },
+  { name: 'SUPPLIER', value: 220, color: '#F59E0B' },
+  { name: 'INVENTORY', value: 300, color: '#EF4444' },
 ];
 
 // Real-time users bar data (simplified for visualization)
@@ -97,7 +97,7 @@ export default function AnalyticsCharts() {
         }}
       >
         <div className="mb-6">
-          <h3 className="text-xl font-bold text-white mb-1">VERTICAL SPLIT</h3>
+          <h3 className="text-xl font-bold text-white mb-1">RECORDS BY SOURCE</h3>
         </div>
 
         <div className="flex items-center justify-center">

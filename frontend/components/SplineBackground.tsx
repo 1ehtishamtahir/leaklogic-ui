@@ -6,10 +6,10 @@ import Spline from "@splinetool/react-spline";
 export default function SplineBackground() {
   return (
     <div 
-      className="fixed inset-0 w-full h-full"
+      className="absolute inset-0 w-full h-full overflow-hidden"
       style={{
         zIndex: 0,
-        backgroundColor: '#001031', // Deep indigo from Spline scene
+        backgroundColor: '#001031',
       }}
     >
       <Suspense fallback={
@@ -23,9 +23,6 @@ export default function SplineBackground() {
           style={{
             width: '100%',
             height: '100%',
-            position: 'fixed',
-            top: 0,
-            left: 0,
             pointerEvents: 'none',
           }}
         />
