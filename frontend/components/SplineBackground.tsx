@@ -4,19 +4,18 @@ import { Suspense } from "react";
 import Spline from "@splinetool/react-spline";
 
 export default function SplineBackground() {
-  // Using standard Spline import for client-side compatibility
   return (
     <div 
       className="fixed inset-0 w-full h-full"
       style={{
         zIndex: 0,
-        backgroundColor: '#0D0D31', // Match your Spline BG color
+        backgroundColor: '#001031', // Deep indigo from Spline scene
       }}
     >
       <Suspense fallback={
         <div 
           className="w-full h-full animate-pulse" 
-          style={{ backgroundColor: '#0D0D31' }}
+          style={{ backgroundColor: '#001031' }}
         />
       }>
         <Spline
@@ -28,16 +27,6 @@ export default function SplineBackground() {
             top: 0,
             left: 0,
             pointerEvents: 'none',
-          }}
-          onLoad={(spline) => {
-            // Lock camera at initial position - prevent zoom animations
-            if (spline && spline.camera) {
-              // Store the initial camera position
-              const camera = spline.camera;
-              camera.enableZoom = false;
-              camera.enablePan = false;
-              camera.enableRotate = false;
-            }
           }}
         />
       </Suspense>

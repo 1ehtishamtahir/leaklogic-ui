@@ -9,49 +9,78 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Dark backgrounds
         'dark': {
           900: '#0F0F10',
           800: '#18181B',
           700: '#27272A',
         },
+        'dark-primary': '#001031', // Deep indigo from Spline
         'sidebar': '#09090B',
-        'primary': {
-          DEFAULT: '#6366F1',
-          light: '#818CF8',
-          dark: '#4F46E5',
+        
+        // Spline-inspired branding colors
+        'brand': {
+          'violet': '#7B2FF7',      // Top wave
+          'magenta': '#E8299C',     // Mid band
+          'pink': '#FF4D8D',        // Transition band
+          'orange': '#FF7A3D',      // Lower band
+          'peach': '#FFA85C',       // Bottom band
         },
+        
+        // Primary (using Spline violet)
+        'primary': {
+          DEFAULT: '#7B2FF7',
+          light: '#9D5CFF',
+          dark: '#6020D9',
+        },
+        
+        // Success (keeping functional green)
         'success': {
           DEFAULT: '#10B981',
           light: '#34D399',
           dark: '#059669',
         },
+        
+        // Warning (using Spline peach/orange)
         'warning': {
-          DEFAULT: '#F59E0B',
-          light: '#FBBF24',
-          dark: '#D97706',
+          DEFAULT: '#FFA85C',
+          light: '#FFBC7D',
+          dark: '#FF7A3D',
         },
+        
+        // Danger (using Spline pink/magenta)
         'danger': {
-          DEFAULT: '#EF4444',
-          light: '#F87171',
-          dark: '#DC2626',
+          DEFAULT: '#FF4D8D',
+          light: '#FF70A6',
+          dark: '#E8299C',
         },
+        
+        // Accent (Spline magenta)
         'accent': {
-          DEFAULT: '#8B5CF6',
-          light: '#A78BFA',
-          dark: '#7C3AED',
+          DEFAULT: '#E8299C',
+          light: '#FF4DB8',
+          dark: '#C91A7F',
         },
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-dark': 'linear-gradient(135deg, #0F0F10 0%, #27272A 100%)',
-        'gradient-primary': 'linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)',
+        'gradient-dark': 'linear-gradient(135deg, #001031 0%, #27272A 100%)',
+        
+        // Spline-inspired gradients
+        'gradient-primary': 'linear-gradient(135deg, #7B2FF7 0%, #E8299C 100%)',
+        'gradient-secondary': 'linear-gradient(135deg, #E8299C 0%, #FF4D8D 100%)',
+        'gradient-warm': 'linear-gradient(135deg, #FF7A3D 0%, #FFA85C 100%)',
+        'gradient-rainbow': 'linear-gradient(135deg, #7B2FF7 0%, #E8299C 33%, #FF4D8D 66%, #FF7A3D 100%)',
+        
         'gradient-success': 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
-        'gradient-hero': 'linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%)',
+        'gradient-hero': 'linear-gradient(135deg, rgba(123, 47, 247, 0.2) 0%, rgba(232, 41, 156, 0.2) 100%)',
       },
       boxShadow: {
-        'glow-primary': '0 0 30px rgba(99, 102, 241, 0.5)',
+        'glow-primary': '0 0 30px rgba(123, 47, 247, 0.5)',
+        'glow-magenta': '0 0 30px rgba(232, 41, 156, 0.5)',
+        'glow-pink': '0 0 30px rgba(255, 77, 141, 0.5)',
         'glow-success': '0 0 30px rgba(16, 185, 129, 0.5)',
-        'glow-danger': '0 0 30px rgba(239, 68, 68, 0.5)',
+        'glow-danger': '0 0 30px rgba(255, 77, 141, 0.5)',
         'card': '0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3)',
         'card-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3)',
       },
@@ -61,6 +90,7 @@ const config: Config = {
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'float': 'float 6s ease-in-out infinite',
         'glow': 'glow 2s ease-in-out infinite alternate',
+        'rainbow': 'rainbow 8s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -76,8 +106,14 @@ const config: Config = {
           '50%': { transform: 'translateY(-20px)' },
         },
         glow: {
-          '0%': { boxShadow: '0 0 5px rgba(99, 102, 241, 0.5), 0 0 10px rgba(99, 102, 241, 0.3)' },
-          '100%': { boxShadow: '0 0 20px rgba(99, 102, 241, 0.8), 0 0 30px rgba(99, 102, 241, 0.5)' },
+          '0%': { boxShadow: '0 0 5px rgba(123, 47, 247, 0.5), 0 0 10px rgba(123, 47, 247, 0.3)' },
+          '100%': { boxShadow: '0 0 20px rgba(123, 47, 247, 0.8), 0 0 30px rgba(123, 47, 247, 0.5)' },
+        },
+        rainbow: {
+          '0%, 100%': { borderColor: '#7B2FF7' },
+          '25%': { borderColor: '#E8299C' },
+          '50%': { borderColor: '#FF4D8D' },
+          '75%': { borderColor: '#FF7A3D' },
         },
       },
     },

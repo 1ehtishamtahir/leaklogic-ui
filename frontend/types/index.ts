@@ -16,6 +16,7 @@ export interface AnalysisResult {
   total_estimated_leak: number;
   findings: Finding[];
   executive_summary: string;
+  amd_usage_note: string;
 }
 
 export interface UploadedFiles {

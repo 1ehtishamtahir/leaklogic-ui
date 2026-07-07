@@ -603,24 +603,68 @@ Do not commit `.env` to GitHub.
 
 ## Frontend Status
 
-The frontend is not built yet.
+The frontend is fully built with a modern dark theme UI.
 
-Planned frontend stack:
+Frontend stack:
 
-- Next.js / React
+- Next.js 15 / React 19
+- TypeScript
 - Tailwind CSS
-- Recharts
+- Lucide Icons
 
-Planned frontend features:
+Frontend features:
 
-1. Landing page
-2. CSV upload form
-3. Processing/loading state
-4. Ranked profit leak dashboard
-5. Cards for each leak
-6. Charts for evidence
-7. AI-generated audit summary
-8. Optional PDF export
+1. ✅ Epic hero landing page with animations
+2. ✅ Features showcase section
+3. ✅ CSV upload form with drag & drop styling
+4. ✅ Sample data button (loads backend sample files)
+5. ✅ Processing/loading state
+6. ✅ Ranked profit leak dashboard
+7. ✅ Color-coded leak cards (refund=red, discount=amber, supplier=gold, inventory=blue)
+8. ✅ Expandable leak details
+9. ✅ Executive summary display
+10. ✅ Glass-morphism effects and animations
+11. ✅ Fully responsive design
+
+---
+
+## Quick Start - Run Full Stack
+
+### Prerequisites
+
+- Python 3.10+ 
+- Node.js 18+
+- npm or yarn
+
+### 1. Start Backend
+
+```bash
+cd backend
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python -m uvicorn app.main:app --reload
+```
+
+Backend will run on `http://127.0.0.1:8000`
+
+### 2. Start Frontend (New Terminal)
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend will run on `http://localhost:3000`
+
+### 3. Open App
+
+Navigate to `http://localhost:3000` and:
+
+- Click "Use Sample Data" to test with backend sample files
+- Or upload your own CSV files
+- View the profit leak analysis results
 
 ---
 

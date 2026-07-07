@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Upload, FileText, CheckCircle, AlertCircle } from "lucide-react";
 import { AnalysisResult, UploadedFiles } from "@/types";
+import { apiClient } from "@/lib/api";
 
 interface UploadSectionProps {
   onAnalysisComplete: (result: AnalysisResult) => void;
@@ -34,7 +35,7 @@ export default function UploadSection({
 
   const handleAnalyze = async () => {
     // Check if at least sales file is uploaded
-    if (!useSampleData && !files.sales) {
+    if (!files.sales) {
       setError("Please upload at least a sales CSV file to analyze");
       return;
     }
@@ -44,43 +45,20 @@ export default function UploadSection({
 
     try {
       const formData = new FormData();
+      
+      // Upload user files
+      if (files.sales) formData.append("sales", files.sales);
+      if (files.refunds) formData.append("refunds", files.refunds);
+      if (files.suppliers) formData.append("suppliers", files.suppliers);
+      if (files.inventory) formData.append("inventory", files.inventory);
 
-      if (useSampleData) {
-        // Fetch sample data from backend
-        const response = await fetch("http://127.0.0.1:8000/analyze", {
-          method: "POST",
-          body: formData,
-        });
-
-        if (!response.ok) {
-          throw new Error("Analysis failed. Please try again.");
-        }
-
-        const result: AnalysisResult = await response.json();
-        onAnalysisComplete(result);
-      } else {
-        // Upload user files
-        if (files.sales) formData.append("sales", files.sales);
-        if (files.refunds) formData.append("refunds", files.refunds);
-        if (files.suppliers) formData.append("suppliers", files.suppliers);
-        if (files.inventory) formData.append("inventory", files.inventory);
-
-        const response = await fetch("http://127.0.0.1:8000/analyze", {
-          method: "POST",
-          body: formData,
-        });
-
-        if (!response.ok) {
-          throw new Error("Analysis failed. Please try again.");
-        }
-
-        const result: AnalysisResult = await response.json();
-        onAnalysisComplete(result);
-      }
+      const result: AnalysisResult = await apiClient.analyze(formData);
+      onAnalysisComplete(result);
     } catch (err) {
       setError(
         err instanceof Error ? err.message : "An error occurred during analysis"
       );
+    } finally {
       setIsAnalyzing(false);
     }
   };
@@ -91,35 +69,15 @@ export default function UploadSection({
     setUseSampleData(true);
 
     try {
-      // Fetch sample CSV files from backend
-      const sampleFiles = ["sales", "refunds", "suppliers", "inventory"];
-      const formData = new FormData();
-
-      for (const fileName of sampleFiles) {
-        const response = await fetch(
-          `http://127.0.0.1:8000/sample-data/${fileName}.csv`
-        );
-        const blob = await response.blob();
-        const file = new File([blob], `${fileName}.csv`, { type: "text/csv" });
-        formData.append(fileName, file);
-      }
-
-      const response = await fetch("http://127.0.0.1:8000/analyze", {
-        method: "POST",
-        body: formData,
-      });
-
-      if (!response.ok) {
-        throw new Error("Analysis failed. Please try again.");
-      }
-
-      const result: AnalysisResult = await response.json();
+      const result: AnalysisResult = await apiClient.analyzeWithSampleData();
       onAnalysisComplete(result);
     } catch (err) {
       setError(
         err instanceof Error ? err.message : "An error occurred during analysis"
       );
+    } finally {
       setIsAnalyzing(false);
+      setUseSampleData(false);
     }
   };
 
