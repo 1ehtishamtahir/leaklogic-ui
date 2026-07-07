@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { Suspense } from "react";
 import Spline from "@splinetool/react-spline";
@@ -12,12 +12,14 @@ export default function SplineBackground() {
         backgroundColor: '#001031',
       }}
     >
-      <Suspense fallback={
-        <div 
-          className="w-full h-full animate-pulse" 
-          style={{ backgroundColor: '#001031' }}
-        />
-      }>
+      <Suspense
+        fallback={
+          <div
+            className="h-full w-full animate-pulse"
+            style={{ backgroundColor: "#001031" }}
+          />
+        }
+      >
         <Spline
           scene="https://prod.spline.design/SxhOPKt5L7pPqxaK/scene.splinecode"
           style={{
