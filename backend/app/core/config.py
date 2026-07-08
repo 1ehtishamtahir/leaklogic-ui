@@ -1,4 +1,4 @@
-﻿from pydantic import AliasChoices, Field
+﻿from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -10,10 +10,7 @@ class Settings(BaseSettings):
 
     openrouter_api_key: str | None = Field(
         default=None,
-        validation_alias=AliasChoices(
-            "NEMOTRON-OPENROUTER_API_KEY",
-            "OPENROUTER_API_KEY",
-        ),
+        validation_alias="OPENROUTER_API_KEY",
     )
     openrouter_api_base_url: str = "https://openrouter.ai/api/v1"
     openrouter_model: str = Field(
