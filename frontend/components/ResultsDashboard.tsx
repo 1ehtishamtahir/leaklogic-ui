@@ -15,6 +15,8 @@ import {
   Sparkles,
   TrendingDown,
 } from "lucide-react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 import { AnalysisResult } from "@/types";
 import AnalyticsCharts from "./AnalyticsCharts";
@@ -180,6 +182,114 @@ function NarrativeBadge({
   );
 }
 
+function ExecutiveSummary({
+  summary,
+}: {
+  summary: string;
+}) {
+  return (
+    <div className="mt-5 max-w-3xl text-sm leading-7 text-slate-200">
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        components={{
+          h1: ({ children }) => (
+            <h1 className="mb-4 mt-6 text-2xl font-bold text-white first:mt-0">
+              {children}
+            </h1>
+          ),
+          h2: ({ children }) => (
+            <h2 className="mb-3 mt-6 text-xl font-bold text-white first:mt-0">
+              {children}
+            </h2>
+          ),
+          h3: ({ children }) => (
+            <h3 className="mb-2 mt-5 text-lg font-semibold text-cyan-100 first:mt-0">
+              {children}
+            </h3>
+          ),
+          p: ({ children }) => (
+            <p className="mb-4 leading-7 text-slate-200 last:mb-0">
+              {children}
+            </p>
+          ),
+          strong: ({ children }) => (
+            <strong className="font-semibold text-white">
+              {children}
+            </strong>
+          ),
+          em: ({ children }) => (
+            <em className="text-slate-300">
+              {children}
+            </em>
+          ),
+          ul: ({ children }) => (
+            <ul className="mb-5 ml-5 list-disc space-y-2 text-slate-200 marker:text-violet-400">
+              {children}
+            </ul>
+          ),
+          ol: ({ children }) => (
+            <ol className="mb-5 ml-5 list-decimal space-y-2 text-slate-200 marker:font-semibold marker:text-violet-400">
+              {children}
+            </ol>
+          ),
+          li: ({ children }) => (
+            <li className="pl-1 leading-7">
+              {children}
+            </li>
+          ),
+          hr: () => (
+            <hr className="my-6 border-white/10" />
+          ),
+          blockquote: ({ children }) => (
+            <blockquote className="my-5 border-l-4 border-violet-500/60 bg-violet-500/5 px-4 py-3 text-slate-300">
+              {children}
+            </blockquote>
+          ),
+          table: ({ children }) => (
+            <div className="my-5 overflow-x-auto rounded-xl border border-white/10">
+              <table className="min-w-full border-collapse text-left text-sm">
+                {children}
+              </table>
+            </div>
+          ),
+          thead: ({ children }) => (
+            <thead className="bg-white/5 text-slate-100">
+              {children}
+            </thead>
+          ),
+          tbody: ({ children }) => (
+            <tbody className="divide-y divide-white/10">
+              {children}
+            </tbody>
+          ),
+          tr: ({ children }) => (
+            <tr className="transition-colors hover:bg-white/[0.02]">
+              {children}
+            </tr>
+          ),
+          th: ({ children }) => (
+            <th className="border-r border-white/10 px-4 py-3 font-semibold last:border-r-0">
+              {children}
+            </th>
+          ),
+          td: ({ children }) => (
+            <td className="border-r border-white/10 px-4 py-3 align-top text-slate-300 last:border-r-0">
+              {children}
+            </td>
+          ),
+          code: ({ children }) => (
+            <code className="rounded bg-black/40 px-1.5 py-0.5 font-mono text-xs text-cyan-200">
+              {children}
+            </code>
+          ),
+        }}
+      >
+        {summary}
+      </ReactMarkdown>
+    </div>
+  );
+}
+
 export default function ResultsDashboard({
   result,
 }: ResultsDashboardProps) {
@@ -228,7 +338,6 @@ export default function ResultsDashboard({
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-      {/* Summary */}
       <Card3D
         className="glass-panel mb-8 overflow-hidden rounded-2xl"
         glowColor="rgba(124, 58, 237, 0.15)"
@@ -265,11 +374,11 @@ export default function ResultsDashboard({
                   Forensic Analysis Report
                 </h2>
 
-                <div className="mt-4 max-w-2xl whitespace-pre-wrap text-sm leading-7 text-slate-200">
-                  {result.executive_summary}
-                </div>
+                <ExecutiveSummary
+                  summary={result.executive_summary}
+                />
 
-                <p className="mt-4 text-xs leading-5 text-slate-500">
+                <p className="mt-5 border-t border-white/10 pt-4 text-xs leading-5 text-slate-500">
                   {result.amd_usage_note}
                 </p>
               </div>
@@ -289,7 +398,6 @@ export default function ResultsDashboard({
               </button>
             </div>
 
-            {/* Metrics */}
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {metrics.map(
                 (
@@ -347,7 +455,6 @@ export default function ResultsDashboard({
         </section>
       </Card3D>
 
-      {/* Visual analytics */}
       <div className="mb-8">
         <h3 className="mb-4 text-2xl font-bold text-white">
           Visual Analysis
@@ -356,7 +463,6 @@ export default function ResultsDashboard({
         <AnalyticsCharts result={result} />
       </div>
 
-      {/* Findings */}
       <div className="mb-5 flex items-end justify-between gap-4">
         <h3 className="text-xl font-bold text-white">
           Findings Registry
