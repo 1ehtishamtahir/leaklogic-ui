@@ -6,7 +6,7 @@ import { Lightbulb, AlertCircle, TrendingUp, Clock, CheckCircle } from "lucide-r
 export default function LeakCard({ finding }: { finding: Finding }) {
   return (
     <div className="border-t p-5 sm:p-6"
-      style={{ borderColor:"rgba(255,255,255,0.06)", background:"rgba(0,0,0,0.22)" }}>
+      style={{ borderColor:"rgba(255,255,255,0.06)", background:"rgba(0,0,0,0.35)" }}>
       <div className="grid md:grid-cols-2 gap-4">
 
         {/* ── LEFT: Hard evidence ──────────────────────────── */}

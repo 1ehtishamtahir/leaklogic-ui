@@ -1,4 +1,5 @@
 from pydantic import BaseModel, Field
+from typing import Any
 
 
 class LeakFinding(BaseModel):
@@ -14,9 +15,18 @@ class LeakFinding(BaseModel):
     suggested_action: str
 
 
+class ChartData(BaseModel):
+    """Data for frontend charts"""
+    revenue_over_time: list[dict[str, Any]]  # [{"month": "2024-01", "revenue": 5000}, ...]
+    records_by_source: dict[str, int]        # {"sales": 120, "refunds": 45, ...}
+    date_range: str                           # "Jan 2024 - Mar 2024"
+
+
 class AnalysisResponse(BaseModel):
     status: str
     total_estimated_leak: float
     findings: list[LeakFinding]
     executive_summary: str
     amd_usage_note: str
+    chart_data: ChartData | None = None
+

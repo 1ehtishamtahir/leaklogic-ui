@@ -1,7 +1,6 @@
 "use client";
 
 import { Shield, Zap, Target, Brain, BarChart, Sparkles } from "lucide-react";
-import AnalyticsCharts from "./AnalyticsCharts";
 import Card3D from "./Card3D";
 
 const features = [
@@ -63,13 +62,10 @@ export default function FeaturesSection() {
           <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
             POWERFUL <span className="text-gradient">FEATURES</span>
           </h2>
-          <p className="text-lg text-slate-400 max-w-xl mx-auto">
+          <p className="text-lg text-slate-200 max-w-xl mx-auto">
             Everything you need to identify and fix profit leaks in your business
           </p>
         </div>
-
-        {/* Analytics Charts */}
-        <AnalyticsCharts />
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
@@ -84,7 +80,7 @@ export default function FeaturesSection() {
                 <div
                   className="group rounded-2xl p-6 border transition-all duration-300 h-full"
                   style={{
-                    background: 'rgba(255,255,255,0.02)',
+                    background: 'rgba(255,255,255,0.04)',
                     backdropFilter: 'blur(22px)',
                     borderColor: feature.color.border,
                     animationDelay: `${index * 100}ms`,
@@ -98,7 +94,7 @@ export default function FeaturesSection() {
                     style={{ textShadow: `0 0 20px ${feature.color.glow}` }}>
                     {feature.title}
                   </h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <p className="text-slate-200 text-sm leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
@@ -120,7 +116,7 @@ export default function FeaturesSection() {
               ].map(({ value, label }) => (
                 <div key={label} className="text-center">
                   <div className="text-4xl font-bold mb-2 text-gradient">{value}</div>
-                  <div className="text-xs text-slate-500 uppercase tracking-wider font-medium">{label}</div>
+                  <div className="text-xs text-slate-300 uppercase tracking-wider font-semibold">{label}</div>
                 </div>
               ))}
             </div>

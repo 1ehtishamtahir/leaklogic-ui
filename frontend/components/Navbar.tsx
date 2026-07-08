@@ -2,6 +2,9 @@
 
 import { Activity, BarChart3, Sparkles, ChevronDown } from "lucide-react";
 import Image from "next/image";
+import { useState, useEffect } from "react";
+import { useRouter, usePathname } from "next/navigation";
+import Link from "next/link";
 
 interface NavbarProps {
   hasResults: boolean;
@@ -9,8 +12,55 @@ interface NavbarProps {
 }
 
 export default function Navbar({ hasResults, onReset }: NavbarProps) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const [activeSection, setActiveSection] = useState<string>('home');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['home', 'dashboard', 'features', 'upload'];
+      const scrollPosition = window.scrollY + 150; // Offset for navbar height
+
+      // Check if we're at the top (hero section)
+      if (window.scrollY < 100) {
+        setActiveSection('home');
+        return;
+      }
+
+      // Check each section
+      for (const sectionId of sections) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const { offsetTop, offsetHeight } = element;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(sectionId);
+            return;
+          }
+        }
+      }
+    };
+
+    // Set initial state
+    handleScroll();
+
+    // Add scroll listener
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleDashboardClick = () => {
+    if (hasResults) {
+      onReset();
+      setTimeout(() => {
+        scrollToSection('#dashboard');
+      }, 100);
+    } else {
+      scrollToSection('#dashboard');
+    }
+  };
+
   const scrollToSection = (sectionId: string) => {
-    if (hasResults && sectionId !== '#') {
+    if (hasResults && sectionId !== '#home') {
       onReset();
       setTimeout(() => {
         const element = document.querySelector(sectionId);
@@ -18,14 +68,44 @@ export default function Navbar({ hasResults, onReset }: NavbarProps) {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }, 100);
-    } else if (sectionId === '#') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (sectionId === '#' || sectionId === '#home') {
+      if (hasResults) {
+        onReset();
+        setTimeout(() => {
+          const element = document.querySelector('#home');
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        }, 100);
+      } else {
+        const element = document.querySelector('#home');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }
     } else {
       const element = document.querySelector(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }
+  };
+
+  const getButtonStyle = (section: string) => {
+    const isActive = activeSection === section;
+    return {
+      base: `px-5 py-2.5 text-[13px] font-${isActive ? 'semibold' : 'medium'} text-${isActive ? 'white' : 'slate-400'} rounded-lg transition-all duration-300`,
+      active: isActive ? {
+        background: 'rgba(124, 58, 237, 0.12)',
+        borderColor: 'rgba(124, 58, 237, 0.35)',
+        boxShadow: '0 0 12px rgba(124,58,237,0.15)',
+      } : {},
+      hover: 'hover:text-white hover:bg-white/5',
+    };
   };
 
   return (
@@ -40,10 +120,7 @@ export default function Navbar({ hasResults, onReset }: NavbarProps) {
         <div className="flex items-center justify-between h-[72px]">
           
           {/* Left: Logo & Brand */}
-          <button 
-            onClick={() => scrollToSection('#')}
-            className="flex items-center gap-4 hover:opacity-90 transition-all duration-300 group"
-          >
+          <Link href="/" className="flex items-center gap-4 hover:opacity-90 transition-all duration-300 group">
             {/* Logo with glow effect */}
             <div className="relative flex-shrink-0">
               <div
@@ -66,42 +143,119 @@ export default function Navbar({ hasResults, onReset }: NavbarProps) {
               <h1 className="text-[20px] font-bold tracking-tight leading-none bg-gradient-to-r from-[#A78BFA] to-[#67E8F9] bg-clip-text text-transparent">
                 LeakLogic AI
               </h1>
-              <p className="text-[10px] text-slate-500 uppercase tracking-[0.2em] font-semibold leading-none">
+              <p className="text-[10px] text-slate-400 uppercase tracking-[0.2em] font-semibold leading-none">
                 Profit Intelligence Platform
               </p>
             </div>
-          </button>
+          </Link>
 
           {/* Center: Navigation */}
           <nav className="hidden lg:flex items-center gap-2 absolute left-1/2 transform -translate-x-1/2">
             <button
               onClick={() => scrollToSection('#')}
-              className="px-5 py-2.5 text-[13px] font-semibold text-white rounded-lg border transition-all duration-300"
-              style={{
+              className={`px-5 py-2.5 text-[13px] rounded-lg border transition-all duration-300 ${
+                activeSection === 'home' 
+                  ? 'font-semibold text-white' 
+                  : 'font-medium text-slate-400 hover:text-white hover:bg-white/5 border-transparent'
+              }`}
+              style={activeSection === 'home' ? {
                 background: 'rgba(124, 58, 237, 0.12)',
                 borderColor: 'rgba(124, 58, 237, 0.35)',
                 boxShadow: '0 0 12px rgba(124,58,237,0.15)',
-              }}
+              } : {}}
               onMouseEnter={e => {
-                (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 0 20px rgba(124,58,237,0.4)';
-                (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(124,58,237,0.6)';
+                if (activeSection === 'home') {
+                  (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 0 20px rgba(124,58,237,0.4)';
+                  (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(124,58,237,0.6)';
+                }
               }}
               onMouseLeave={e => {
-                (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 0 12px rgba(124,58,237,0.15)';
-                (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(124,58,237,0.35)';
+                if (activeSection === 'home') {
+                  (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 0 12px rgba(124,58,237,0.15)';
+                  (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(124,58,237,0.35)';
+                }
+              }}
+            >
+              Home
+            </button>
+            <button
+              onClick={handleDashboardClick}
+              className={`px-5 py-2.5 text-[13px] rounded-lg border transition-all duration-300 ${
+                activeSection === 'dashboard' 
+                  ? 'font-semibold text-white' 
+                  : 'font-medium text-slate-400 hover:text-white hover:bg-white/5 border-transparent'
+              }`}
+              style={activeSection === 'dashboard' ? {
+                background: 'rgba(124, 58, 237, 0.12)',
+                borderColor: 'rgba(124, 58, 237, 0.35)',
+                boxShadow: '0 0 12px rgba(124,58,237,0.15)',
+              } : {}}
+              onMouseEnter={e => {
+                if (activeSection === 'dashboard') {
+                  (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 0 20px rgba(124,58,237,0.4)';
+                  (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(124,58,237,0.6)';
+                }
+              }}
+              onMouseLeave={e => {
+                if (activeSection === 'dashboard') {
+                  (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 0 12px rgba(124,58,237,0.15)';
+                  (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(124,58,237,0.35)';
+                }
               }}
             >
               Dashboard
             </button>
             <button
               onClick={() => scrollToSection('#features')}
-              className="px-5 py-2.5 text-[13px] font-medium text-slate-400 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300"
+              className={`px-5 py-2.5 text-[13px] rounded-lg border transition-all duration-300 ${
+                activeSection === 'features' 
+                  ? 'font-semibold text-white' 
+                  : 'font-medium text-slate-400 hover:text-white hover:bg-white/5 border-transparent'
+              }`}
+              style={activeSection === 'features' ? {
+                background: 'rgba(124, 58, 237, 0.12)',
+                borderColor: 'rgba(124, 58, 237, 0.35)',
+                boxShadow: '0 0 12px rgba(124,58,237,0.15)',
+              } : {}}
+              onMouseEnter={e => {
+                if (activeSection === 'features') {
+                  (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 0 20px rgba(124,58,237,0.4)';
+                  (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(124,58,237,0.6)';
+                }
+              }}
+              onMouseLeave={e => {
+                if (activeSection === 'features') {
+                  (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 0 12px rgba(124,58,237,0.15)';
+                  (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(124,58,237,0.35)';
+                }
+              }}
             >
               Features
             </button>
             <button
               onClick={() => scrollToSection('#upload')}
-              className="px-5 py-2.5 text-[13px] font-medium text-slate-400 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300"
+              className={`px-5 py-2.5 text-[13px] rounded-lg border transition-all duration-300 ${
+                activeSection === 'upload' 
+                  ? 'font-semibold text-white' 
+                  : 'font-medium text-slate-400 hover:text-white hover:bg-white/5 border-transparent'
+              }`}
+              style={activeSection === 'upload' ? {
+                background: 'rgba(124, 58, 237, 0.12)',
+                borderColor: 'rgba(124, 58, 237, 0.35)',
+                boxShadow: '0 0 12px rgba(124,58,237,0.15)',
+              } : {}}
+              onMouseEnter={e => {
+                if (activeSection === 'upload') {
+                  (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 0 20px rgba(124,58,237,0.4)';
+                  (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(124,58,237,0.6)';
+                }
+              }}
+              onMouseLeave={e => {
+                if (activeSection === 'upload') {
+                  (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 0 12px rgba(124,58,237,0.15)';
+                  (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(124,58,237,0.35)';
+                }
+              }}
             >
               Analyze
             </button>

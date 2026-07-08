@@ -1,6 +1,6 @@
 "use client";
 
-import { LineChart, Line, PieChart, Pie, Cell, ResponsiveContainer, XAxis, YAxis, Tooltip } from 'recharts';
+import { LineChart, Line, PieChart, Pie, Cell, ResponsiveContainer, XAxis, YAxis, Tooltip, BarChart as RechartsBarChart, Bar } from 'recharts';
 
 interface RevenueChartProps {
   data: Array<{ month: string; value: number }>;
@@ -71,5 +71,58 @@ export function DonutChart({ data }: DonutChartProps) {
         ))}
       </Pie>
     </PieChart>
+  );
+}
+
+interface BarChartProps {
+  data: Array<{ name: string; value: number; category: string }>;
+  categoryColors: Record<string, string>;
+}
+
+export function BarChart({ data, categoryColors }: BarChartProps) {
+  return (
+    <ResponsiveContainer width="100%" height={240}>
+      <RechartsBarChart data={data} layout="vertical">
+        <XAxis 
+          type="number"
+          stroke="#52525B" 
+          tick={{ fill: '#71717A', fontSize: 11 }}
+          axisLine={false}
+          tickLine={false}
+          tickFormatter={(value) => `$${(value / 1000).toFixed(1)}K`}
+        />
+        <YAxis 
+          type="category"
+          dataKey="name" 
+          stroke="#52525B" 
+          tick={{ fill: '#A1A1AA', fontSize: 10 }}
+          axisLine={false}
+          tickLine={false}
+          width={120}
+        />
+        <Tooltip 
+          contentStyle={{
+            background: 'rgba(24, 24, 27, 0.95)',
+            border: '1px solid rgba(239, 68, 68, 0.3)',
+            borderRadius: '8px',
+            color: '#fff',
+          }}
+          cursor={{ fill: 'rgba(255, 255, 255, 0.03)' }}
+          formatter={(value: number) => [`$${value.toLocaleString()}`, 'Impact']}
+        />
+        <Bar 
+          dataKey="value" 
+          fill="#EF4444"
+          radius={[0, 8, 8, 0]}
+        >
+          {data.map((entry, index) => (
+            <Cell 
+              key={`cell-${index}`} 
+              fill={categoryColors[entry.category.toUpperCase()] || '#EF4444'} 
+            />
+          ))}
+        </Bar>
+      </RechartsBarChart>
+    </ResponsiveContainer>
   );
 }

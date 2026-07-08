@@ -12,7 +12,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className="relative min-h-[700px] lg:min-h-[820px] overflow-hidden">
+    <div id="home" className="relative min-h-[700px] lg:min-h-[820px] overflow-hidden">
 
 
       {/* Extra glow overlay behind hero content */}
@@ -24,14 +24,14 @@ export default function HeroSection() {
       {/* Hero Content */}
       <div className="relative z-10 w-full lg:w-[62%] py-12 lg:py-20 px-4 sm:px-6 lg:px-12">
         <div
-          className="rounded-2xl sm:rounded-3xl p-7 sm:p-10 md:p-14 lg:py-18 transition-all duration-1000"
+          className="rounded-2xl sm:rounded-3xl p-7 sm:p-10 md:p-14 lg:py-18 transition-all duration-1000 hero-glow-border"
           style={{
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? 'translateX(0)' : 'translateX(-40px)',
             background: 'rgba(0,0,0,0.35)',
             border: '1px solid rgba(255,255,255,0.06)',
             backdropFilter: 'blur(10px)',
-            boxShadow: '0 0 0 0.5px rgba(255,255,255,0.03) inset, 0 20px 60px rgba(0,0,0,0.5)',
+            boxShadow: '0 0 0 0.5px rgba(255,255,255,0.03) inset, 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(124, 58, 237, 0.15), 0 0 80px rgba(6, 182, 212, 0.08)',
           }}
         >
           {/* Status Badges */}
@@ -70,17 +70,17 @@ export default function HeroSection() {
               <span className="block">PROFIT</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-slate-300 max-w-2xl leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-200 max-w-2xl leading-relaxed">
               AI-powered analysis that identifies hidden profit leaks in your business data.{" "}
-              <span className="text-slate-400">Upload your sales, refunds, supplier, and inventory data to discover where revenue is slipping through the cracks.</span>
+              <span className="text-slate-300">Upload your sales, refunds, supplier, and inventory data to discover where revenue is slipping through the cracks.</span>
             </p>
           </div>
 
           {/* Feature checks */}
-          <div className="flex flex-wrap items-center gap-6 text-sm text-slate-400 mb-8">
+          <div className="flex flex-wrap items-center gap-6 text-sm text-slate-200 mb-8">
             {[
               { label: "Instant Detection", highlight: "Instant" },
-              { label: "7+ Leak Categories", highlight: "7+" },
+              { label: "4 Leak Categories", highlight: "4" },
               { label: "AI-Powered Insights", highlight: "AI-Powered" },
             ].map(({ label, highlight }) => (
               <div key={label} className="flex items-center gap-2">
@@ -118,7 +118,7 @@ export default function HeroSection() {
           {
             icon: TrendingUp,
             label: "Detection Types",
-            value: "7+ Categories",
+            value: "4 Categories",
             color: { bg: "rgba(124,58,237,0.08)", border: "rgba(124,58,237,0.3)", icon: "#A78BFA", glow: "rgba(124,58,237,0.15)" },
           },
           {
@@ -161,7 +161,7 @@ export default function HeroSection() {
               </div>
             </div>
             <div className="relative z-10">
-              <div className="text-xs text-slate-500 uppercase tracking-wider font-mono mb-1">{label}</div>
+              <div className="text-xs text-slate-300 uppercase tracking-wider font-mono mb-1 font-semibold">{label}</div>
               <div className="text-lg sm:text-xl font-bold text-white" style={{ textShadow: `0 0 20px ${color.glow}` }}>{value}</div>
             </div>
           </div>

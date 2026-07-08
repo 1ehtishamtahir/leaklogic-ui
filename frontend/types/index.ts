@@ -11,12 +11,19 @@ export interface Finding {
   suggested_action: string;
 }
 
+export interface ChartData {
+  revenue_over_time: Array<{ month: string; value: number }>;
+  records_by_source: Record<string, number>;
+  date_range: string;
+}
+
 export interface AnalysisResult {
   status: string;
   total_estimated_leak: number;
   findings: Finding[];
   executive_summary: string;
   amd_usage_note: string;
+  chart_data?: ChartData;
 }
 
 export interface UploadedFiles {

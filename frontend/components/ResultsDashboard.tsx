@@ -9,6 +9,7 @@ import {
 import { AnalysisResult } from "@/types";
 import LeakCard from "./LeakCard";
 import Card3D from "./Card3D";
+import AnalyticsCharts from "./AnalyticsCharts";
 
 interface ResultsDashboardProps { result: AnalysisResult; }
 
@@ -58,7 +59,10 @@ export default function ResultsDashboard({ result }: ResultsDashboardProps) {
 
       {/* ── Summary ──────────────────────────────────────── */}
       <Card3D className="rounded-2xl mb-8 overflow-hidden glass-panel" glowColor="rgba(124, 58, 237, 0.15)">
-        <section className="h-full w-full">
+        <section className="h-full w-full" style={{
+          background: 'rgba(0,0,0,0.35)',
+          backdropFilter: 'blur(10px)',
+        }}>
         <div className="p-6 sm:p-8">
           <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
             <div className="flex-1">
@@ -70,13 +74,13 @@ export default function ResultsDashboard({ result }: ResultsDashboardProps) {
               <h2 className="text-2xl sm:text-3xl font-bold text-white leading-snug">
                 Forensic Analysis Report
               </h2>
-              <p className="mt-3 text-sm leading-7 text-slate-400 max-w-2xl">
+              <p className="mt-3 text-sm leading-7 text-slate-200 max-w-2xl">
                 {result.executive_summary}
               </p>
             </div>
             <button onClick={() => window.print()}
-              className="flex shrink-0 items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium border transition hover:bg-white/5 btn-liquid-highlight"
-              style={{ borderColor:"rgba(255,255,255,0.10)", color:"#CBD5E1", background:"rgba(255,255,255,0.03)" }}>
+              className="flex shrink-0 items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold border transition hover:bg-white/5 btn-liquid-highlight"
+              style={{ borderColor:"rgba(6,182,212,0.3)", color:"#67E8F9", background:"rgba(6,182,212,0.08)" }}>
               <Download className="h-4 w-4" />
               Export Brief
             </button>
@@ -85,9 +89,9 @@ export default function ResultsDashboard({ result }: ResultsDashboardProps) {
           {/* Metrics */}
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             {[
-              { label:"ANOMALIES DETECTED", value:result.findings.length,               icon:TrendingDown,      bg:"rgba(239,68,68,0.06)", border:"rgba(239,68,68,0.22)", text:"#EF4444", prefix:"",  suffix:"" },
-              { label:"ESTIMATED LOSS",     value:Math.abs(result.total_estimated_leak), icon:CircleDollarSign, bg:"rgba(239,68,68,0.06)", border:"rgba(239,68,68,0.22)", text:"#EF4444", prefix:"$", suffix:"" },
-              { label:"AVG CONFIDENCE",     value:avgConf*100,                           icon:ShieldCheck,      bg:"rgba(6,182,212,0.06)", border:"rgba(6,182,212,0.20)", text:"#06B6D4", prefix:"",  suffix:"%" },
+              { label:"ANOMALIES DETECTED", value:result.findings.length,               icon:TrendingDown,      bg:"rgba(239,68,68,0.12)", border:"rgba(239,68,68,0.3)", text:"#EF4444", prefix:"",  suffix:"" },
+              { label:"ESTIMATED LOSS",     value:Math.abs(result.total_estimated_leak), icon:CircleDollarSign, bg:"rgba(239,68,68,0.12)", border:"rgba(239,68,68,0.3)", text:"#EF4444", prefix:"$", suffix:"" },
+              { label:"AVG CONFIDENCE",     value:avgConf*100,                           icon:ShieldCheck,      bg:"rgba(6,182,212,0.12)", border:"rgba(6,182,212,0.3)", text:"#06B6D4", prefix:"",  suffix:"%" },
             ].map(({ label, value, icon:Icon, bg, border, text, prefix, suffix }, i) => (
               <div key={label}
                 className="rounded-xl p-5 border flex items-center gap-4 glass-panel animate-fade-in-up"
@@ -96,7 +100,7 @@ export default function ResultsDashboard({ result }: ResultsDashboardProps) {
                   <Icon className="h-5 w-5" />
                 </div>
                 <div>
-                  <p className="text-[10px] font-mono tracking-widest text-slate-500">{label}</p>
+                  <p className="text-[10px] font-mono tracking-widest text-slate-300 font-semibold">{label}</p>
                   <p className="mt-0.5 text-2xl font-bold font-mono text-white">
                     <Counter to={value} prefix={prefix} suffix={suffix} dur={1.3+i*0.15} />
                   </p>
@@ -108,17 +112,23 @@ export default function ResultsDashboard({ result }: ResultsDashboardProps) {
         </section>
       </Card3D>
 
+      {/* ── Visual Analytics ─────────────────────────────── */}
+      <div className="mb-8">
+        <h3 className="text-2xl font-bold text-white mb-4">Visual Analysis</h3>
+        <AnalyticsCharts result={result} />
+      </div>
+
       {/* ── Findings ─────────────────────────────────────── */}
       <div className="mb-5 flex justify-between items-end">
         <h3 className="text-xl font-bold text-white">Findings Registry</h3>
-        <span className="text-[10px] font-mono tracking-widest text-slate-600">SORTED BY FINANCIAL IMPACT</span>
+        <span className="text-[10px] font-mono tracking-widest text-slate-500">SORTED BY FINANCIAL IMPACT</span>
       </div>
 
       {result.findings.length === 0 ? (
         <div className="glass-panel rounded-2xl p-10 text-center" style={{ borderColor:"rgba(16,185,129,0.22)" }}>
           <ShieldCheck className="mx-auto h-10 w-10" style={{ color:"#10B981" }} />
           <h4 className="mt-4 text-lg font-semibold text-white">No Major Leaks Detected</h4>
-          <p className="mt-2 text-sm text-slate-500">Financial streams appear stable.</p>
+          <p className="mt-2 text-sm text-slate-400">Financial streams appear stable.</p>
         </div>
       ) : (
         <div className="space-y-3">
@@ -149,18 +159,18 @@ export default function ResultsDashboard({ result }: ResultsDashboardProps) {
                         style={{ background:s.bg, color:s.text, borderColor:s.border }}>
                         {finding.category.toUpperCase()}
                       </span>
-                      <span className="text-[10px] font-mono flex items-center gap-1 text-slate-600">
+                      <span className="text-[10px] font-mono flex items-center gap-1 text-slate-500">
                         <span className="w-1.5 h-1.5 rounded-full inline-block" style={{ background:"#A78BFA" }} />
                         {(finding.confidence*100).toFixed(0)}% CONF
                       </span>
                     </div>
                     <h4 className="text-base font-semibold text-slate-100 leading-snug">{finding.title}</h4>
-                    <p className="mt-0.5 text-xs text-slate-500 truncate">{finding.entity}</p>
+                    <p className="mt-0.5 text-xs text-slate-400 truncate">{finding.entity}</p>
                   </div>
 
                   <div className="ml-auto shrink-0 flex items-center gap-3 pl-3 relative z-10">
                     <div className="text-right hidden sm:block">
-                      <p className="text-[10px] font-mono text-slate-600">IMPACT</p>
+                      <p className="text-[10px] font-mono text-slate-500">IMPACT</p>
                       <p className="text-base font-bold font-mono" style={{ color:"#F87171" }}>
                         −${Math.abs(finding.dollar_impact).toLocaleString()}
                       </p>
