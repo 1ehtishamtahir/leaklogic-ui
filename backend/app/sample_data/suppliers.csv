@@ -1,19 +1,1171 @@
 date,supplier_name,product,sku,unit_cost,purchase_volume
-2019-01-01,BeautySupplyCo,Health and beauty,SKU-750-67-8,32.08,254
-2019-02-01,BeautySupplyCo,Health and beauty,SKU-370-41-7,29.73,266
-2019-03-01,BeautySupplyCo,Health and beauty,SKU-829-34-3,28.89,334
-2019-01-01,TechWholesale Inc,Electronic accessories,SKU-272-65-1,30.05,333
-2019-02-01,TechWholesale Inc,Electronic accessories,SKU-355-53-5,29.93,313
-2019-03-01,TechWholesale Inc,Electronic accessories,SKU-226-31-3,35.65,325
-2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-280-35-5,31.11,342
-2019-02-01,HomeGoods Ltd,Home and lifestyle,SKU-315-22-5,30.4,205
-2019-03-01,HomeGoods Ltd,Home and lifestyle,SKU-631-41-3,29.8,364
-2019-01-01,ActiveLife Supplies,Sports and travel,SKU-299-46-1,30.08,375
-2019-02-01,ActiveLife Supplies,Sports and travel,SKU-373-73-7,32.61,226
-2019-03-02,ActiveLife Supplies,Sports and travel,SKU-549-59-1,32.0,319
-2019-01-01,FreshDistributors,Food and beverages,SKU-329-62-1,31.8,325
-2019-02-01,FreshDistributors,Food and beverages,SKU-692-92-5,29.88,349
-2019-03-01,FreshDistributors,Food and beverages,SKU-228-96-1,30.84,278
-2019-01-01,StyleSource Co,Fashion accessories,SKU-778-71-5,30.45,336
-2019-02-02,StyleSource Co,Fashion accessories,SKU-351-62-0,34.07,295
-2019-03-01,StyleSource Co,Fashion accessories,SKU-189-17-4,29.67,271
+2019-01-01,TechWholesale Inc,Electronic accessories,SKU-114-35-5,28.53,183
+2019-01-01,TechWholesale Inc,Electronic accessories,SKU-120-06-4,16.44,384
+2019-01-01,TechWholesale Inc,Electronic accessories,SKU-122-61-9,27.08,116
+2019-01-01,TechWholesale Inc,Electronic accessories,SKU-124-31-1,43.16,129
+2019-01-01,TechWholesale Inc,Electronic accessories,SKU-132-32-9,45.06,192
+2019-01-01,TechWholesale Inc,Electronic accessories,SKU-134-54-4,22.32,150
+2019-01-01,TechWholesale Inc,Electronic accessories,SKU-134-75-2,9.44,360
+2019-01-01,TechWholesale Inc,Electronic accessories,SKU-137-63-5,31.27,372
+2019-01-01,TechWholesale Inc,Electronic accessories,SKU-139-20-0,19.79,131
+2019-01-01,TechWholesale Inc,Electronic accessories,SKU-151-16-1,15.82,81
+2019-01-01,TechWholesale Inc,Electronic accessories,SKU-151-27-8,28.49,289
+2019-01-01,TechWholesale Inc,Electronic accessories,SKU-155-45-3,39.64,85
+2019-01-01,TechWholesale Inc,Electronic accessories,SKU-156-20-0,12.98,242
+2019-01-01,TechWholesale Inc,Electronic accessories,SKU-169-52-4,8.28,383
+2019-01-01,TechWholesale Inc,Electronic accessories,SKU-172-42-8,18.75,191
+2019-01-01,StyleSource Co,Fashion accessories,SKU-105-10-6,10.23,178
+2019-01-01,StyleSource Co,Fashion accessories,SKU-109-28-2,47.16,301
+2019-01-01,StyleSource Co,Fashion accessories,SKU-110-48-7,16.38,317
+2019-01-01,StyleSource Co,Fashion accessories,SKU-115-38-7,4.88,282
+2019-01-01,StyleSource Co,Fashion accessories,SKU-115-99-4,26.68,70
+2019-01-01,StyleSource Co,Fashion accessories,SKU-125-45-2,53.9,214
+2019-01-01,StyleSource Co,Fashion accessories,SKU-130-98-8,32.35,331
+2019-01-01,StyleSource Co,Fashion accessories,SKU-133-77-3,29.53,283
+2019-01-01,StyleSource Co,Fashion accessories,SKU-135-84-8,37.38,214
+2019-01-01,StyleSource Co,Fashion accessories,SKU-137-74-8,5.44,123
+2019-01-01,StyleSource Co,Fashion accessories,SKU-139-52-2,11.2,101
+2019-01-01,StyleSource Co,Fashion accessories,SKU-142-72-4,48.36,288
+2019-01-01,StyleSource Co,Fashion accessories,SKU-163-56-7,24.37,75
+2019-01-01,StyleSource Co,Fashion accessories,SKU-173-82-9,17.68,139
+2019-01-01,StyleSource Co,Fashion accessories,SKU-181-94-6,32.75,324
+2019-01-01,FreshDistributors,Food and beverages,SKU-101-17-6,21.0,302
+2019-01-01,FreshDistributors,Food and beverages,SKU-110-05-6,19.72,253
+2019-01-01,FreshDistributors,Food and beverages,SKU-120-54-2,12.72,116
+2019-01-01,FreshDistributors,Food and beverages,SKU-130-67-4,25.59,204
+2019-01-01,FreshDistributors,Food and beverages,SKU-131-15-8,36.94,108
+2019-01-01,FreshDistributors,Food and beverages,SKU-135-13-8,42.12,337
+2019-01-01,FreshDistributors,Food and beverages,SKU-145-94-9,48.13,364
+2019-01-01,FreshDistributors,Food and beverages,SKU-146-09-5,17.19,340
+2019-01-01,FreshDistributors,Food and beverages,SKU-151-33-7,36.51,158
+2019-01-01,FreshDistributors,Food and beverages,SKU-152-68-2,24.93,216
+2019-01-01,FreshDistributors,Food and beverages,SKU-153-58-4,38.96,151
+2019-01-01,FreshDistributors,Food and beverages,SKU-156-95-3,27.66,79
+2019-01-01,FreshDistributors,Food and beverages,SKU-162-48-8,20.84,318
+2019-01-01,FreshDistributors,Food and beverages,SKU-162-65-8,32.92,389
+2019-01-01,FreshDistributors,Food and beverages,SKU-174-36-3,45.66,201
+2019-01-01,BeautySupplyCo,Health and beauty,SKU-101-81-4,32.65,169
+2019-01-01,BeautySupplyCo,Health and beauty,SKU-102-77-2,33.27,92
+2019-01-01,BeautySupplyCo,Health and beauty,SKU-123-19-1,27.53,121
+2019-01-01,BeautySupplyCo,Health and beauty,SKU-127-47-6,26.89,199
+2019-01-01,BeautySupplyCo,Health and beauty,SKU-131-70-8,44.96,347
+2019-01-01,BeautySupplyCo,Health and beauty,SKU-132-23-6,10.52,196
+2019-01-01,BeautySupplyCo,Health and beauty,SKU-133-14-7,28.58,278
+2019-01-01,BeautySupplyCo,Health and beauty,SKU-148-41-7,46.09,237
+2019-01-01,BeautySupplyCo,Health and beauty,SKU-149-14-0,16.06,301
+2019-01-01,BeautySupplyCo,Health and beauty,SKU-152-08-9,30.23,343
+2019-01-01,BeautySupplyCo,Health and beauty,SKU-157-13-5,24.94,113
+2019-01-01,BeautySupplyCo,Health and beauty,SKU-160-22-2,48.69,338
+2019-01-01,BeautySupplyCo,Health and beauty,SKU-176-78-1,16.96,210
+2019-01-01,BeautySupplyCo,Health and beauty,SKU-186-09-3,41.69,313
+2019-01-01,BeautySupplyCo,Health and beauty,SKU-186-79-9,32.39,197
+2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-106-35-6,22.0,217
+2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-118-62-1,41.6,76
+2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-126-54-1,10.24,319
+2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-136-08-6,35.87,197
+2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-138-17-5,46.5,76
+2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-142-63-6,51.14,140
+2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-144-51-6,34.48,145
+2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-148-82-2,6.07,234
+2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-152-03-4,6.07,398
+2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-154-87-7,32.24,79
+2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-181-82-6,9.15,279
+2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-186-43-8,23.21,107
+2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-195-06-0,42.04,123
+2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-200-40-6,32.22,79
+2019-01-01,HomeGoods Ltd,Home and lifestyle,SKU-209-61-0,20.74,205
+2019-01-01,ActiveLife Supplies,Sports and travel,SKU-102-06-2,11.59,213
+2019-01-01,ActiveLife Supplies,Sports and travel,SKU-105-31-1,37.98,136
+2019-01-01,ActiveLife Supplies,Sports and travel,SKU-109-86-4,32.96,58
+2019-01-01,ActiveLife Supplies,Sports and travel,SKU-123-35-4,23.41,203
+2019-01-01,ActiveLife Supplies,Sports and travel,SKU-129-29-8,33.52,328
+2019-01-01,ActiveLife Supplies,Sports and travel,SKU-139-32-4,46.42,364
+2019-01-01,ActiveLife Supplies,Sports and travel,SKU-149-15-7,19.73,212
+2019-01-01,ActiveLife Supplies,Sports and travel,SKU-149-61-1,34.53,174
+2019-01-01,ActiveLife Supplies,Sports and travel,SKU-149-71-6,38.41,218
+2019-01-01,ActiveLife Supplies,Sports and travel,SKU-150-89-8,20.58,331
+2019-01-01,ActiveLife Supplies,Sports and travel,SKU-154-74-7,27.23,324
+2019-01-01,ActiveLife Supplies,Sports and travel,SKU-166-19-2,41.95,397
+2019-01-01,ActiveLife Supplies,Sports and travel,SKU-173-50-1,8.91,134
+2019-01-01,ActiveLife Supplies,Sports and travel,SKU-173-57-2,37.09,237
+2019-01-01,ActiveLife Supplies,Sports and travel,SKU-174-64-0,33.9,311
+2019-01-08,TechWholesale Inc,Electronic accessories,SKU-114-35-5,28.59,210
+2019-01-08,TechWholesale Inc,Electronic accessories,SKU-120-06-4,16.77,391
+2019-01-08,TechWholesale Inc,Electronic accessories,SKU-122-61-9,27.72,184
+2019-01-08,TechWholesale Inc,Electronic accessories,SKU-124-31-1,44.67,171
+2019-01-08,TechWholesale Inc,Electronic accessories,SKU-132-32-9,44.31,310
+2019-01-08,TechWholesale Inc,Electronic accessories,SKU-134-54-4,22.54,85
+2019-01-08,TechWholesale Inc,Electronic accessories,SKU-134-75-2,9.46,288
+2019-01-08,TechWholesale Inc,Electronic accessories,SKU-137-63-5,31.77,246
+2019-01-08,TechWholesale Inc,Electronic accessories,SKU-139-20-0,20.78,293
+2019-01-08,TechWholesale Inc,Electronic accessories,SKU-151-16-1,15.79,265
+2019-01-08,TechWholesale Inc,Electronic accessories,SKU-151-27-8,30.29,368
+2019-01-08,TechWholesale Inc,Electronic accessories,SKU-155-45-3,42.35,383
+2019-01-08,TechWholesale Inc,Electronic accessories,SKU-156-20-0,13.26,151
+2019-01-08,TechWholesale Inc,Electronic accessories,SKU-169-52-4,8.2,325
+2019-01-08,TechWholesale Inc,Electronic accessories,SKU-172-42-8,19.16,314
+2019-01-08,StyleSource Co,Fashion accessories,SKU-105-10-6,10.47,148
+2019-01-08,StyleSource Co,Fashion accessories,SKU-109-28-2,47.16,56
+2019-01-08,StyleSource Co,Fashion accessories,SKU-110-48-7,17.0,276
+2019-01-08,StyleSource Co,Fashion accessories,SKU-115-38-7,4.81,169
+2019-01-08,StyleSource Co,Fashion accessories,SKU-115-99-4,28.54,215
+2019-01-08,StyleSource Co,Fashion accessories,SKU-125-45-2,55.75,132
+2019-01-08,StyleSource Co,Fashion accessories,SKU-130-98-8,33.08,197
+2019-01-08,StyleSource Co,Fashion accessories,SKU-133-77-3,30.23,246
+2019-01-08,StyleSource Co,Fashion accessories,SKU-135-84-8,39.55,172
+2019-01-08,StyleSource Co,Fashion accessories,SKU-137-74-8,5.75,385
+2019-01-08,StyleSource Co,Fashion accessories,SKU-139-52-2,11.14,203
+2019-01-08,StyleSource Co,Fashion accessories,SKU-142-72-4,49.92,396
+2019-01-08,StyleSource Co,Fashion accessories,SKU-163-56-7,24.54,304
+2019-01-08,StyleSource Co,Fashion accessories,SKU-173-82-9,17.33,326
+2019-01-08,StyleSource Co,Fashion accessories,SKU-181-94-6,33.9,238
+2019-01-08,FreshDistributors,Food and beverages,SKU-101-17-6,21.44,170
+2019-01-08,FreshDistributors,Food and beverages,SKU-110-05-6,20.29,112
+2019-01-08,FreshDistributors,Food and beverages,SKU-120-54-2,13.42,139
+2019-01-08,FreshDistributors,Food and beverages,SKU-130-67-4,26.09,65
+2019-01-08,FreshDistributors,Food and beverages,SKU-131-15-8,37.7,383
+2019-01-08,FreshDistributors,Food and beverages,SKU-135-13-8,42.94,393
+2019-01-08,FreshDistributors,Food and beverages,SKU-145-94-9,49.34,335
+2019-01-08,FreshDistributors,Food and beverages,SKU-146-09-5,17.32,76
+2019-01-08,FreshDistributors,Food and beverages,SKU-151-33-7,37.97,180
+2019-01-08,FreshDistributors,Food and beverages,SKU-152-68-2,25.35,366
+2019-01-08,FreshDistributors,Food and beverages,SKU-153-58-4,39.46,128
+2019-01-08,FreshDistributors,Food and beverages,SKU-156-95-3,27.89,196
+2019-01-08,FreshDistributors,Food and beverages,SKU-162-48-8,20.79,131
+2019-01-08,FreshDistributors,Food and beverages,SKU-162-65-8,32.27,354
+2019-01-08,FreshDistributors,Food and beverages,SKU-174-36-3,49.24,101
+2019-01-08,BeautySupplyCo,Health and beauty,SKU-101-81-4,33.04,208
+2019-01-08,BeautySupplyCo,Health and beauty,SKU-102-77-2,35.25,189
+2019-01-08,BeautySupplyCo,Health and beauty,SKU-123-19-1,27.77,290
+2019-01-08,BeautySupplyCo,Health and beauty,SKU-127-47-6,26.99,364
+2019-01-08,BeautySupplyCo,Health and beauty,SKU-131-70-8,46.44,220
+2019-01-08,BeautySupplyCo,Health and beauty,SKU-132-23-6,10.39,74
+2019-01-08,BeautySupplyCo,Health and beauty,SKU-133-14-7,29.52,268
+2019-01-08,BeautySupplyCo,Health and beauty,SKU-148-41-7,45.22,340
+2019-01-08,BeautySupplyCo,Health and beauty,SKU-149-14-0,15.58,119
+2019-01-08,BeautySupplyCo,Health and beauty,SKU-152-08-9,30.82,332
+2019-01-08,BeautySupplyCo,Health and beauty,SKU-157-13-5,26.47,205
+2019-01-08,BeautySupplyCo,Health and beauty,SKU-160-22-2,49.33,64
+2019-01-08,BeautySupplyCo,Health and beauty,SKU-176-78-1,17.39,213
+2019-01-08,BeautySupplyCo,Health and beauty,SKU-186-09-3,42.88,207
+2019-01-08,BeautySupplyCo,Health and beauty,SKU-186-79-9,32.5,308
+2019-01-08,HomeGoods Ltd,Home and lifestyle,SKU-106-35-6,23.06,213
+2019-01-08,HomeGoods Ltd,Home and lifestyle,SKU-118-62-1,42.77,137
+2019-01-08,HomeGoods Ltd,Home and lifestyle,SKU-126-54-1,10.2,138
+2019-01-08,HomeGoods Ltd,Home and lifestyle,SKU-136-08-6,35.73,396
+2019-01-08,HomeGoods Ltd,Home and lifestyle,SKU-138-17-5,45.92,219
+2019-01-08,HomeGoods Ltd,Home and lifestyle,SKU-142-63-6,51.77,68
+2019-01-08,HomeGoods Ltd,Home and lifestyle,SKU-144-51-6,34.05,222
+2019-01-08,HomeGoods Ltd,Home and lifestyle,SKU-148-82-2,6.36,81
+2019-01-08,HomeGoods Ltd,Home and lifestyle,SKU-152-03-4,6.25,91
+2019-01-08,HomeGoods Ltd,Home and lifestyle,SKU-154-87-7,33.08,394
+2019-01-08,HomeGoods Ltd,Home and lifestyle,SKU-181-82-6,9.28,243
+2019-01-08,HomeGoods Ltd,Home and lifestyle,SKU-186-43-8,23.19,388
+2019-01-08,HomeGoods Ltd,Home and lifestyle,SKU-195-06-0,45.23,316
+2019-01-08,HomeGoods Ltd,Home and lifestyle,SKU-200-40-6,32.57,263
+2019-01-08,HomeGoods Ltd,Home and lifestyle,SKU-209-61-0,21.01,57
+2019-01-08,ActiveLife Supplies,Sports and travel,SKU-102-06-2,12.31,239
+2019-01-08,ActiveLife Supplies,Sports and travel,SKU-105-31-1,39.44,230
+2019-01-08,ActiveLife Supplies,Sports and travel,SKU-109-86-4,32.69,332
+2019-01-08,ActiveLife Supplies,Sports and travel,SKU-123-35-4,23.66,91
+2019-01-08,ActiveLife Supplies,Sports and travel,SKU-129-29-8,34.94,66
+2019-01-08,ActiveLife Supplies,Sports and travel,SKU-139-32-4,47.68,253
+2019-01-08,ActiveLife Supplies,Sports and travel,SKU-149-15-7,19.74,96
+2019-01-08,ActiveLife Supplies,Sports and travel,SKU-149-61-1,34.39,136
+2019-01-08,ActiveLife Supplies,Sports and travel,SKU-149-71-6,38.45,270
+2019-01-08,ActiveLife Supplies,Sports and travel,SKU-150-89-8,21.09,286
+2019-01-08,ActiveLife Supplies,Sports and travel,SKU-154-74-7,28.4,93
+2019-01-08,ActiveLife Supplies,Sports and travel,SKU-166-19-2,42.92,306
+2019-01-08,ActiveLife Supplies,Sports and travel,SKU-173-50-1,9.5,174
+2019-01-08,ActiveLife Supplies,Sports and travel,SKU-173-57-2,37.66,284
+2019-01-08,ActiveLife Supplies,Sports and travel,SKU-174-64-0,33.6,355
+2019-01-15,TechWholesale Inc,Electronic accessories,SKU-114-35-5,29.26,252
+2019-01-15,TechWholesale Inc,Electronic accessories,SKU-120-06-4,17.49,203
+2019-01-15,TechWholesale Inc,Electronic accessories,SKU-122-61-9,27.07,276
+2019-01-15,TechWholesale Inc,Electronic accessories,SKU-124-31-1,45.22,140
+2019-01-15,TechWholesale Inc,Electronic accessories,SKU-132-32-9,45.05,324
+2019-01-15,TechWholesale Inc,Electronic accessories,SKU-134-54-4,24.08,219
+2019-01-15,TechWholesale Inc,Electronic accessories,SKU-134-75-2,9.44,395
+2019-01-15,TechWholesale Inc,Electronic accessories,SKU-137-63-5,31.81,174
+2019-01-15,TechWholesale Inc,Electronic accessories,SKU-139-20-0,21.05,176
+2019-01-15,TechWholesale Inc,Electronic accessories,SKU-151-16-1,16.19,349
+2019-01-15,TechWholesale Inc,Electronic accessories,SKU-151-27-8,30.08,251
+2019-01-15,TechWholesale Inc,Electronic accessories,SKU-155-45-3,41.79,65
+2019-01-15,TechWholesale Inc,Electronic accessories,SKU-156-20-0,13.41,371
+2019-01-15,TechWholesale Inc,Electronic accessories,SKU-169-52-4,8.59,288
+2019-01-15,TechWholesale Inc,Electronic accessories,SKU-172-42-8,20.2,93
+2019-01-15,StyleSource Co,Fashion accessories,SKU-105-10-6,10.78,324
+2019-01-15,StyleSource Co,Fashion accessories,SKU-109-28-2,50.07,290
+2019-01-15,StyleSource Co,Fashion accessories,SKU-110-48-7,17.38,351
+2019-01-15,StyleSource Co,Fashion accessories,SKU-115-38-7,5.19,370
+2019-01-15,StyleSource Co,Fashion accessories,SKU-115-99-4,28.59,63
+2019-01-15,StyleSource Co,Fashion accessories,SKU-125-45-2,55.61,303
+2019-01-15,StyleSource Co,Fashion accessories,SKU-130-98-8,34.6,298
+2019-01-15,StyleSource Co,Fashion accessories,SKU-133-77-3,30.12,356
+2019-01-15,StyleSource Co,Fashion accessories,SKU-135-84-8,39.89,169
+2019-01-15,StyleSource Co,Fashion accessories,SKU-137-74-8,6.13,88
+2019-01-15,StyleSource Co,Fashion accessories,SKU-139-52-2,11.53,73
+2019-01-15,StyleSource Co,Fashion accessories,SKU-142-72-4,49.75,87
+2019-01-15,StyleSource Co,Fashion accessories,SKU-163-56-7,24.52,196
+2019-01-15,StyleSource Co,Fashion accessories,SKU-173-82-9,18.27,237
+2019-01-15,StyleSource Co,Fashion accessories,SKU-181-94-6,36.0,394
+2019-01-15,FreshDistributors,Food and beverages,SKU-101-17-6,23.17,119
+2019-01-15,FreshDistributors,Food and beverages,SKU-110-05-6,21.81,282
+2019-01-15,FreshDistributors,Food and beverages,SKU-120-54-2,13.46,63
+2019-01-15,FreshDistributors,Food and beverages,SKU-130-67-4,26.25,295
+2019-01-15,FreshDistributors,Food and beverages,SKU-131-15-8,38.39,332
+2019-01-15,FreshDistributors,Food and beverages,SKU-135-13-8,42.67,231
+2019-01-15,FreshDistributors,Food and beverages,SKU-145-94-9,48.99,386
+2019-01-15,FreshDistributors,Food and beverages,SKU-146-09-5,17.12,366
+2019-01-15,FreshDistributors,Food and beverages,SKU-151-33-7,37.1,111
+2019-01-15,FreshDistributors,Food and beverages,SKU-152-68-2,25.99,235
+2019-01-15,FreshDistributors,Food and beverages,SKU-153-58-4,41.32,385
+2019-01-15,FreshDistributors,Food and beverages,SKU-156-95-3,27.76,96
+2019-01-15,FreshDistributors,Food and beverages,SKU-162-48-8,21.1,194
+2019-01-15,FreshDistributors,Food and beverages,SKU-162-65-8,33.36,93
+2019-01-15,FreshDistributors,Food and beverages,SKU-174-36-3,49.88,326
+2019-01-15,BeautySupplyCo,Health and beauty,SKU-101-81-4,34.78,290
+2019-01-15,BeautySupplyCo,Health and beauty,SKU-102-77-2,35.27,312
+2019-01-15,BeautySupplyCo,Health and beauty,SKU-123-19-1,27.6,52
+2019-01-15,BeautySupplyCo,Health and beauty,SKU-127-47-6,27.44,342
+2019-01-15,BeautySupplyCo,Health and beauty,SKU-131-70-8,45.94,230
+2019-01-15,BeautySupplyCo,Health and beauty,SKU-132-23-6,10.76,219
+2019-01-15,BeautySupplyCo,Health and beauty,SKU-133-14-7,29.15,277
+2019-01-15,BeautySupplyCo,Health and beauty,SKU-148-41-7,44.58,128
+2019-01-15,BeautySupplyCo,Health and beauty,SKU-149-14-0,16.4,281
+2019-01-15,BeautySupplyCo,Health and beauty,SKU-152-08-9,30.94,94
+2019-01-15,BeautySupplyCo,Health and beauty,SKU-157-13-5,26.7,215
+2019-01-15,BeautySupplyCo,Health and beauty,SKU-160-22-2,50.96,378
+2019-01-15,BeautySupplyCo,Health and beauty,SKU-176-78-1,17.43,226
+2019-01-15,BeautySupplyCo,Health and beauty,SKU-186-09-3,43.38,96
+2019-01-15,BeautySupplyCo,Health and beauty,SKU-186-79-9,33.94,331
+2019-01-15,HomeGoods Ltd,Home and lifestyle,SKU-106-35-6,22.5,365
+2019-01-15,HomeGoods Ltd,Home and lifestyle,SKU-118-62-1,43.77,367
+2019-01-15,HomeGoods Ltd,Home and lifestyle,SKU-126-54-1,10.4,322
+2019-01-15,HomeGoods Ltd,Home and lifestyle,SKU-136-08-6,37.81,252
+2019-01-15,HomeGoods Ltd,Home and lifestyle,SKU-138-17-5,48.61,101
+2019-01-15,HomeGoods Ltd,Home and lifestyle,SKU-142-63-6,52.44,253
+2019-01-15,HomeGoods Ltd,Home and lifestyle,SKU-144-51-6,36.6,340
+2019-01-15,HomeGoods Ltd,Home and lifestyle,SKU-148-82-2,6.49,288
+2019-01-15,HomeGoods Ltd,Home and lifestyle,SKU-152-03-4,6.34,320
+2019-01-15,HomeGoods Ltd,Home and lifestyle,SKU-154-87-7,34.21,61
+2019-01-15,HomeGoods Ltd,Home and lifestyle,SKU-181-82-6,9.15,399
+2019-01-15,HomeGoods Ltd,Home and lifestyle,SKU-186-43-8,23.94,58
+2019-01-15,HomeGoods Ltd,Home and lifestyle,SKU-195-06-0,44.44,203
+2019-01-15,HomeGoods Ltd,Home and lifestyle,SKU-200-40-6,33.38,118
+2019-01-15,HomeGoods Ltd,Home and lifestyle,SKU-209-61-0,20.3,147
+2019-01-15,ActiveLife Supplies,Sports and travel,SKU-102-06-2,12.26,73
+2019-01-15,ActiveLife Supplies,Sports and travel,SKU-105-31-1,39.01,329
+2019-01-15,ActiveLife Supplies,Sports and travel,SKU-109-86-4,34.55,58
+2019-01-15,ActiveLife Supplies,Sports and travel,SKU-123-35-4,23.88,382
+2019-01-15,ActiveLife Supplies,Sports and travel,SKU-129-29-8,34.97,211
+2019-01-15,ActiveLife Supplies,Sports and travel,SKU-139-32-4,48.01,217
+2019-01-15,ActiveLife Supplies,Sports and travel,SKU-149-15-7,19.75,207
+2019-01-15,ActiveLife Supplies,Sports and travel,SKU-149-61-1,35.34,136
+2019-01-15,ActiveLife Supplies,Sports and travel,SKU-149-71-6,40.2,383
+2019-01-15,ActiveLife Supplies,Sports and travel,SKU-150-89-8,23.03,157
+2019-01-15,ActiveLife Supplies,Sports and travel,SKU-154-74-7,28.33,177
+2019-01-15,ActiveLife Supplies,Sports and travel,SKU-166-19-2,42.43,62
+2019-01-15,ActiveLife Supplies,Sports and travel,SKU-173-50-1,9.4,332
+2019-01-15,ActiveLife Supplies,Sports and travel,SKU-173-57-2,38.2,393
+2019-01-15,ActiveLife Supplies,Sports and travel,SKU-174-64-0,33.41,246
+2019-01-22,TechWholesale Inc,Electronic accessories,SKU-114-35-5,29.68,380
+2019-01-22,TechWholesale Inc,Electronic accessories,SKU-120-06-4,18.03,103
+2019-01-22,TechWholesale Inc,Electronic accessories,SKU-122-61-9,27.86,268
+2019-01-22,TechWholesale Inc,Electronic accessories,SKU-124-31-1,45.98,62
+2019-01-22,TechWholesale Inc,Electronic accessories,SKU-132-32-9,45.48,64
+2019-01-22,TechWholesale Inc,Electronic accessories,SKU-134-54-4,24.34,389
+2019-01-22,TechWholesale Inc,Electronic accessories,SKU-134-75-2,9.4,292
+2019-01-22,TechWholesale Inc,Electronic accessories,SKU-137-63-5,31.33,52
+2019-01-22,TechWholesale Inc,Electronic accessories,SKU-139-20-0,22.19,191
+2019-01-22,TechWholesale Inc,Electronic accessories,SKU-151-16-1,16.96,60
+2019-01-22,TechWholesale Inc,Electronic accessories,SKU-151-27-8,30.66,389
+2019-01-22,TechWholesale Inc,Electronic accessories,SKU-155-45-3,45.51,152
+2019-01-22,TechWholesale Inc,Electronic accessories,SKU-156-20-0,13.96,204
+2019-01-22,TechWholesale Inc,Electronic accessories,SKU-169-52-4,8.56,353
+2019-01-22,TechWholesale Inc,Electronic accessories,SKU-172-42-8,19.93,258
+2019-01-22,StyleSource Co,Fashion accessories,SKU-105-10-6,11.47,144
+2019-01-22,StyleSource Co,Fashion accessories,SKU-109-28-2,51.33,224
+2019-01-22,StyleSource Co,Fashion accessories,SKU-110-48-7,18.6,206
+2019-01-22,StyleSource Co,Fashion accessories,SKU-115-38-7,5.21,151
+2019-01-22,StyleSource Co,Fashion accessories,SKU-115-99-4,28.22,395
+2019-01-22,StyleSource Co,Fashion accessories,SKU-125-45-2,56.45,255
+2019-01-22,StyleSource Co,Fashion accessories,SKU-130-98-8,34.82,372
+2019-01-22,StyleSource Co,Fashion accessories,SKU-133-77-3,31.26,119
+2019-01-22,StyleSource Co,Fashion accessories,SKU-135-84-8,41.62,260
+2019-01-22,StyleSource Co,Fashion accessories,SKU-137-74-8,6.13,185
+2019-01-22,StyleSource Co,Fashion accessories,SKU-139-52-2,11.22,78
+2019-01-22,StyleSource Co,Fashion accessories,SKU-142-72-4,50.29,226
+2019-01-22,StyleSource Co,Fashion accessories,SKU-163-56-7,24.54,167
+2019-01-22,StyleSource Co,Fashion accessories,SKU-173-82-9,18.13,189
+2019-01-22,StyleSource Co,Fashion accessories,SKU-181-94-6,36.06,245
+2019-01-22,FreshDistributors,Food and beverages,SKU-101-17-6,23.19,239
+2019-01-22,FreshDistributors,Food and beverages,SKU-110-05-6,21.38,158
+2019-01-22,FreshDistributors,Food and beverages,SKU-120-54-2,13.86,233
+2019-01-22,FreshDistributors,Food and beverages,SKU-130-67-4,28.35,268
+2019-01-22,FreshDistributors,Food and beverages,SKU-131-15-8,38.67,160
+2019-01-22,FreshDistributors,Food and beverages,SKU-135-13-8,45.53,266
+2019-01-22,FreshDistributors,Food and beverages,SKU-145-94-9,53.05,186
+2019-01-22,FreshDistributors,Food and beverages,SKU-146-09-5,17.26,91
+2019-01-22,FreshDistributors,Food and beverages,SKU-151-33-7,36.67,270
+2019-01-22,FreshDistributors,Food and beverages,SKU-152-68-2,25.59,104
+2019-01-22,FreshDistributors,Food and beverages,SKU-153-58-4,40.08,371
+2019-01-22,FreshDistributors,Food and beverages,SKU-156-95-3,29.05,309
+2019-01-22,FreshDistributors,Food and beverages,SKU-162-48-8,21.65,223
+2019-01-22,FreshDistributors,Food and beverages,SKU-162-65-8,33.04,242
+2019-01-22,FreshDistributors,Food and beverages,SKU-174-36-3,52.5,319
+2019-01-22,BeautySupplyCo,Health and beauty,SKU-101-81-4,35.55,149
+2019-01-22,BeautySupplyCo,Health and beauty,SKU-102-77-2,35.29,273
+2019-01-22,BeautySupplyCo,Health and beauty,SKU-123-19-1,28.71,59
+2019-01-22,BeautySupplyCo,Health and beauty,SKU-127-47-6,28.11,390
+2019-01-22,BeautySupplyCo,Health and beauty,SKU-131-70-8,48.28,379
+2019-01-22,BeautySupplyCo,Health and beauty,SKU-132-23-6,10.44,238
+2019-01-22,BeautySupplyCo,Health and beauty,SKU-133-14-7,29.88,71
+2019-01-22,BeautySupplyCo,Health and beauty,SKU-148-41-7,46.63,239
+2019-01-22,BeautySupplyCo,Health and beauty,SKU-149-14-0,15.94,277
+2019-01-22,BeautySupplyCo,Health and beauty,SKU-152-08-9,31.39,253
+2019-01-22,BeautySupplyCo,Health and beauty,SKU-157-13-5,28.8,165
+2019-01-22,BeautySupplyCo,Health and beauty,SKU-160-22-2,54.71,185
+2019-01-22,BeautySupplyCo,Health and beauty,SKU-176-78-1,17.86,116
+2019-01-22,BeautySupplyCo,Health and beauty,SKU-186-09-3,44.96,308
+2019-01-22,BeautySupplyCo,Health and beauty,SKU-186-79-9,34.28,369
+2019-01-22,HomeGoods Ltd,Home and lifestyle,SKU-106-35-6,23.8,203
+2019-01-22,HomeGoods Ltd,Home and lifestyle,SKU-118-62-1,45.59,244
+2019-01-22,HomeGoods Ltd,Home and lifestyle,SKU-126-54-1,10.46,231
+2019-01-22,HomeGoods Ltd,Home and lifestyle,SKU-136-08-6,39.61,124
+2019-01-22,HomeGoods Ltd,Home and lifestyle,SKU-138-17-5,49.44,120
+2019-01-22,HomeGoods Ltd,Home and lifestyle,SKU-142-63-6,52.27,145
+2019-01-22,HomeGoods Ltd,Home and lifestyle,SKU-144-51-6,37.26,148
+2019-01-22,HomeGoods Ltd,Home and lifestyle,SKU-148-82-2,6.48,257
+2019-01-22,HomeGoods Ltd,Home and lifestyle,SKU-152-03-4,6.58,89
+2019-01-22,HomeGoods Ltd,Home and lifestyle,SKU-154-87-7,34.02,51
+2019-01-22,HomeGoods Ltd,Home and lifestyle,SKU-181-82-6,9.62,326
+2019-01-22,HomeGoods Ltd,Home and lifestyle,SKU-186-43-8,23.89,84
+2019-01-22,HomeGoods Ltd,Home and lifestyle,SKU-195-06-0,45.81,335
+2019-01-22,HomeGoods Ltd,Home and lifestyle,SKU-200-40-6,33.85,180
+2019-01-22,HomeGoods Ltd,Home and lifestyle,SKU-209-61-0,21.44,110
+2019-01-22,ActiveLife Supplies,Sports and travel,SKU-102-06-2,12.85,163
+2019-01-22,ActiveLife Supplies,Sports and travel,SKU-105-31-1,40.66,327
+2019-01-22,ActiveLife Supplies,Sports and travel,SKU-109-86-4,35.84,190
+2019-01-22,ActiveLife Supplies,Sports and travel,SKU-123-35-4,24.3,97
+2019-01-22,ActiveLife Supplies,Sports and travel,SKU-129-29-8,35.44,156
+2019-01-22,ActiveLife Supplies,Sports and travel,SKU-139-32-4,45.66,189
+2019-01-22,ActiveLife Supplies,Sports and travel,SKU-149-15-7,20.74,188
+2019-01-22,ActiveLife Supplies,Sports and travel,SKU-149-61-1,34.88,204
+2019-01-22,ActiveLife Supplies,Sports and travel,SKU-149-71-6,41.47,119
+2019-01-22,ActiveLife Supplies,Sports and travel,SKU-150-89-8,23.07,199
+2019-01-22,ActiveLife Supplies,Sports and travel,SKU-154-74-7,30.07,231
+2019-01-22,ActiveLife Supplies,Sports and travel,SKU-166-19-2,43.94,201
+2019-01-22,ActiveLife Supplies,Sports and travel,SKU-173-50-1,9.33,336
+2019-01-22,ActiveLife Supplies,Sports and travel,SKU-173-57-2,41.04,320
+2019-01-22,ActiveLife Supplies,Sports and travel,SKU-174-64-0,34.31,299
+2019-01-29,TechWholesale Inc,Electronic accessories,SKU-114-35-5,30.6,211
+2019-01-29,TechWholesale Inc,Electronic accessories,SKU-120-06-4,18.47,118
+2019-01-29,TechWholesale Inc,Electronic accessories,SKU-122-61-9,28.02,107
+2019-01-29,TechWholesale Inc,Electronic accessories,SKU-124-31-1,44.78,220
+2019-01-29,TechWholesale Inc,Electronic accessories,SKU-132-32-9,45.48,183
+2019-01-29,TechWholesale Inc,Electronic accessories,SKU-134-54-4,25.41,203
+2019-01-29,TechWholesale Inc,Electronic accessories,SKU-134-75-2,9.83,136
+2019-01-29,TechWholesale Inc,Electronic accessories,SKU-137-63-5,32.96,104
+2019-01-29,TechWholesale Inc,Electronic accessories,SKU-139-20-0,22.73,316
+2019-01-29,TechWholesale Inc,Electronic accessories,SKU-151-16-1,17.1,344
+2019-01-29,TechWholesale Inc,Electronic accessories,SKU-151-27-8,30.09,379
+2019-01-29,TechWholesale Inc,Electronic accessories,SKU-155-45-3,46.58,368
+2019-01-29,TechWholesale Inc,Electronic accessories,SKU-156-20-0,14.91,357
+2019-01-29,TechWholesale Inc,Electronic accessories,SKU-169-52-4,8.61,175
+2019-01-29,TechWholesale Inc,Electronic accessories,SKU-172-42-8,20.8,173
+2019-01-29,StyleSource Co,Fashion accessories,SKU-105-10-6,11.22,297
+2019-01-29,StyleSource Co,Fashion accessories,SKU-109-28-2,51.93,76
+2019-01-29,StyleSource Co,Fashion accessories,SKU-110-48-7,18.61,80
+2019-01-29,StyleSource Co,Fashion accessories,SKU-115-38-7,5.29,328
+2019-01-29,StyleSource Co,Fashion accessories,SKU-115-99-4,30.05,344
+2019-01-29,StyleSource Co,Fashion accessories,SKU-125-45-2,59.26,331
+2019-01-29,StyleSource Co,Fashion accessories,SKU-130-98-8,36.76,172
+2019-01-29,StyleSource Co,Fashion accessories,SKU-133-77-3,32.49,191
+2019-01-29,StyleSource Co,Fashion accessories,SKU-135-84-8,40.63,292
+2019-01-29,StyleSource Co,Fashion accessories,SKU-137-74-8,6.26,253
+2019-01-29,StyleSource Co,Fashion accessories,SKU-139-52-2,11.27,241
+2019-01-29,StyleSource Co,Fashion accessories,SKU-142-72-4,52.83,203
+2019-01-29,StyleSource Co,Fashion accessories,SKU-163-56-7,24.39,230
+2019-01-29,StyleSource Co,Fashion accessories,SKU-173-82-9,18.68,181
+2019-01-29,StyleSource Co,Fashion accessories,SKU-181-94-6,38.26,240
+2019-01-29,FreshDistributors,Food and beverages,SKU-101-17-6,24.29,326
+2019-01-29,FreshDistributors,Food and beverages,SKU-110-05-6,22.78,355
+2019-01-29,FreshDistributors,Food and beverages,SKU-120-54-2,14.82,171
+2019-01-29,FreshDistributors,Food and beverages,SKU-130-67-4,28.9,301
+2019-01-29,FreshDistributors,Food and beverages,SKU-131-15-8,38.62,166
+2019-01-29,FreshDistributors,Food and beverages,SKU-135-13-8,46.42,76
+2019-01-29,FreshDistributors,Food and beverages,SKU-145-94-9,52.11,189
+2019-01-29,FreshDistributors,Food and beverages,SKU-146-09-5,17.75,388
+2019-01-29,FreshDistributors,Food and beverages,SKU-151-33-7,37.25,244
+2019-01-29,FreshDistributors,Food and beverages,SKU-152-68-2,26.02,351
+2019-01-29,FreshDistributors,Food and beverages,SKU-153-58-4,41.56,338
+2019-01-29,FreshDistributors,Food and beverages,SKU-156-95-3,29.02,347
+2019-01-29,FreshDistributors,Food and beverages,SKU-162-48-8,22.55,76
+2019-01-29,FreshDistributors,Food and beverages,SKU-162-65-8,34.18,218
+2019-01-29,FreshDistributors,Food and beverages,SKU-174-36-3,51.61,222
+2019-01-29,BeautySupplyCo,Health and beauty,SKU-101-81-4,35.29,342
+2019-01-29,BeautySupplyCo,Health and beauty,SKU-102-77-2,35.82,163
+2019-01-29,BeautySupplyCo,Health and beauty,SKU-123-19-1,27.95,126
+2019-01-29,BeautySupplyCo,Health and beauty,SKU-127-47-6,29.11,318
+2019-01-29,BeautySupplyCo,Health and beauty,SKU-131-70-8,48.37,400
+2019-01-29,BeautySupplyCo,Health and beauty,SKU-132-23-6,10.6,254
+2019-01-29,BeautySupplyCo,Health and beauty,SKU-133-14-7,30.97,230
+2019-01-29,BeautySupplyCo,Health and beauty,SKU-148-41-7,46.05,89
+2019-01-29,BeautySupplyCo,Health and beauty,SKU-149-14-0,16.95,399
+2019-01-29,BeautySupplyCo,Health and beauty,SKU-152-08-9,33.79,295
+2019-01-29,BeautySupplyCo,Health and beauty,SKU-157-13-5,28.62,315
+2019-01-29,BeautySupplyCo,Health and beauty,SKU-160-22-2,55.89,342
+2019-01-29,BeautySupplyCo,Health and beauty,SKU-176-78-1,17.81,313
+2019-01-29,BeautySupplyCo,Health and beauty,SKU-186-09-3,44.09,173
+2019-01-29,BeautySupplyCo,Health and beauty,SKU-186-79-9,35.81,110
+2019-01-29,HomeGoods Ltd,Home and lifestyle,SKU-106-35-6,24.09,309
+2019-01-29,HomeGoods Ltd,Home and lifestyle,SKU-118-62-1,45.03,398
+2019-01-29,HomeGoods Ltd,Home and lifestyle,SKU-126-54-1,10.81,398
+2019-01-29,HomeGoods Ltd,Home and lifestyle,SKU-136-08-6,39.52,197
+2019-01-29,HomeGoods Ltd,Home and lifestyle,SKU-138-17-5,48.36,331
+2019-01-29,HomeGoods Ltd,Home and lifestyle,SKU-142-63-6,53.2,198
+2019-01-29,HomeGoods Ltd,Home and lifestyle,SKU-144-51-6,37.04,377
+2019-01-29,HomeGoods Ltd,Home and lifestyle,SKU-148-82-2,6.76,209
+2019-01-29,HomeGoods Ltd,Home and lifestyle,SKU-152-03-4,6.85,107
+2019-01-29,HomeGoods Ltd,Home and lifestyle,SKU-154-87-7,35.38,346
+2019-01-29,HomeGoods Ltd,Home and lifestyle,SKU-181-82-6,9.28,228
+2019-01-29,HomeGoods Ltd,Home and lifestyle,SKU-186-43-8,23.88,67
+2019-01-29,HomeGoods Ltd,Home and lifestyle,SKU-195-06-0,48.96,139
+2019-01-29,HomeGoods Ltd,Home and lifestyle,SKU-200-40-6,34.26,381
+2019-01-29,HomeGoods Ltd,Home and lifestyle,SKU-209-61-0,21.38,295
+2019-01-29,ActiveLife Supplies,Sports and travel,SKU-102-06-2,13.38,58
+2019-01-29,ActiveLife Supplies,Sports and travel,SKU-105-31-1,42.81,80
+2019-01-29,ActiveLife Supplies,Sports and travel,SKU-109-86-4,36.9,196
+2019-01-29,ActiveLife Supplies,Sports and travel,SKU-123-35-4,24.05,243
+2019-01-29,ActiveLife Supplies,Sports and travel,SKU-129-29-8,37.54,253
+2019-01-29,ActiveLife Supplies,Sports and travel,SKU-139-32-4,48.07,280
+2019-01-29,ActiveLife Supplies,Sports and travel,SKU-149-15-7,20.76,94
+2019-01-29,ActiveLife Supplies,Sports and travel,SKU-149-61-1,35.86,124
+2019-01-29,ActiveLife Supplies,Sports and travel,SKU-149-71-6,40.69,358
+2019-01-29,ActiveLife Supplies,Sports and travel,SKU-150-89-8,24.36,85
+2019-01-29,ActiveLife Supplies,Sports and travel,SKU-154-74-7,29.95,363
+2019-01-29,ActiveLife Supplies,Sports and travel,SKU-166-19-2,44.4,93
+2019-01-29,ActiveLife Supplies,Sports and travel,SKU-173-50-1,9.61,286
+2019-01-29,ActiveLife Supplies,Sports and travel,SKU-173-57-2,42.37,210
+2019-01-29,ActiveLife Supplies,Sports and travel,SKU-174-64-0,35.07,380
+2019-02-05,TechWholesale Inc,Electronic accessories,SKU-114-35-5,32.41,87
+2019-02-05,TechWholesale Inc,Electronic accessories,SKU-120-06-4,18.15,104
+2019-02-05,TechWholesale Inc,Electronic accessories,SKU-122-61-9,27.35,126
+2019-02-05,TechWholesale Inc,Electronic accessories,SKU-124-31-1,47.14,260
+2019-02-05,TechWholesale Inc,Electronic accessories,SKU-132-32-9,46.26,185
+2019-02-05,TechWholesale Inc,Electronic accessories,SKU-134-54-4,25.62,391
+2019-02-05,TechWholesale Inc,Electronic accessories,SKU-134-75-2,9.85,195
+2019-02-05,TechWholesale Inc,Electronic accessories,SKU-137-63-5,32.93,162
+2019-02-05,TechWholesale Inc,Electronic accessories,SKU-139-20-0,22.99,172
+2019-02-05,TechWholesale Inc,Electronic accessories,SKU-151-16-1,16.84,53
+2019-02-05,TechWholesale Inc,Electronic accessories,SKU-151-27-8,31.3,286
+2019-02-05,TechWholesale Inc,Electronic accessories,SKU-155-45-3,46.01,114
+2019-02-05,TechWholesale Inc,Electronic accessories,SKU-156-20-0,15.3,339
+2019-02-05,TechWholesale Inc,Electronic accessories,SKU-169-52-4,9.05,94
+2019-02-05,TechWholesale Inc,Electronic accessories,SKU-172-42-8,21.63,380
+2019-02-05,StyleSource Co,Fashion accessories,SKU-105-10-6,11.54,351
+2019-02-05,StyleSource Co,Fashion accessories,SKU-109-28-2,53.66,294
+2019-02-05,StyleSource Co,Fashion accessories,SKU-110-48-7,19.13,100
+2019-02-05,StyleSource Co,Fashion accessories,SKU-115-38-7,5.34,126
+2019-02-05,StyleSource Co,Fashion accessories,SKU-115-99-4,30.13,60
+2019-02-05,StyleSource Co,Fashion accessories,SKU-125-45-2,57.52,95
+2019-02-05,StyleSource Co,Fashion accessories,SKU-130-98-8,37.89,209
+2019-02-05,StyleSource Co,Fashion accessories,SKU-133-77-3,32.88,262
+2019-02-05,StyleSource Co,Fashion accessories,SKU-135-84-8,43.33,245
+2019-02-05,StyleSource Co,Fashion accessories,SKU-137-74-8,6.56,218
+2019-02-05,StyleSource Co,Fashion accessories,SKU-139-52-2,11.44,175
+2019-02-05,StyleSource Co,Fashion accessories,SKU-142-72-4,52.63,267
+2019-02-05,StyleSource Co,Fashion accessories,SKU-163-56-7,23.93,147
+2019-02-05,StyleSource Co,Fashion accessories,SKU-173-82-9,19.01,296
+2019-02-05,StyleSource Co,Fashion accessories,SKU-181-94-6,37.58,169
+2019-02-05,FreshDistributors,Food and beverages,SKU-101-17-6,24.63,129
+2019-02-05,FreshDistributors,Food and beverages,SKU-110-05-6,23.92,75
+2019-02-05,FreshDistributors,Food and beverages,SKU-120-54-2,15.04,58
+2019-02-05,FreshDistributors,Food and beverages,SKU-130-67-4,29.76,277
+2019-02-05,FreshDistributors,Food and beverages,SKU-131-15-8,39.2,282
+2019-02-05,FreshDistributors,Food and beverages,SKU-135-13-8,47.59,357
+2019-02-05,FreshDistributors,Food and beverages,SKU-145-94-9,55.89,208
+2019-02-05,FreshDistributors,Food and beverages,SKU-146-09-5,18.17,360
+2019-02-05,FreshDistributors,Food and beverages,SKU-151-33-7,38.27,167
+2019-02-05,FreshDistributors,Food and beverages,SKU-152-68-2,26.46,90
+2019-02-05,FreshDistributors,Food and beverages,SKU-153-58-4,42.67,279
+2019-02-05,FreshDistributors,Food and beverages,SKU-156-95-3,29.69,71
+2019-02-05,FreshDistributors,Food and beverages,SKU-162-48-8,23.23,381
+2019-02-05,FreshDistributors,Food and beverages,SKU-162-65-8,35.0,393
+2019-02-05,FreshDistributors,Food and beverages,SKU-174-36-3,55.93,366
+2019-02-05,BeautySupplyCo,Health and beauty,SKU-101-81-4,37.5,286
+2019-02-05,BeautySupplyCo,Health and beauty,SKU-102-77-2,38.1,228
+2019-02-05,BeautySupplyCo,Health and beauty,SKU-123-19-1,28.8,361
+2019-02-05,BeautySupplyCo,Health and beauty,SKU-127-47-6,30.23,84
+2019-02-05,BeautySupplyCo,Health and beauty,SKU-131-70-8,50.4,295
+2019-02-05,BeautySupplyCo,Health and beauty,SKU-132-23-6,10.84,247
+2019-02-05,BeautySupplyCo,Health and beauty,SKU-133-14-7,31.17,272
+2019-02-05,BeautySupplyCo,Health and beauty,SKU-148-41-7,46.88,321
+2019-02-05,BeautySupplyCo,Health and beauty,SKU-149-14-0,17.12,213
+2019-02-05,BeautySupplyCo,Health and beauty,SKU-152-08-9,33.44,259
+2019-02-05,BeautySupplyCo,Health and beauty,SKU-157-13-5,30.41,90
+2019-02-05,BeautySupplyCo,Health and beauty,SKU-160-22-2,56.65,377
+2019-02-05,BeautySupplyCo,Health and beauty,SKU-176-78-1,17.77,213
+2019-02-05,BeautySupplyCo,Health and beauty,SKU-186-09-3,43.86,230
+2019-02-05,BeautySupplyCo,Health and beauty,SKU-186-79-9,35.31,99
+2019-02-05,HomeGoods Ltd,Home and lifestyle,SKU-106-35-6,24.93,322
+2019-02-05,HomeGoods Ltd,Home and lifestyle,SKU-118-62-1,46.42,343
+2019-02-05,HomeGoods Ltd,Home and lifestyle,SKU-126-54-1,10.93,185
+2019-02-05,HomeGoods Ltd,Home and lifestyle,SKU-136-08-6,42.3,90
+2019-02-05,HomeGoods Ltd,Home and lifestyle,SKU-138-17-5,52.23,130
+2019-02-05,HomeGoods Ltd,Home and lifestyle,SKU-142-63-6,53.49,54
+2019-02-05,HomeGoods Ltd,Home and lifestyle,SKU-144-51-6,39.59,268
+2019-02-05,HomeGoods Ltd,Home and lifestyle,SKU-148-82-2,6.9,377
+2019-02-05,HomeGoods Ltd,Home and lifestyle,SKU-152-03-4,6.68,330
+2019-02-05,HomeGoods Ltd,Home and lifestyle,SKU-154-87-7,34.59,266
+2019-02-05,HomeGoods Ltd,Home and lifestyle,SKU-181-82-6,9.41,325
+2019-02-05,HomeGoods Ltd,Home and lifestyle,SKU-186-43-8,24.59,394
+2019-02-05,HomeGoods Ltd,Home and lifestyle,SKU-195-06-0,49.28,268
+2019-02-05,HomeGoods Ltd,Home and lifestyle,SKU-200-40-6,34.79,280
+2019-02-05,HomeGoods Ltd,Home and lifestyle,SKU-209-61-0,21.81,359
+2019-02-05,ActiveLife Supplies,Sports and travel,SKU-102-06-2,13.39,349
+2019-02-05,ActiveLife Supplies,Sports and travel,SKU-105-31-1,42.55,88
+2019-02-05,ActiveLife Supplies,Sports and travel,SKU-109-86-4,36.76,395
+2019-02-05,ActiveLife Supplies,Sports and travel,SKU-123-35-4,24.53,78
+2019-02-05,ActiveLife Supplies,Sports and travel,SKU-129-29-8,39.18,203
+2019-02-05,ActiveLife Supplies,Sports and travel,SKU-139-32-4,47.53,232
+2019-02-05,ActiveLife Supplies,Sports and travel,SKU-149-15-7,21.31,279
+2019-02-05,ActiveLife Supplies,Sports and travel,SKU-149-61-1,36.1,272
+2019-02-05,ActiveLife Supplies,Sports and travel,SKU-149-71-6,43.18,152
+2019-02-05,ActiveLife Supplies,Sports and travel,SKU-150-89-8,25.08,259
+2019-02-05,ActiveLife Supplies,Sports and travel,SKU-154-74-7,30.47,380
+2019-02-05,ActiveLife Supplies,Sports and travel,SKU-166-19-2,44.23,122
+2019-02-05,ActiveLife Supplies,Sports and travel,SKU-173-50-1,9.63,257
+2019-02-05,ActiveLife Supplies,Sports and travel,SKU-173-57-2,42.51,362
+2019-02-05,ActiveLife Supplies,Sports and travel,SKU-174-64-0,36.01,138
+2019-02-12,TechWholesale Inc,Electronic accessories,SKU-114-35-5,31.27,368
+2019-02-12,TechWholesale Inc,Electronic accessories,SKU-120-06-4,19.1,129
+2019-02-12,TechWholesale Inc,Electronic accessories,SKU-122-61-9,28.28,239
+2019-02-12,TechWholesale Inc,Electronic accessories,SKU-124-31-1,47.91,177
+2019-02-12,TechWholesale Inc,Electronic accessories,SKU-132-32-9,46.46,355
+2019-02-12,TechWholesale Inc,Electronic accessories,SKU-134-54-4,26.19,256
+2019-02-12,TechWholesale Inc,Electronic accessories,SKU-134-75-2,9.86,374
+2019-02-12,TechWholesale Inc,Electronic accessories,SKU-137-63-5,31.95,315
+2019-02-12,TechWholesale Inc,Electronic accessories,SKU-139-20-0,23.32,89
+2019-02-12,TechWholesale Inc,Electronic accessories,SKU-151-16-1,17.64,202
+2019-02-12,TechWholesale Inc,Electronic accessories,SKU-151-27-8,31.3,183
+2019-02-12,TechWholesale Inc,Electronic accessories,SKU-155-45-3,48.25,108
+2019-02-12,TechWholesale Inc,Electronic accessories,SKU-156-20-0,15.7,227
+2019-02-12,TechWholesale Inc,Electronic accessories,SKU-169-52-4,8.9,280
+2019-02-12,TechWholesale Inc,Electronic accessories,SKU-172-42-8,22.24,279
+2019-02-12,StyleSource Co,Fashion accessories,SKU-105-10-6,12.3,318
+2019-02-12,StyleSource Co,Fashion accessories,SKU-109-28-2,54.71,83
+2019-02-12,StyleSource Co,Fashion accessories,SKU-110-48-7,20.0,156
+2019-02-12,StyleSource Co,Fashion accessories,SKU-115-38-7,5.69,122
+2019-02-12,StyleSource Co,Fashion accessories,SKU-115-99-4,31.41,394
+2019-02-12,StyleSource Co,Fashion accessories,SKU-125-45-2,59.48,215
+2019-02-12,StyleSource Co,Fashion accessories,SKU-130-98-8,38.43,332
+2019-02-12,StyleSource Co,Fashion accessories,SKU-133-77-3,32.58,309
+2019-02-12,StyleSource Co,Fashion accessories,SKU-135-84-8,43.53,389
+2019-02-12,StyleSource Co,Fashion accessories,SKU-137-74-8,6.82,323
+2019-02-12,StyleSource Co,Fashion accessories,SKU-139-52-2,11.59,339
+2019-02-12,StyleSource Co,Fashion accessories,SKU-142-72-4,53.66,283
+2019-02-12,StyleSource Co,Fashion accessories,SKU-163-56-7,24.61,397
+2019-02-12,StyleSource Co,Fashion accessories,SKU-173-82-9,19.3,201
+2019-02-12,StyleSource Co,Fashion accessories,SKU-181-94-6,39.37,367
+2019-02-12,FreshDistributors,Food and beverages,SKU-101-17-6,26.04,385
+2019-02-12,FreshDistributors,Food and beverages,SKU-110-05-6,24.35,174
+2019-02-12,FreshDistributors,Food and beverages,SKU-120-54-2,15.05,76
+2019-02-12,FreshDistributors,Food and beverages,SKU-130-67-4,29.42,91
+2019-02-12,FreshDistributors,Food and beverages,SKU-131-15-8,39.78,98
+2019-02-12,FreshDistributors,Food and beverages,SKU-135-13-8,46.64,103
+2019-02-12,FreshDistributors,Food and beverages,SKU-145-94-9,58.25,229
+2019-02-12,FreshDistributors,Food and beverages,SKU-146-09-5,18.45,189
+2019-02-12,FreshDistributors,Food and beverages,SKU-151-33-7,38.4,392
+2019-02-12,FreshDistributors,Food and beverages,SKU-152-68-2,26.64,208
+2019-02-12,FreshDistributors,Food and beverages,SKU-153-58-4,42.92,339
+2019-02-12,FreshDistributors,Food and beverages,SKU-156-95-3,29.87,342
+2019-02-12,FreshDistributors,Food and beverages,SKU-162-48-8,23.12,218
+2019-02-12,FreshDistributors,Food and beverages,SKU-162-65-8,35.25,400
+2019-02-12,FreshDistributors,Food and beverages,SKU-174-36-3,55.06,242
+2019-02-12,BeautySupplyCo,Health and beauty,SKU-101-81-4,37.91,245
+2019-02-12,BeautySupplyCo,Health and beauty,SKU-102-77-2,39.05,262
+2019-02-12,BeautySupplyCo,Health and beauty,SKU-123-19-1,29.1,106
+2019-02-12,BeautySupplyCo,Health and beauty,SKU-127-47-6,30.78,328
+2019-02-12,BeautySupplyCo,Health and beauty,SKU-131-70-8,52.09,119
+2019-02-12,BeautySupplyCo,Health and beauty,SKU-132-23-6,10.64,145
+2019-02-12,BeautySupplyCo,Health and beauty,SKU-133-14-7,30.93,79
+2019-02-12,BeautySupplyCo,Health and beauty,SKU-148-41-7,46.56,210
+2019-02-12,BeautySupplyCo,Health and beauty,SKU-149-14-0,17.02,83
+2019-02-12,BeautySupplyCo,Health and beauty,SKU-152-08-9,34.63,87
+2019-02-12,BeautySupplyCo,Health and beauty,SKU-157-13-5,30.06,375
+2019-02-12,BeautySupplyCo,Health and beauty,SKU-160-22-2,56.84,371
+2019-02-12,BeautySupplyCo,Health and beauty,SKU-176-78-1,17.6,112
+2019-02-12,BeautySupplyCo,Health and beauty,SKU-186-09-3,43.81,194
+2019-02-12,BeautySupplyCo,Health and beauty,SKU-186-79-9,36.57,223
+2019-02-12,HomeGoods Ltd,Home and lifestyle,SKU-106-35-6,24.93,338
+2019-02-12,HomeGoods Ltd,Home and lifestyle,SKU-118-62-1,49.6,106
+2019-02-12,HomeGoods Ltd,Home and lifestyle,SKU-126-54-1,11.05,148
+2019-02-12,HomeGoods Ltd,Home and lifestyle,SKU-136-08-6,41.94,276
+2019-02-12,HomeGoods Ltd,Home and lifestyle,SKU-138-17-5,51.42,293
+2019-02-12,HomeGoods Ltd,Home and lifestyle,SKU-142-63-6,52.13,358
+2019-02-12,HomeGoods Ltd,Home and lifestyle,SKU-144-51-6,39.61,94
+2019-02-12,HomeGoods Ltd,Home and lifestyle,SKU-148-82-2,7.13,201
+2019-02-12,HomeGoods Ltd,Home and lifestyle,SKU-152-03-4,7.2,153
+2019-02-12,HomeGoods Ltd,Home and lifestyle,SKU-154-87-7,35.8,82
+2019-02-12,HomeGoods Ltd,Home and lifestyle,SKU-181-82-6,9.71,115
+2019-02-12,HomeGoods Ltd,Home and lifestyle,SKU-186-43-8,25.18,74
+2019-02-12,HomeGoods Ltd,Home and lifestyle,SKU-195-06-0,50.32,74
+2019-02-12,HomeGoods Ltd,Home and lifestyle,SKU-200-40-6,37.27,97
+2019-02-12,HomeGoods Ltd,Home and lifestyle,SKU-209-61-0,21.75,253
+2019-02-12,ActiveLife Supplies,Sports and travel,SKU-102-06-2,14.05,263
+2019-02-12,ActiveLife Supplies,Sports and travel,SKU-105-31-1,44.54,392
+2019-02-12,ActiveLife Supplies,Sports and travel,SKU-109-86-4,38.74,141
+2019-02-12,ActiveLife Supplies,Sports and travel,SKU-123-35-4,24.91,137
+2019-02-12,ActiveLife Supplies,Sports and travel,SKU-129-29-8,38.25,173
+2019-02-12,ActiveLife Supplies,Sports and travel,SKU-139-32-4,47.99,242
+2019-02-12,ActiveLife Supplies,Sports and travel,SKU-149-15-7,22.25,312
+2019-02-12,ActiveLife Supplies,Sports and travel,SKU-149-61-1,37.27,203
+2019-02-12,ActiveLife Supplies,Sports and travel,SKU-149-71-6,42.86,140
+2019-02-12,ActiveLife Supplies,Sports and travel,SKU-150-89-8,25.6,121
+2019-02-12,ActiveLife Supplies,Sports and travel,SKU-154-74-7,32.45,254
+2019-02-12,ActiveLife Supplies,Sports and travel,SKU-166-19-2,45.5,225
+2019-02-12,ActiveLife Supplies,Sports and travel,SKU-173-50-1,9.99,145
+2019-02-12,ActiveLife Supplies,Sports and travel,SKU-173-57-2,43.04,108
+2019-02-12,ActiveLife Supplies,Sports and travel,SKU-174-64-0,35.54,300
+2019-02-19,TechWholesale Inc,Electronic accessories,SKU-114-35-5,33.82,101
+2019-02-19,TechWholesale Inc,Electronic accessories,SKU-120-06-4,18.98,359
+2019-02-19,TechWholesale Inc,Electronic accessories,SKU-122-61-9,28.49,125
+2019-02-19,TechWholesale Inc,Electronic accessories,SKU-124-31-1,47.09,105
+2019-02-19,TechWholesale Inc,Electronic accessories,SKU-132-32-9,48.21,210
+2019-02-19,TechWholesale Inc,Electronic accessories,SKU-134-54-4,27.37,333
+2019-02-19,TechWholesale Inc,Electronic accessories,SKU-134-75-2,10.02,97
+2019-02-19,TechWholesale Inc,Electronic accessories,SKU-137-63-5,32.7,335
+2019-02-19,TechWholesale Inc,Electronic accessories,SKU-139-20-0,24.58,170
+2019-02-19,TechWholesale Inc,Electronic accessories,SKU-151-16-1,17.67,264
+2019-02-19,TechWholesale Inc,Electronic accessories,SKU-151-27-8,32.15,158
+2019-02-19,TechWholesale Inc,Electronic accessories,SKU-155-45-3,49.85,161
+2019-02-19,TechWholesale Inc,Electronic accessories,SKU-156-20-0,15.89,388
+2019-02-19,TechWholesale Inc,Electronic accessories,SKU-169-52-4,9.02,287
+2019-02-19,TechWholesale Inc,Electronic accessories,SKU-172-42-8,22.93,97
+2019-02-19,StyleSource Co,Fashion accessories,SKU-105-10-6,12.3,101
+2019-02-19,StyleSource Co,Fashion accessories,SKU-109-28-2,57.2,87
+2019-02-19,StyleSource Co,Fashion accessories,SKU-110-48-7,20.09,185
+2019-02-19,StyleSource Co,Fashion accessories,SKU-115-38-7,5.53,134
+2019-02-19,StyleSource Co,Fashion accessories,SKU-115-99-4,31.61,345
+2019-02-19,StyleSource Co,Fashion accessories,SKU-125-45-2,59.74,256
+2019-02-19,StyleSource Co,Fashion accessories,SKU-130-98-8,39.0,165
+2019-02-19,StyleSource Co,Fashion accessories,SKU-133-77-3,32.98,51
+2019-02-19,StyleSource Co,Fashion accessories,SKU-135-84-8,45.65,383
+2019-02-19,StyleSource Co,Fashion accessories,SKU-137-74-8,6.81,212
+2019-02-19,StyleSource Co,Fashion accessories,SKU-139-52-2,11.77,142
+2019-02-19,StyleSource Co,Fashion accessories,SKU-142-72-4,55.03,151
+2019-02-19,StyleSource Co,Fashion accessories,SKU-163-56-7,24.91,387
+2019-02-19,StyleSource Co,Fashion accessories,SKU-173-82-9,19.28,223
+2019-02-19,StyleSource Co,Fashion accessories,SKU-181-94-6,41.32,337
+2019-02-19,FreshDistributors,Food and beverages,SKU-101-17-6,25.52,300
+2019-02-19,FreshDistributors,Food and beverages,SKU-110-05-6,25.34,339
+2019-02-19,FreshDistributors,Food and beverages,SKU-120-54-2,15.4,265
+2019-02-19,FreshDistributors,Food and beverages,SKU-130-67-4,30.67,125
+2019-02-19,FreshDistributors,Food and beverages,SKU-131-15-8,40.18,210
+2019-02-19,FreshDistributors,Food and beverages,SKU-135-13-8,48.27,158
+2019-02-19,FreshDistributors,Food and beverages,SKU-145-94-9,56.68,123
+2019-02-19,FreshDistributors,Food and beverages,SKU-146-09-5,18.45,312
+2019-02-19,FreshDistributors,Food and beverages,SKU-151-33-7,39.32,86
+2019-02-19,FreshDistributors,Food and beverages,SKU-152-68-2,27.4,163
+2019-02-19,FreshDistributors,Food and beverages,SKU-153-58-4,43.27,369
+2019-02-19,FreshDistributors,Food and beverages,SKU-156-95-3,30.61,214
+2019-02-19,FreshDistributors,Food and beverages,SKU-162-48-8,23.29,397
+2019-02-19,FreshDistributors,Food and beverages,SKU-162-65-8,36.16,97
+2019-02-19,FreshDistributors,Food and beverages,SKU-174-36-3,56.72,142
+2019-02-19,BeautySupplyCo,Health and beauty,SKU-101-81-4,38.18,264
+2019-02-19,BeautySupplyCo,Health and beauty,SKU-102-77-2,37.7,307
+2019-02-19,BeautySupplyCo,Health and beauty,SKU-123-19-1,29.88,171
+2019-02-19,BeautySupplyCo,Health and beauty,SKU-127-47-6,30.55,309
+2019-02-19,BeautySupplyCo,Health and beauty,SKU-131-70-8,51.47,284
+2019-02-19,BeautySupplyCo,Health and beauty,SKU-132-23-6,10.79,304
+2019-02-19,BeautySupplyCo,Health and beauty,SKU-133-14-7,30.95,376
+2019-02-19,BeautySupplyCo,Health and beauty,SKU-148-41-7,47.63,177
+2019-02-19,BeautySupplyCo,Health and beauty,SKU-149-14-0,17.1,198
+2019-02-19,BeautySupplyCo,Health and beauty,SKU-152-08-9,33.77,212
+2019-02-19,BeautySupplyCo,Health and beauty,SKU-157-13-5,32.19,190
+2019-02-19,BeautySupplyCo,Health and beauty,SKU-160-22-2,60.21,378
+2019-02-19,BeautySupplyCo,Health and beauty,SKU-176-78-1,17.79,176
+2019-02-19,BeautySupplyCo,Health and beauty,SKU-186-09-3,45.43,384
+2019-02-19,BeautySupplyCo,Health and beauty,SKU-186-79-9,37.63,237
+2019-02-19,HomeGoods Ltd,Home and lifestyle,SKU-106-35-6,25.14,58
+2019-02-19,HomeGoods Ltd,Home and lifestyle,SKU-118-62-1,48.53,275
+2019-02-19,HomeGoods Ltd,Home and lifestyle,SKU-126-54-1,11.43,192
+2019-02-19,HomeGoods Ltd,Home and lifestyle,SKU-136-08-6,43.89,295
+2019-02-19,HomeGoods Ltd,Home and lifestyle,SKU-138-17-5,52.57,152
+2019-02-19,HomeGoods Ltd,Home and lifestyle,SKU-142-63-6,51.97,221
+2019-02-19,HomeGoods Ltd,Home and lifestyle,SKU-144-51-6,40.23,98
+2019-02-19,HomeGoods Ltd,Home and lifestyle,SKU-148-82-2,7.03,163
+2019-02-19,HomeGoods Ltd,Home and lifestyle,SKU-152-03-4,7.24,126
+2019-02-19,HomeGoods Ltd,Home and lifestyle,SKU-154-87-7,36.86,80
+2019-02-19,HomeGoods Ltd,Home and lifestyle,SKU-181-82-6,10.04,164
+2019-02-19,HomeGoods Ltd,Home and lifestyle,SKU-186-43-8,24.7,72
+2019-02-19,HomeGoods Ltd,Home and lifestyle,SKU-195-06-0,52.85,379
+2019-02-19,HomeGoods Ltd,Home and lifestyle,SKU-200-40-6,37.4,147
+2019-02-19,HomeGoods Ltd,Home and lifestyle,SKU-209-61-0,22.24,332
+2019-02-19,ActiveLife Supplies,Sports and travel,SKU-102-06-2,14.2,150
+2019-02-19,ActiveLife Supplies,Sports and travel,SKU-105-31-1,43.08,53
+2019-02-19,ActiveLife Supplies,Sports and travel,SKU-109-86-4,39.0,99
+2019-02-19,ActiveLife Supplies,Sports and travel,SKU-123-35-4,24.35,272
+2019-02-19,ActiveLife Supplies,Sports and travel,SKU-129-29-8,40.05,249
+2019-02-19,ActiveLife Supplies,Sports and travel,SKU-139-32-4,47.93,398
+2019-02-19,ActiveLife Supplies,Sports and travel,SKU-149-15-7,22.5,63
+2019-02-19,ActiveLife Supplies,Sports and travel,SKU-149-61-1,38.45,89
+2019-02-19,ActiveLife Supplies,Sports and travel,SKU-149-71-6,45.0,213
+2019-02-19,ActiveLife Supplies,Sports and travel,SKU-150-89-8,26.27,173
+2019-02-19,ActiveLife Supplies,Sports and travel,SKU-154-74-7,33.8,219
+2019-02-19,ActiveLife Supplies,Sports and travel,SKU-166-19-2,46.44,155
+2019-02-19,ActiveLife Supplies,Sports and travel,SKU-173-50-1,10.13,271
+2019-02-19,ActiveLife Supplies,Sports and travel,SKU-173-57-2,43.97,284
+2019-02-19,ActiveLife Supplies,Sports and travel,SKU-174-64-0,35.28,145
+2019-02-26,TechWholesale Inc,Electronic accessories,SKU-114-35-5,32.6,159
+2019-02-26,TechWholesale Inc,Electronic accessories,SKU-120-06-4,19.32,225
+2019-02-26,TechWholesale Inc,Electronic accessories,SKU-122-61-9,28.37,71
+2019-02-26,TechWholesale Inc,Electronic accessories,SKU-124-31-1,48.12,69
+2019-02-26,TechWholesale Inc,Electronic accessories,SKU-132-32-9,48.83,311
+2019-02-26,TechWholesale Inc,Electronic accessories,SKU-134-54-4,27.15,265
+2019-02-26,TechWholesale Inc,Electronic accessories,SKU-134-75-2,10.24,170
+2019-02-26,TechWholesale Inc,Electronic accessories,SKU-137-63-5,32.47,112
+2019-02-26,TechWholesale Inc,Electronic accessories,SKU-139-20-0,24.56,213
+2019-02-26,TechWholesale Inc,Electronic accessories,SKU-151-16-1,17.67,329
+2019-02-26,TechWholesale Inc,Electronic accessories,SKU-151-27-8,32.77,222
+2019-02-26,TechWholesale Inc,Electronic accessories,SKU-155-45-3,50.89,181
+2019-02-26,TechWholesale Inc,Electronic accessories,SKU-156-20-0,16.15,309
+2019-02-26,TechWholesale Inc,Electronic accessories,SKU-169-52-4,9.34,392
+2019-02-26,TechWholesale Inc,Electronic accessories,SKU-172-42-8,22.82,257
+2019-02-26,StyleSource Co,Fashion accessories,SKU-105-10-6,12.74,201
+2019-02-26,StyleSource Co,Fashion accessories,SKU-109-28-2,59.36,77
+2019-02-26,StyleSource Co,Fashion accessories,SKU-110-48-7,20.61,130
+2019-02-26,StyleSource Co,Fashion accessories,SKU-115-38-7,5.9,354
+2019-02-26,StyleSource Co,Fashion accessories,SKU-115-99-4,30.67,139
+2019-02-26,StyleSource Co,Fashion accessories,SKU-125-45-2,63.5,50
+2019-02-26,StyleSource Co,Fashion accessories,SKU-130-98-8,41.3,108
+2019-02-26,StyleSource Co,Fashion accessories,SKU-133-77-3,33.56,202
+2019-02-26,StyleSource Co,Fashion accessories,SKU-135-84-8,47.21,303
+2019-02-26,StyleSource Co,Fashion accessories,SKU-137-74-8,7.09,299
+2019-02-26,StyleSource Co,Fashion accessories,SKU-139-52-2,11.49,90
+2019-02-26,StyleSource Co,Fashion accessories,SKU-142-72-4,56.42,297
+2019-02-26,StyleSource Co,Fashion accessories,SKU-163-56-7,24.9,120
+2019-02-26,StyleSource Co,Fashion accessories,SKU-173-82-9,19.57,289
+2019-02-26,StyleSource Co,Fashion accessories,SKU-181-94-6,40.91,362
+2019-02-26,FreshDistributors,Food and beverages,SKU-101-17-6,27.03,193
+2019-02-26,FreshDistributors,Food and beverages,SKU-110-05-6,24.84,333
+2019-02-26,FreshDistributors,Food and beverages,SKU-120-54-2,16.17,82
+2019-02-26,FreshDistributors,Food and beverages,SKU-130-67-4,30.97,190
+2019-02-26,FreshDistributors,Food and beverages,SKU-131-15-8,41.67,241
+2019-02-26,FreshDistributors,Food and beverages,SKU-135-13-8,47.91,296
+2019-02-26,FreshDistributors,Food and beverages,SKU-145-94-9,60.25,255
+2019-02-26,FreshDistributors,Food and beverages,SKU-146-09-5,18.59,270
+2019-02-26,FreshDistributors,Food and beverages,SKU-151-33-7,38.57,71
+2019-02-26,FreshDistributors,Food and beverages,SKU-152-68-2,26.92,136
+2019-02-26,FreshDistributors,Food and beverages,SKU-153-58-4,42.88,371
+2019-02-26,FreshDistributors,Food and beverages,SKU-156-95-3,30.9,306
+2019-02-26,FreshDistributors,Food and beverages,SKU-162-48-8,24.22,179
+2019-02-26,FreshDistributors,Food and beverages,SKU-162-65-8,36.07,266
+2019-02-26,FreshDistributors,Food and beverages,SKU-174-36-3,60.72,369
+2019-02-26,BeautySupplyCo,Health and beauty,SKU-101-81-4,40.13,152
+2019-02-26,BeautySupplyCo,Health and beauty,SKU-102-77-2,39.11,247
+2019-02-26,BeautySupplyCo,Health and beauty,SKU-123-19-1,29.38,74
+2019-02-26,BeautySupplyCo,Health and beauty,SKU-127-47-6,31.21,249
+2019-02-26,BeautySupplyCo,Health and beauty,SKU-131-70-8,52.54,153
+2019-02-26,BeautySupplyCo,Health and beauty,SKU-132-23-6,10.76,315
+2019-02-26,BeautySupplyCo,Health and beauty,SKU-133-14-7,31.98,312
+2019-02-26,BeautySupplyCo,Health and beauty,SKU-148-41-7,48.79,63
+2019-02-26,BeautySupplyCo,Health and beauty,SKU-149-14-0,17.65,130
+2019-02-26,BeautySupplyCo,Health and beauty,SKU-152-08-9,35.43,280
+2019-02-26,BeautySupplyCo,Health and beauty,SKU-157-13-5,31.43,205
+2019-02-26,BeautySupplyCo,Health and beauty,SKU-160-22-2,63.29,297
+2019-02-26,BeautySupplyCo,Health and beauty,SKU-176-78-1,17.82,75
+2019-02-26,BeautySupplyCo,Health and beauty,SKU-186-09-3,46.33,196
+2019-02-26,BeautySupplyCo,Health and beauty,SKU-186-79-9,38.77,151
+2019-02-26,HomeGoods Ltd,Home and lifestyle,SKU-106-35-6,25.73,394
+2019-02-26,HomeGoods Ltd,Home and lifestyle,SKU-118-62-1,50.03,127
+2019-02-26,HomeGoods Ltd,Home and lifestyle,SKU-126-54-1,11.3,165
+2019-02-26,HomeGoods Ltd,Home and lifestyle,SKU-136-08-6,43.87,325
+2019-02-26,HomeGoods Ltd,Home and lifestyle,SKU-138-17-5,54.39,197
+2019-02-26,HomeGoods Ltd,Home and lifestyle,SKU-142-63-6,53.0,378
+2019-02-26,HomeGoods Ltd,Home and lifestyle,SKU-144-51-6,40.59,121
+2019-02-26,HomeGoods Ltd,Home and lifestyle,SKU-148-82-2,7.1,118
+2019-02-26,HomeGoods Ltd,Home and lifestyle,SKU-152-03-4,7.23,316
+2019-02-26,HomeGoods Ltd,Home and lifestyle,SKU-154-87-7,38.38,85
+2019-02-26,HomeGoods Ltd,Home and lifestyle,SKU-181-82-6,10.25,61
+2019-02-26,HomeGoods Ltd,Home and lifestyle,SKU-186-43-8,25.13,169
+2019-02-26,HomeGoods Ltd,Home and lifestyle,SKU-195-06-0,53.17,318
+2019-02-26,HomeGoods Ltd,Home and lifestyle,SKU-200-40-6,37.1,243
+2019-02-26,HomeGoods Ltd,Home and lifestyle,SKU-209-61-0,21.67,194
+2019-02-26,ActiveLife Supplies,Sports and travel,SKU-102-06-2,14.62,244
+2019-02-26,ActiveLife Supplies,Sports and travel,SKU-105-31-1,44.94,372
+2019-02-26,ActiveLife Supplies,Sports and travel,SKU-109-86-4,41.05,173
+2019-02-26,ActiveLife Supplies,Sports and travel,SKU-123-35-4,25.46,219
+2019-02-26,ActiveLife Supplies,Sports and travel,SKU-129-29-8,41.17,326
+2019-02-26,ActiveLife Supplies,Sports and travel,SKU-139-32-4,48.66,244
+2019-02-26,ActiveLife Supplies,Sports and travel,SKU-149-15-7,22.51,333
+2019-02-26,ActiveLife Supplies,Sports and travel,SKU-149-61-1,38.86,176
+2019-02-26,ActiveLife Supplies,Sports and travel,SKU-149-71-6,44.09,374
+2019-02-26,ActiveLife Supplies,Sports and travel,SKU-150-89-8,26.38,128
+2019-02-26,ActiveLife Supplies,Sports and travel,SKU-154-74-7,34.59,270
+2019-02-26,ActiveLife Supplies,Sports and travel,SKU-166-19-2,47.27,228
+2019-02-26,ActiveLife Supplies,Sports and travel,SKU-173-50-1,10.11,364
+2019-02-26,ActiveLife Supplies,Sports and travel,SKU-173-57-2,45.74,394
+2019-02-26,ActiveLife Supplies,Sports and travel,SKU-174-64-0,35.65,280
+2019-03-05,TechWholesale Inc,Electronic accessories,SKU-114-35-5,34.09,117
+2019-03-05,TechWholesale Inc,Electronic accessories,SKU-120-06-4,19.72,374
+2019-03-05,TechWholesale Inc,Electronic accessories,SKU-122-61-9,28.3,70
+2019-03-05,TechWholesale Inc,Electronic accessories,SKU-124-31-1,50.22,163
+2019-03-05,TechWholesale Inc,Electronic accessories,SKU-132-32-9,48.49,345
+2019-03-05,TechWholesale Inc,Electronic accessories,SKU-134-54-4,28.78,244
+2019-03-05,TechWholesale Inc,Electronic accessories,SKU-134-75-2,10.25,165
+2019-03-05,TechWholesale Inc,Electronic accessories,SKU-137-63-5,33.07,287
+2019-03-05,TechWholesale Inc,Electronic accessories,SKU-139-20-0,26.13,91
+2019-03-05,TechWholesale Inc,Electronic accessories,SKU-151-16-1,18.17,162
+2019-03-05,TechWholesale Inc,Electronic accessories,SKU-151-27-8,33.85,244
+2019-03-05,TechWholesale Inc,Electronic accessories,SKU-155-45-3,53.17,135
+2019-03-05,TechWholesale Inc,Electronic accessories,SKU-156-20-0,16.85,56
+2019-03-05,TechWholesale Inc,Electronic accessories,SKU-169-52-4,9.37,64
+2019-03-05,TechWholesale Inc,Electronic accessories,SKU-172-42-8,23.95,206
+2019-03-05,StyleSource Co,Fashion accessories,SKU-105-10-6,12.55,141
+2019-03-05,StyleSource Co,Fashion accessories,SKU-109-28-2,59.36,338
+2019-03-05,StyleSource Co,Fashion accessories,SKU-110-48-7,20.55,332
+2019-03-05,StyleSource Co,Fashion accessories,SKU-115-38-7,6.01,341
+2019-03-05,StyleSource Co,Fashion accessories,SKU-115-99-4,32.0,383
+2019-03-05,StyleSource Co,Fashion accessories,SKU-125-45-2,63.73,327
+2019-03-05,StyleSource Co,Fashion accessories,SKU-130-98-8,40.91,110
+2019-03-05,StyleSource Co,Fashion accessories,SKU-133-77-3,35.26,346
+2019-03-05,StyleSource Co,Fashion accessories,SKU-135-84-8,48.23,114
+2019-03-05,StyleSource Co,Fashion accessories,SKU-137-74-8,7.38,68
+2019-03-05,StyleSource Co,Fashion accessories,SKU-139-52-2,11.87,245
+2019-03-05,StyleSource Co,Fashion accessories,SKU-142-72-4,54.32,245
+2019-03-05,StyleSource Co,Fashion accessories,SKU-163-56-7,24.92,371
+2019-03-05,StyleSource Co,Fashion accessories,SKU-173-82-9,19.99,122
+2019-03-05,StyleSource Co,Fashion accessories,SKU-181-94-6,41.58,82
+2019-03-05,FreshDistributors,Food and beverages,SKU-101-17-6,26.78,239
+2019-03-05,FreshDistributors,Food and beverages,SKU-110-05-6,25.51,160
+2019-03-05,FreshDistributors,Food and beverages,SKU-120-54-2,16.51,235
+2019-03-05,FreshDistributors,Food and beverages,SKU-130-67-4,32.85,349
+2019-03-05,FreshDistributors,Food and beverages,SKU-131-15-8,43.02,292
+2019-03-05,FreshDistributors,Food and beverages,SKU-135-13-8,48.98,105
+2019-03-05,FreshDistributors,Food and beverages,SKU-145-94-9,60.02,374
+2019-03-05,FreshDistributors,Food and beverages,SKU-146-09-5,18.84,397
+2019-03-05,FreshDistributors,Food and beverages,SKU-151-33-7,38.87,285
+2019-03-05,FreshDistributors,Food and beverages,SKU-152-68-2,26.68,374
+2019-03-05,FreshDistributors,Food and beverages,SKU-153-58-4,43.3,275
+2019-03-05,FreshDistributors,Food and beverages,SKU-156-95-3,30.43,81
+2019-03-05,FreshDistributors,Food and beverages,SKU-162-48-8,25.24,386
+2019-03-05,FreshDistributors,Food and beverages,SKU-162-65-8,36.24,59
+2019-03-05,FreshDistributors,Food and beverages,SKU-174-36-3,62.28,134
+2019-03-05,BeautySupplyCo,Health and beauty,SKU-101-81-4,40.63,120
+2019-03-05,BeautySupplyCo,Health and beauty,SKU-102-77-2,41.27,241
+2019-03-05,BeautySupplyCo,Health and beauty,SKU-123-19-1,29.61,377
+2019-03-05,BeautySupplyCo,Health and beauty,SKU-127-47-6,32.39,72
+2019-03-05,BeautySupplyCo,Health and beauty,SKU-131-70-8,53.7,152
+2019-03-05,BeautySupplyCo,Health and beauty,SKU-132-23-6,10.74,92
+2019-03-05,BeautySupplyCo,Health and beauty,SKU-133-14-7,33.15,397
+2019-03-05,BeautySupplyCo,Health and beauty,SKU-148-41-7,48.42,305
+2019-03-05,BeautySupplyCo,Health and beauty,SKU-149-14-0,17.67,376
+2019-03-05,BeautySupplyCo,Health and beauty,SKU-152-08-9,35.64,314
+2019-03-05,BeautySupplyCo,Health and beauty,SKU-157-13-5,33.19,97
+2019-03-05,BeautySupplyCo,Health and beauty,SKU-160-22-2,62.19,400
+2019-03-05,BeautySupplyCo,Health and beauty,SKU-176-78-1,18.16,246
+2019-03-05,BeautySupplyCo,Health and beauty,SKU-186-09-3,46.37,105
+2019-03-05,BeautySupplyCo,Health and beauty,SKU-186-79-9,39.12,255
+2019-03-05,HomeGoods Ltd,Home and lifestyle,SKU-106-35-6,25.81,263
+2019-03-05,HomeGoods Ltd,Home and lifestyle,SKU-118-62-1,51.47,154
+2019-03-05,HomeGoods Ltd,Home and lifestyle,SKU-126-54-1,11.71,202
+2019-03-05,HomeGoods Ltd,Home and lifestyle,SKU-136-08-6,45.16,337
+2019-03-05,HomeGoods Ltd,Home and lifestyle,SKU-138-17-5,53.91,380
+2019-03-05,HomeGoods Ltd,Home and lifestyle,SKU-142-63-6,54.29,302
+2019-03-05,HomeGoods Ltd,Home and lifestyle,SKU-144-51-6,42.22,177
+2019-03-05,HomeGoods Ltd,Home and lifestyle,SKU-148-82-2,7.34,282
+2019-03-05,HomeGoods Ltd,Home and lifestyle,SKU-152-03-4,7.53,398
+2019-03-05,HomeGoods Ltd,Home and lifestyle,SKU-154-87-7,39.15,291
+2019-03-05,HomeGoods Ltd,Home and lifestyle,SKU-181-82-6,10.47,287
+2019-03-05,HomeGoods Ltd,Home and lifestyle,SKU-186-43-8,25.55,78
+2019-03-05,HomeGoods Ltd,Home and lifestyle,SKU-195-06-0,53.29,263
+2019-03-05,HomeGoods Ltd,Home and lifestyle,SKU-200-40-6,39.34,358
+2019-03-05,HomeGoods Ltd,Home and lifestyle,SKU-209-61-0,21.95,323
+2019-03-05,ActiveLife Supplies,Sports and travel,SKU-102-06-2,15.23,175
+2019-03-05,ActiveLife Supplies,Sports and travel,SKU-105-31-1,45.33,127
+2019-03-05,ActiveLife Supplies,Sports and travel,SKU-109-86-4,41.25,319
+2019-03-05,ActiveLife Supplies,Sports and travel,SKU-123-35-4,25.6,98
+2019-03-05,ActiveLife Supplies,Sports and travel,SKU-129-29-8,41.16,121
+2019-03-05,ActiveLife Supplies,Sports and travel,SKU-139-32-4,47.49,366
+2019-03-05,ActiveLife Supplies,Sports and travel,SKU-149-15-7,22.96,356
+2019-03-05,ActiveLife Supplies,Sports and travel,SKU-149-61-1,40.42,303
+2019-03-05,ActiveLife Supplies,Sports and travel,SKU-149-71-6,45.49,344
+2019-03-05,ActiveLife Supplies,Sports and travel,SKU-150-89-8,27.86,243
+2019-03-05,ActiveLife Supplies,Sports and travel,SKU-154-74-7,33.61,100
+2019-03-05,ActiveLife Supplies,Sports and travel,SKU-166-19-2,47.79,274
+2019-03-05,ActiveLife Supplies,Sports and travel,SKU-173-50-1,10.55,280
+2019-03-05,ActiveLife Supplies,Sports and travel,SKU-173-57-2,47.05,202
+2019-03-05,ActiveLife Supplies,Sports and travel,SKU-174-64-0,36.63,233
+2019-03-12,TechWholesale Inc,Electronic accessories,SKU-114-35-5,35.6,85
+2019-03-12,TechWholesale Inc,Electronic accessories,SKU-120-06-4,20.92,308
+2019-03-12,TechWholesale Inc,Electronic accessories,SKU-122-61-9,29.46,157
+2019-03-12,TechWholesale Inc,Electronic accessories,SKU-124-31-1,48.96,285
+2019-03-12,TechWholesale Inc,Electronic accessories,SKU-132-32-9,49.31,72
+2019-03-12,TechWholesale Inc,Electronic accessories,SKU-134-54-4,29.53,139
+2019-03-12,TechWholesale Inc,Electronic accessories,SKU-134-75-2,10.43,125
+2019-03-12,TechWholesale Inc,Electronic accessories,SKU-137-63-5,33.68,336
+2019-03-12,TechWholesale Inc,Electronic accessories,SKU-139-20-0,25.59,168
+2019-03-12,TechWholesale Inc,Electronic accessories,SKU-151-16-1,18.06,189
+2019-03-12,TechWholesale Inc,Electronic accessories,SKU-151-27-8,33.36,265
+2019-03-12,TechWholesale Inc,Electronic accessories,SKU-155-45-3,54.01,108
+2019-03-12,TechWholesale Inc,Electronic accessories,SKU-156-20-0,17.48,300
+2019-03-12,TechWholesale Inc,Electronic accessories,SKU-169-52-4,9.58,216
+2019-03-12,TechWholesale Inc,Electronic accessories,SKU-172-42-8,24.49,238
+2019-03-12,StyleSource Co,Fashion accessories,SKU-105-10-6,12.87,323
+2019-03-12,StyleSource Co,Fashion accessories,SKU-109-28-2,63.84,93
+2019-03-12,StyleSource Co,Fashion accessories,SKU-110-48-7,20.81,51
+2019-03-12,StyleSource Co,Fashion accessories,SKU-115-38-7,6.2,274
+2019-03-12,StyleSource Co,Fashion accessories,SKU-115-99-4,32.47,192
+2019-03-12,StyleSource Co,Fashion accessories,SKU-125-45-2,63.97,77
+2019-03-12,StyleSource Co,Fashion accessories,SKU-130-98-8,42.28,128
+2019-03-12,StyleSource Co,Fashion accessories,SKU-133-77-3,36.16,300
+2019-03-12,StyleSource Co,Fashion accessories,SKU-135-84-8,47.95,352
+2019-03-12,StyleSource Co,Fashion accessories,SKU-137-74-8,7.45,170
+2019-03-12,StyleSource Co,Fashion accessories,SKU-139-52-2,11.96,173
+2019-03-12,StyleSource Co,Fashion accessories,SKU-142-72-4,56.74,344
+2019-03-12,StyleSource Co,Fashion accessories,SKU-163-56-7,25.04,208
+2019-03-12,StyleSource Co,Fashion accessories,SKU-173-82-9,19.97,165
+2019-03-12,StyleSource Co,Fashion accessories,SKU-181-94-6,43.59,287
+2019-03-12,FreshDistributors,Food and beverages,SKU-101-17-6,27.77,277
+2019-03-12,FreshDistributors,Food and beverages,SKU-110-05-6,27.14,169
+2019-03-12,FreshDistributors,Food and beverages,SKU-120-54-2,16.94,105
+2019-03-12,FreshDistributors,Food and beverages,SKU-130-67-4,33.51,216
+2019-03-12,FreshDistributors,Food and beverages,SKU-131-15-8,41.4,93
+2019-03-12,FreshDistributors,Food and beverages,SKU-135-13-8,50.23,334
+2019-03-12,FreshDistributors,Food and beverages,SKU-145-94-9,65.0,96
+2019-03-12,FreshDistributors,Food and beverages,SKU-146-09-5,19.76,299
+2019-03-12,FreshDistributors,Food and beverages,SKU-151-33-7,40.22,210
+2019-03-12,FreshDistributors,Food and beverages,SKU-152-68-2,26.93,311
+2019-03-12,FreshDistributors,Food and beverages,SKU-153-58-4,43.08,276
+2019-03-12,FreshDistributors,Food and beverages,SKU-156-95-3,31.36,225
+2019-03-12,FreshDistributors,Food and beverages,SKU-162-48-8,26.13,358
+2019-03-12,FreshDistributors,Food and beverages,SKU-162-65-8,36.39,142
+2019-03-12,FreshDistributors,Food and beverages,SKU-174-36-3,63.6,72
+2019-03-12,BeautySupplyCo,Health and beauty,SKU-101-81-4,41.68,76
+2019-03-12,BeautySupplyCo,Health and beauty,SKU-102-77-2,40.07,213
+2019-03-12,BeautySupplyCo,Health and beauty,SKU-123-19-1,30.96,284
+2019-03-12,BeautySupplyCo,Health and beauty,SKU-127-47-6,32.52,241
+2019-03-12,BeautySupplyCo,Health and beauty,SKU-131-70-8,57.7,211
+2019-03-12,BeautySupplyCo,Health and beauty,SKU-132-23-6,11.1,90
+2019-03-12,BeautySupplyCo,Health and beauty,SKU-133-14-7,32.3,65
+2019-03-12,BeautySupplyCo,Health and beauty,SKU-148-41-7,48.06,337
+2019-03-12,BeautySupplyCo,Health and beauty,SKU-149-14-0,17.3,235
+2019-03-12,BeautySupplyCo,Health and beauty,SKU-152-08-9,35.95,332
+2019-03-12,BeautySupplyCo,Health and beauty,SKU-157-13-5,33.79,136
+2019-03-12,BeautySupplyCo,Health and beauty,SKU-160-22-2,64.34,282
+2019-03-12,BeautySupplyCo,Health and beauty,SKU-176-78-1,18.96,264
+2019-03-12,BeautySupplyCo,Health and beauty,SKU-186-09-3,46.49,185
+2019-03-12,BeautySupplyCo,Health and beauty,SKU-186-79-9,39.57,73
+2019-03-12,HomeGoods Ltd,Home and lifestyle,SKU-106-35-6,27.06,372
+2019-03-12,HomeGoods Ltd,Home and lifestyle,SKU-118-62-1,52.6,363
+2019-03-12,HomeGoods Ltd,Home and lifestyle,SKU-126-54-1,11.73,156
+2019-03-12,HomeGoods Ltd,Home and lifestyle,SKU-136-08-6,47.5,120
+2019-03-12,HomeGoods Ltd,Home and lifestyle,SKU-138-17-5,53.96,95
+2019-03-12,HomeGoods Ltd,Home and lifestyle,SKU-142-63-6,55.89,118
+2019-03-12,HomeGoods Ltd,Home and lifestyle,SKU-144-51-6,41.9,246
+2019-03-12,HomeGoods Ltd,Home and lifestyle,SKU-148-82-2,7.59,360
+2019-03-12,HomeGoods Ltd,Home and lifestyle,SKU-152-03-4,7.59,348
+2019-03-12,HomeGoods Ltd,Home and lifestyle,SKU-154-87-7,37.59,259
+2019-03-12,HomeGoods Ltd,Home and lifestyle,SKU-181-82-6,10.43,328
+2019-03-12,HomeGoods Ltd,Home and lifestyle,SKU-186-43-8,25.14,198
+2019-03-12,HomeGoods Ltd,Home and lifestyle,SKU-195-06-0,54.81,203
+2019-03-12,HomeGoods Ltd,Home and lifestyle,SKU-200-40-6,38.65,87
+2019-03-12,HomeGoods Ltd,Home and lifestyle,SKU-209-61-0,22.52,207
+2019-03-12,ActiveLife Supplies,Sports and travel,SKU-102-06-2,15.56,385
+2019-03-12,ActiveLife Supplies,Sports and travel,SKU-105-31-1,45.59,308
+2019-03-12,ActiveLife Supplies,Sports and travel,SKU-109-86-4,42.43,231
+2019-03-12,ActiveLife Supplies,Sports and travel,SKU-123-35-4,26.37,71
+2019-03-12,ActiveLife Supplies,Sports and travel,SKU-129-29-8,43.16,90
+2019-03-12,ActiveLife Supplies,Sports and travel,SKU-139-32-4,48.38,176
+2019-03-12,ActiveLife Supplies,Sports and travel,SKU-149-15-7,24.4,247
+2019-03-12,ActiveLife Supplies,Sports and travel,SKU-149-61-1,40.83,150
+2019-03-12,ActiveLife Supplies,Sports and travel,SKU-149-71-6,47.16,216
+2019-03-12,ActiveLife Supplies,Sports and travel,SKU-150-89-8,27.51,356
+2019-03-12,ActiveLife Supplies,Sports and travel,SKU-154-74-7,34.69,311
+2019-03-12,ActiveLife Supplies,Sports and travel,SKU-166-19-2,49.15,281
+2019-03-12,ActiveLife Supplies,Sports and travel,SKU-173-50-1,10.5,249
+2019-03-12,ActiveLife Supplies,Sports and travel,SKU-173-57-2,48.72,352
+2019-03-12,ActiveLife Supplies,Sports and travel,SKU-174-64-0,37.68,298
+2019-03-19,TechWholesale Inc,Electronic accessories,SKU-114-35-5,36.12,239
+2019-03-19,TechWholesale Inc,Electronic accessories,SKU-120-06-4,20.89,76
+2019-03-19,TechWholesale Inc,Electronic accessories,SKU-122-61-9,29.23,391
+2019-03-19,TechWholesale Inc,Electronic accessories,SKU-124-31-1,50.1,166
+2019-03-19,TechWholesale Inc,Electronic accessories,SKU-132-32-9,51.5,50
+2019-03-19,TechWholesale Inc,Electronic accessories,SKU-134-54-4,30.14,204
+2019-03-19,TechWholesale Inc,Electronic accessories,SKU-134-75-2,10.04,175
+2019-03-19,TechWholesale Inc,Electronic accessories,SKU-137-63-5,33.73,276
+2019-03-19,TechWholesale Inc,Electronic accessories,SKU-139-20-0,26.6,128
+2019-03-19,TechWholesale Inc,Electronic accessories,SKU-151-16-1,18.23,64
+2019-03-19,TechWholesale Inc,Electronic accessories,SKU-151-27-8,33.77,91
+2019-03-19,TechWholesale Inc,Electronic accessories,SKU-155-45-3,55.92,133
+2019-03-19,TechWholesale Inc,Electronic accessories,SKU-156-20-0,17.12,235
+2019-03-19,TechWholesale Inc,Electronic accessories,SKU-169-52-4,9.53,158
+2019-03-19,TechWholesale Inc,Electronic accessories,SKU-172-42-8,24.79,321
+2019-03-19,StyleSource Co,Fashion accessories,SKU-105-10-6,12.99,73
+2019-03-19,StyleSource Co,Fashion accessories,SKU-109-28-2,65.59,110
+2019-03-19,StyleSource Co,Fashion accessories,SKU-110-48-7,21.7,354
+2019-03-19,StyleSource Co,Fashion accessories,SKU-115-38-7,6.03,205
+2019-03-19,StyleSource Co,Fashion accessories,SKU-115-99-4,32.47,349
+2019-03-19,StyleSource Co,Fashion accessories,SKU-125-45-2,63.89,235
+2019-03-19,StyleSource Co,Fashion accessories,SKU-130-98-8,42.8,199
+2019-03-19,StyleSource Co,Fashion accessories,SKU-133-77-3,36.45,278
+2019-03-19,StyleSource Co,Fashion accessories,SKU-135-84-8,48.48,101
+2019-03-19,StyleSource Co,Fashion accessories,SKU-137-74-8,7.63,197
+2019-03-19,StyleSource Co,Fashion accessories,SKU-139-52-2,11.94,348
+2019-03-19,StyleSource Co,Fashion accessories,SKU-142-72-4,56.66,201
+2019-03-19,StyleSource Co,Fashion accessories,SKU-163-56-7,25.35,67
+2019-03-19,StyleSource Co,Fashion accessories,SKU-173-82-9,20.33,395
+2019-03-19,StyleSource Co,Fashion accessories,SKU-181-94-6,45.27,204
+2019-03-19,FreshDistributors,Food and beverages,SKU-101-17-6,29.73,235
+2019-03-19,FreshDistributors,Food and beverages,SKU-110-05-6,27.03,125
+2019-03-19,FreshDistributors,Food and beverages,SKU-120-54-2,17.27,163
+2019-03-19,FreshDistributors,Food and beverages,SKU-130-67-4,33.98,355
+2019-03-19,FreshDistributors,Food and beverages,SKU-131-15-8,42.07,99
+2019-03-19,FreshDistributors,Food and beverages,SKU-135-13-8,51.15,192
+2019-03-19,FreshDistributors,Food and beverages,SKU-145-94-9,65.76,160
+2019-03-19,FreshDistributors,Food and beverages,SKU-146-09-5,19.84,207
+2019-03-19,FreshDistributors,Food and beverages,SKU-151-33-7,39.61,343
+2019-03-19,FreshDistributors,Food and beverages,SKU-152-68-2,27.25,228
+2019-03-19,FreshDistributors,Food and beverages,SKU-153-58-4,45.02,190
+2019-03-19,FreshDistributors,Food and beverages,SKU-156-95-3,32.74,93
+2019-03-19,FreshDistributors,Food and beverages,SKU-162-48-8,26.52,220
+2019-03-19,FreshDistributors,Food and beverages,SKU-162-65-8,38.17,224
+2019-03-19,FreshDistributors,Food and beverages,SKU-174-36-3,64.03,396
+2019-03-19,BeautySupplyCo,Health and beauty,SKU-101-81-4,41.99,240
+2019-03-19,BeautySupplyCo,Health and beauty,SKU-102-77-2,42.49,382
+2019-03-19,BeautySupplyCo,Health and beauty,SKU-123-19-1,29.96,305
+2019-03-19,BeautySupplyCo,Health and beauty,SKU-127-47-6,32.34,58
+2019-03-19,BeautySupplyCo,Health and beauty,SKU-131-70-8,59.07,313
+2019-03-19,BeautySupplyCo,Health and beauty,SKU-132-23-6,10.95,142
+2019-03-19,BeautySupplyCo,Health and beauty,SKU-133-14-7,32.66,361
+2019-03-19,BeautySupplyCo,Health and beauty,SKU-148-41-7,47.17,183
+2019-03-19,BeautySupplyCo,Health and beauty,SKU-149-14-0,17.85,112
+2019-03-19,BeautySupplyCo,Health and beauty,SKU-152-08-9,37.18,143
+2019-03-19,BeautySupplyCo,Health and beauty,SKU-157-13-5,34.79,347
+2019-03-19,BeautySupplyCo,Health and beauty,SKU-160-22-2,64.56,80
+2019-03-19,BeautySupplyCo,Health and beauty,SKU-176-78-1,18.45,131
+2019-03-19,BeautySupplyCo,Health and beauty,SKU-186-09-3,47.74,256
+2019-03-19,BeautySupplyCo,Health and beauty,SKU-186-79-9,39.14,220
+2019-03-19,HomeGoods Ltd,Home and lifestyle,SKU-106-35-6,26.64,292
+2019-03-19,HomeGoods Ltd,Home and lifestyle,SKU-118-62-1,55.4,81
+2019-03-19,HomeGoods Ltd,Home and lifestyle,SKU-126-54-1,11.82,300
+2019-03-19,HomeGoods Ltd,Home and lifestyle,SKU-136-08-6,46.97,350
+2019-03-19,HomeGoods Ltd,Home and lifestyle,SKU-138-17-5,56.88,168
+2019-03-19,HomeGoods Ltd,Home and lifestyle,SKU-142-63-6,56.23,289
+2019-03-19,HomeGoods Ltd,Home and lifestyle,SKU-144-51-6,43.37,186
+2019-03-19,HomeGoods Ltd,Home and lifestyle,SKU-148-82-2,7.56,331
+2019-03-19,HomeGoods Ltd,Home and lifestyle,SKU-152-03-4,7.9,311
+2019-03-19,HomeGoods Ltd,Home and lifestyle,SKU-154-87-7,38.55,119
+2019-03-19,HomeGoods Ltd,Home and lifestyle,SKU-181-82-6,10.41,244
+2019-03-19,HomeGoods Ltd,Home and lifestyle,SKU-186-43-8,25.48,344
+2019-03-19,HomeGoods Ltd,Home and lifestyle,SKU-195-06-0,55.93,325
+2019-03-19,HomeGoods Ltd,Home and lifestyle,SKU-200-40-6,39.8,350
+2019-03-19,HomeGoods Ltd,Home and lifestyle,SKU-209-61-0,22.21,312
+2019-03-19,ActiveLife Supplies,Sports and travel,SKU-102-06-2,16.38,222
+2019-03-19,ActiveLife Supplies,Sports and travel,SKU-105-31-1,47.74,80
+2019-03-19,ActiveLife Supplies,Sports and travel,SKU-109-86-4,43.5,253
+2019-03-19,ActiveLife Supplies,Sports and travel,SKU-123-35-4,25.6,340
+2019-03-19,ActiveLife Supplies,Sports and travel,SKU-129-29-8,43.27,227
+2019-03-19,ActiveLife Supplies,Sports and travel,SKU-139-32-4,49.9,92
+2019-03-19,ActiveLife Supplies,Sports and travel,SKU-149-15-7,23.73,261
+2019-03-19,ActiveLife Supplies,Sports and travel,SKU-149-61-1,41.2,119
+2019-03-19,ActiveLife Supplies,Sports and travel,SKU-149-71-6,46.89,251
+2019-03-19,ActiveLife Supplies,Sports and travel,SKU-150-89-8,28.92,255
+2019-03-19,ActiveLife Supplies,Sports and travel,SKU-154-74-7,36.51,335
+2019-03-19,ActiveLife Supplies,Sports and travel,SKU-166-19-2,48.61,203
+2019-03-19,ActiveLife Supplies,Sports and travel,SKU-173-50-1,10.26,159
+2019-03-19,ActiveLife Supplies,Sports and travel,SKU-173-57-2,47.37,118
+2019-03-19,ActiveLife Supplies,Sports and travel,SKU-174-64-0,36.2,246
+2019-03-26,TechWholesale Inc,Electronic accessories,SKU-114-35-5,35.48,274
+2019-03-26,TechWholesale Inc,Electronic accessories,SKU-120-06-4,20.8,266
+2019-03-26,TechWholesale Inc,Electronic accessories,SKU-122-61-9,28.37,336
+2019-03-26,TechWholesale Inc,Electronic accessories,SKU-124-31-1,50.41,387
+2019-03-26,TechWholesale Inc,Electronic accessories,SKU-132-32-9,51.54,325
+2019-03-26,TechWholesale Inc,Electronic accessories,SKU-134-54-4,30.48,50
+2019-03-26,TechWholesale Inc,Electronic accessories,SKU-134-75-2,10.73,362
+2019-03-26,TechWholesale Inc,Electronic accessories,SKU-137-63-5,33.96,308
+2019-03-26,TechWholesale Inc,Electronic accessories,SKU-139-20-0,27.76,82
+2019-03-26,TechWholesale Inc,Electronic accessories,SKU-151-16-1,18.39,392
+2019-03-26,TechWholesale Inc,Electronic accessories,SKU-151-27-8,34.69,326
+2019-03-26,TechWholesale Inc,Electronic accessories,SKU-155-45-3,57.91,105
+2019-03-26,TechWholesale Inc,Electronic accessories,SKU-156-20-0,18.1,285
+2019-03-26,TechWholesale Inc,Electronic accessories,SKU-169-52-4,9.78,182
+2019-03-26,TechWholesale Inc,Electronic accessories,SKU-172-42-8,25.16,331
+2019-03-26,StyleSource Co,Fashion accessories,SKU-105-10-6,13.93,333
+2019-03-26,StyleSource Co,Fashion accessories,SKU-109-28-2,65.47,263
+2019-03-26,StyleSource Co,Fashion accessories,SKU-110-48-7,22.25,66
+2019-03-26,StyleSource Co,Fashion accessories,SKU-115-38-7,6.37,189
+2019-03-26,StyleSource Co,Fashion accessories,SKU-115-99-4,33.49,301
+2019-03-26,StyleSource Co,Fashion accessories,SKU-125-45-2,66.59,305
+2019-03-26,StyleSource Co,Fashion accessories,SKU-130-98-8,43.72,189
+2019-03-26,StyleSource Co,Fashion accessories,SKU-133-77-3,36.3,226
+2019-03-26,StyleSource Co,Fashion accessories,SKU-135-84-8,51.13,275
+2019-03-26,StyleSource Co,Fashion accessories,SKU-137-74-8,7.98,96
+2019-03-26,StyleSource Co,Fashion accessories,SKU-139-52-2,11.77,286
+2019-03-26,StyleSource Co,Fashion accessories,SKU-142-72-4,56.55,387
+2019-03-26,StyleSource Co,Fashion accessories,SKU-163-56-7,25.14,117
+2019-03-26,StyleSource Co,Fashion accessories,SKU-173-82-9,20.7,335
+2019-03-26,StyleSource Co,Fashion accessories,SKU-181-94-6,45.54,109
+2019-03-26,FreshDistributors,Food and beverages,SKU-101-17-6,28.94,238
+2019-03-26,FreshDistributors,Food and beverages,SKU-110-05-6,28.47,355
+2019-03-26,FreshDistributors,Food and beverages,SKU-120-54-2,18.19,72
+2019-03-26,FreshDistributors,Food and beverages,SKU-130-67-4,35.09,282
+2019-03-26,FreshDistributors,Food and beverages,SKU-131-15-8,44.38,240
+2019-03-26,FreshDistributors,Food and beverages,SKU-135-13-8,52.67,269
+2019-03-26,FreshDistributors,Food and beverages,SKU-145-94-9,65.91,282
+2019-03-26,FreshDistributors,Food and beverages,SKU-146-09-5,19.52,252
+2019-03-26,FreshDistributors,Food and beverages,SKU-151-33-7,39.41,377
+2019-03-26,FreshDistributors,Food and beverages,SKU-152-68-2,27.7,380
+2019-03-26,FreshDistributors,Food and beverages,SKU-153-58-4,45.36,230
+2019-03-26,FreshDistributors,Food and beverages,SKU-156-95-3,32.2,138
+2019-03-26,FreshDistributors,Food and beverages,SKU-162-48-8,25.8,389
+2019-03-26,FreshDistributors,Food and beverages,SKU-162-65-8,38.64,298
+2019-03-26,FreshDistributors,Food and beverages,SKU-174-36-3,66.86,277
+2019-03-26,BeautySupplyCo,Health and beauty,SKU-101-81-4,42.64,102
+2019-03-26,BeautySupplyCo,Health and beauty,SKU-102-77-2,41.67,124
+2019-03-26,BeautySupplyCo,Health and beauty,SKU-123-19-1,31.29,58
+2019-03-26,BeautySupplyCo,Health and beauty,SKU-127-47-6,33.11,84
+2019-03-26,BeautySupplyCo,Health and beauty,SKU-131-70-8,58.39,328
+2019-03-26,BeautySupplyCo,Health and beauty,SKU-132-23-6,11.08,214
+2019-03-26,BeautySupplyCo,Health and beauty,SKU-133-14-7,34.14,274
+2019-03-26,BeautySupplyCo,Health and beauty,SKU-148-41-7,49.14,159
+2019-03-26,BeautySupplyCo,Health and beauty,SKU-149-14-0,18.56,121
+2019-03-26,BeautySupplyCo,Health and beauty,SKU-152-08-9,38.06,116
+2019-03-26,BeautySupplyCo,Health and beauty,SKU-157-13-5,34.68,387
+2019-03-26,BeautySupplyCo,Health and beauty,SKU-160-22-2,66.42,262
+2019-03-26,BeautySupplyCo,Health and beauty,SKU-176-78-1,19.25,345
+2019-03-26,BeautySupplyCo,Health and beauty,SKU-186-09-3,47.12,255
+2019-03-26,BeautySupplyCo,Health and beauty,SKU-186-79-9,41.69,315
+2019-03-26,HomeGoods Ltd,Home and lifestyle,SKU-106-35-6,27.52,385
+2019-03-26,HomeGoods Ltd,Home and lifestyle,SKU-118-62-1,55.87,315
+2019-03-26,HomeGoods Ltd,Home and lifestyle,SKU-126-54-1,11.69,228
+2019-03-26,HomeGoods Ltd,Home and lifestyle,SKU-136-08-6,48.48,75
+2019-03-26,HomeGoods Ltd,Home and lifestyle,SKU-138-17-5,57.41,69
+2019-03-26,HomeGoods Ltd,Home and lifestyle,SKU-142-63-6,54.78,107
+2019-03-26,HomeGoods Ltd,Home and lifestyle,SKU-144-51-6,46.2,204
+2019-03-26,HomeGoods Ltd,Home and lifestyle,SKU-148-82-2,7.94,325
+2019-03-26,HomeGoods Ltd,Home and lifestyle,SKU-152-03-4,8.05,78
+2019-03-26,HomeGoods Ltd,Home and lifestyle,SKU-154-87-7,40.58,380
+2019-03-26,HomeGoods Ltd,Home and lifestyle,SKU-181-82-6,10.8,176
+2019-03-26,HomeGoods Ltd,Home and lifestyle,SKU-186-43-8,25.82,356
+2019-03-26,HomeGoods Ltd,Home and lifestyle,SKU-195-06-0,57.5,165
+2019-03-26,HomeGoods Ltd,Home and lifestyle,SKU-200-40-6,41.93,336
+2019-03-26,HomeGoods Ltd,Home and lifestyle,SKU-209-61-0,23.26,288
+2019-03-26,ActiveLife Supplies,Sports and travel,SKU-102-06-2,16.12,300
+2019-03-26,ActiveLife Supplies,Sports and travel,SKU-105-31-1,49.11,391
+2019-03-26,ActiveLife Supplies,Sports and travel,SKU-109-86-4,44.02,257
+2019-03-26,ActiveLife Supplies,Sports and travel,SKU-123-35-4,26.25,73
+2019-03-26,ActiveLife Supplies,Sports and travel,SKU-129-29-8,42.94,273
+2019-03-26,ActiveLife Supplies,Sports and travel,SKU-139-32-4,48.86,244
+2019-03-26,ActiveLife Supplies,Sports and travel,SKU-149-15-7,24.73,93
+2019-03-26,ActiveLife Supplies,Sports and travel,SKU-149-61-1,41.52,252
+2019-03-26,ActiveLife Supplies,Sports and travel,SKU-149-71-6,47.72,338
+2019-03-26,ActiveLife Supplies,Sports and travel,SKU-150-89-8,29.74,264
+2019-03-26,ActiveLife Supplies,Sports and travel,SKU-154-74-7,36.93,344
+2019-03-26,ActiveLife Supplies,Sports and travel,SKU-166-19-2,48.43,108
+2019-03-26,ActiveLife Supplies,Sports and travel,SKU-173-50-1,10.51,82
+2019-03-26,ActiveLife Supplies,Sports and travel,SKU-173-57-2,49.08,172
+2019-03-26,ActiveLife Supplies,Sports and travel,SKU-174-64-0,38.36,308

@@ -254,7 +254,7 @@ export default function Home() {
             </div>
           </>
         ) : (
-          <div className="py-8">
+          <div className="py-12 px-6 lg:px-12">
             <ResultsDashboard result={analysisResult} />
           </div>
         )}

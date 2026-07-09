@@ -337,9 +337,9 @@ export default function ResultsDashboard({
   ];
 
   return (
-    <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+    <div className="w-full">
       <Card3D
-        className="glass-panel mb-8 overflow-hidden rounded-2xl"
+        className="glass-panel mb-8 overflow-hidden rounded-3xl"
         glowColor="rgba(124, 58, 237, 0.15)"
       >
         <section
@@ -349,7 +349,7 @@ export default function ResultsDashboard({
             backdropFilter: "blur(10px)",
           }}
         >
-          <div className="p-6 sm:p-8">
+          <div className="p-8 sm:p-10 lg:p-12">
             <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
               <div className="min-w-0 flex-1">
                 <div className="mb-4 flex flex-wrap items-center gap-2">
@@ -370,7 +370,7 @@ export default function ResultsDashboard({
                   />
                 </div>
 
-                <h2 className="text-2xl font-bold leading-snug text-white sm:text-3xl">
+                <h2 className="text-3xl font-bold leading-snug text-white sm:text-4xl lg:text-5xl">
                   Forensic Analysis Report
                 </h2>
 
@@ -378,7 +378,7 @@ export default function ResultsDashboard({
                   summary={result.executive_summary}
                 />
 
-                <p className="mt-5 border-t border-white/10 pt-4 text-xs leading-5 text-slate-500">
+                <p className="mt-5 border-t border-white/10 pt-4 text-sm leading-5 text-slate-500">
                   {result.amd_usage_note}
                 </p>
               </div>
@@ -398,7 +398,7 @@ export default function ResultsDashboard({
               </button>
             </div>
 
-            <div className="mt-8 grid gap-4 md:grid-cols-3">
+            <div className="mt-10 grid gap-6 md:grid-cols-3">
               {metrics.map(
                 (
                   {
@@ -415,7 +415,7 @@ export default function ResultsDashboard({
                 ) => (
                   <div
                     key={label}
-                    className="glass-panel animate-fade-in-up flex items-center gap-4 rounded-xl border p-5"
+                    className="glass-panel animate-fade-in-up flex items-center gap-5 rounded-2xl border p-8"
                     style={{
                       background,
                       borderColor: border,
@@ -423,22 +423,22 @@ export default function ResultsDashboard({
                     }}
                   >
                     <div
-                      className="rounded-lg p-2.5"
+                      className="rounded-xl p-4"
                       style={{
                         background: `${text}1a`,
                         color: text,
                         border: `1px solid ${text}33`,
                       }}
                     >
-                      <Icon className="h-5 w-5" />
+                      <Icon className="h-7 w-7" />
                     </div>
 
                     <div>
-                      <p className="text-[10px] font-semibold font-mono tracking-widest text-slate-300">
+                      <p className="text-xs font-semibold font-mono tracking-widest text-slate-300">
                         {label}
                       </p>
 
-                      <p className="mt-0.5 text-2xl font-bold font-mono text-white">
+                      <p className="mt-1 text-3xl font-bold font-mono text-white">
                         <Counter
                           to={value}
                           prefix={prefix}
@@ -455,20 +455,20 @@ export default function ResultsDashboard({
         </section>
       </Card3D>
 
-      <div className="mb-8">
-        <h3 className="mb-4 text-2xl font-bold text-white">
+      <div className="mb-10">
+        <h3 className="mb-6 text-3xl font-bold text-white">
           Visual Analysis
         </h3>
 
         <AnalyticsCharts result={result} />
       </div>
 
-      <div className="mb-5 flex items-end justify-between gap-4">
-        <h3 className="text-xl font-bold text-white">
+      <div className="mb-6 flex items-end justify-between gap-4">
+        <h3 className="text-3xl font-bold text-white">
           Findings Registry
         </h3>
 
-        <span className="text-right text-[10px] font-mono tracking-widest text-slate-500">
+        <span className="text-right text-xs font-mono tracking-widest text-slate-500">
           SORTED BY FINANCIAL IMPACT
         </span>
       </div>
@@ -496,7 +496,7 @@ export default function ResultsDashboard({
           </p>
         </div>
       ) : (
-        <div className="space-y-3">
+        <div className="space-y-4">
           {result.findings.map((finding, index) => {
             const category = finding.category.toLowerCase();
 
@@ -509,7 +509,7 @@ export default function ResultsDashboard({
             return (
               <article
                 key={`${category}-${finding.entity}-${index}`}
-                className="glass-panel animate-fade-in-up overflow-hidden rounded-xl"
+                className="glass-panel animate-fade-in-up overflow-hidden rounded-2xl"
                 style={{
                   animationDelay: `${index * 60}ms`,
                 }}
@@ -519,7 +519,7 @@ export default function ResultsDashboard({
                   onClick={() =>
                     setExpandedFinding(isOpen ? null : index)
                   }
-                  className="flex w-full items-start gap-4 p-5 text-left transition-colors"
+                  className="flex w-full items-start gap-5 p-6 lg:p-7 text-left transition-colors"
                   style={{
                     background: "transparent",
                   }}
@@ -533,7 +533,7 @@ export default function ResultsDashboard({
                   }}
                 >
                   <div
-                    className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-lg"
+                    className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-xl"
                     style={{
                       background: categoryStyle.bg,
                       color: categoryStyle.text,
@@ -542,13 +542,15 @@ export default function ResultsDashboard({
                       boxShadow: `0 0 12px ${categoryStyle.glow}`,
                     }}
                   >
-                    <CategoryIcon category={finding.category} />
+                    <div className="scale-125">
+                      <CategoryIcon category={finding.category} />
+                    </div>
                   </div>
 
                   <div className="relative z-10 min-w-0 flex-1">
-                    <div className="mb-1.5 flex flex-wrap items-center gap-2">
+                    <div className="mb-2 flex flex-wrap items-center gap-2">
                       <span
-                        className="rounded border px-2 py-0.5 text-[10px] font-mono tracking-widest"
+                        className="rounded border px-2.5 py-1 text-xs font-mono tracking-widest"
                         style={{
                           background: categoryStyle.bg,
                           color: categoryStyle.text,
@@ -558,9 +560,9 @@ export default function ResultsDashboard({
                         {finding.category.toUpperCase()}
                       </span>
 
-                      <span className="flex items-center gap-1 text-[10px] font-mono text-slate-500">
+                      <span className="flex items-center gap-1.5 text-xs font-mono text-slate-500">
                         <span
-                          className="inline-block h-1.5 w-1.5 rounded-full"
+                          className="inline-block h-2 w-2 rounded-full"
                           style={{
                             background: "#A78BFA",
                           }}
@@ -570,23 +572,23 @@ export default function ResultsDashboard({
                       </span>
                     </div>
 
-                    <h4 className="text-base font-semibold leading-snug text-slate-100">
+                    <h4 className="text-lg font-semibold leading-snug text-slate-100 lg:text-xl">
                       {finding.title}
                     </h4>
 
-                    <p className="mt-0.5 truncate text-xs text-slate-400">
+                    <p className="mt-1 truncate text-sm text-slate-400">
                       {finding.entity}
                     </p>
                   </div>
 
-                  <div className="relative z-10 ml-auto flex shrink-0 items-center gap-3 pl-3">
+                  <div className="relative z-10 ml-auto flex shrink-0 items-center gap-4 pl-4">
                     <div className="hidden text-right sm:block">
-                      <p className="text-[10px] font-mono text-slate-500">
+                      <p className="text-xs font-mono text-slate-500">
                         IMPACT
                       </p>
 
                       <p
-                        className="text-base font-bold font-mono"
+                        className="text-xl font-bold font-mono lg:text-2xl"
                         style={{
                           color: "#F87171",
                         }}
@@ -599,16 +601,16 @@ export default function ResultsDashboard({
                     </div>
 
                     <div
-                      className="flex h-7 w-7 items-center justify-center rounded-lg border"
+                      className="flex h-9 w-9 items-center justify-center rounded-xl border"
                       style={{
                         background: "rgba(255,255,255,0.04)",
                         borderColor: "rgba(255,255,255,0.08)",
                       }}
                     >
                       {isOpen ? (
-                        <ChevronUp className="h-3.5 w-3.5 text-slate-400" />
+                        <ChevronUp className="h-4 w-4 text-slate-400" />
                       ) : (
-                        <ChevronDown className="h-3.5 w-3.5 text-slate-400" />
+                        <ChevronDown className="h-4 w-4 text-slate-400" />
                       )}
                     </div>
                   </div>
