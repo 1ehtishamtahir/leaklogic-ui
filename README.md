@@ -1313,12 +1313,16 @@ Until a `LICENSE` file is added, the repository remains under the default copyri
 
 ---
 
-## Author
+## Authors
 
 **MUHAMMAD REHAN**
+
 **EHTISHAM TAHIR**
+
 **GUL-E-ZARA**
+
 **NEHA**
+
 **ZOKIRJANOV JASURBEK**
 
 
