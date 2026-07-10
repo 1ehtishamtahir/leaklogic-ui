@@ -1265,46 +1265,6 @@ This documentation intentionally separates current functionality from planned AM
 
 ---
 
-## Demo Script
-
-A short presentation flow:
-
-1. Introduce the problem:
-   - businesses lose profit through hidden operational inefficiencies.
-
-2. Show the four data sources:
-   - sales;
-   - refunds;
-   - suppliers;
-   - inventory.
-
-3. Click **Try Sample Data**.
-
-4. Start the audit.
-
-5. Show:
-   - total estimated profit leak;
-   - highest-impact finding;
-   - evidence;
-   - confidence;
-   - suggested action.
-
-6. Open the executive narrative.
-
-7. Point out:
-   - Fireworks AI generates the narrative;
-   - Python and pandas generate the financial findings;
-   - fallback mode keeps the system functional.
-
-8. Explain Docker:
-   - the project can run consistently across machines and cloud platforms.
-
-9. Close with:
-
-> LeakLogic AI does not only show business data. It shows where money is being lost, why it matters, and what action should be taken next.
-
----
-
 ## Contributing
 
 Contributions are welcome.
@@ -1355,7 +1315,12 @@ Until a `LICENSE` file is added, the repository remains under the default copyri
 
 ## Author
 
-**Rehan**
+**MUHAMMAD REHAN**
+**EHTISHAM TAHIR**
+**GUL-E-ZARA**
+**NEHA**
+**ZOKIRJANOV JASURBEK**
+
 
 GitHub: [builtbyrehan](https://github.com/builtbyrehan)
 
