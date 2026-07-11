@@ -1,238 +1,217 @@
-# LeakLogic AI
-
 <div align="center">
 
-## AI-Powered Profit Intelligence for Detecting Hidden Business Losses
+<img src="docs/assets/leaklogic-hero-dashboard.png" alt="LeakLogic AI dashboard" width="100%" />
 
-**LeakLogic AI** analyzes sales, refunds, supplier costs, and inventory data to uncover hidden profit leaks, quantify their financial impact, and generate an executive-ready narrative using Fireworks AI.
+# LeakLogic AI
 
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Next.js](https://img.shields.io/badge/Frontend-Next.js-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-[![Fireworks AI](https://img.shields.io/badge/AI-Fireworks_AI-FF6B35)](https://fireworks.ai/)
-[![Docker](https://img.shields.io/badge/Containerized-Docker-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
-[![Python](https://img.shields.io/badge/Analytics-Python_%2B_pandas-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![TypeScript](https://img.shields.io/badge/Frontend-TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+### Find every leak. Protect every profit.
 
-**Find the leaks. Protect the profit.**
+**An explainable AI business-auditing platform that detects hidden profit losses across sales, refunds, supplier costs, and inventory—then converts verified findings into an executive-ready report.**
+
+<p>
+  <a href="https://radiant-cobbler-afcae6.netlify.app">
+    <img src="https://img.shields.io/badge/LIVE_DEMO-Open_LeakLogic_AI-7C3AED?style=for-the-badge&logo=netlify&logoColor=white" alt="Live demo">
+  </a>
+  <a href="https://leaklogicai-backend.vercel.app/health">
+    <img src="https://img.shields.io/badge/API_STATUS-LIVE-10B981?style=for-the-badge&logo=vercel&logoColor=white" alt="API live">
+  </a>
+  <a href="https://github.com/builtbyrehan/leaklogic-ai">
+    <img src="https://img.shields.io/badge/SOURCE-GITHUB-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub repository">
+  </a>
+</p>
+
+<p>
+  <img src="https://img.shields.io/github/stars/builtbyrehan/leaklogic-ai?style=flat-square&logo=github" alt="GitHub stars">
+  <img src="https://img.shields.io/github/forks/builtbyrehan/leaklogic-ai?style=flat-square&logo=github" alt="GitHub forks">
+  <img src="https://img.shields.io/badge/Track-Unicorn_Track-F59E0B?style=flat-square" alt="Unicorn Track">
+  <img src="https://img.shields.io/badge/Status-Production-10B981?style=flat-square" alt="Production status">
+  <img src="https://img.shields.io/badge/Containerized-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+</p>
 
 </div>
 
 ---
 
+## Built for the AMD Developer Hackathon: ACT II
+
+<div align="center">
+  <a href="https://www.amd.com/en/developer/ai-dev-program.html">
+    <img src="https://img.shields.io/badge/AMD-AI_Developer_Program-ED1C24?style=for-the-badge&logo=amd&logoColor=white" alt="AMD">
+  </a>
+  &nbsp;
+  <a href="https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-ii">
+    <img src="https://lablab.ai/_next/static/media/lablab-logo-invertedcolor.190bb0b1.png" alt="lablab.ai" height="54">
+  </a>
+  &nbsp;
+  <a href="https://fireworks.ai">
+    <img src="https://img.shields.io/badge/Fireworks_AI-Inference_Provider-FF6B35?style=for-the-badge" alt="Fireworks AI">
+  </a>
+</div>
+
+<p align="center">
+Built for the <strong>AMD Developer Hackathon: ACT II</strong>, hosted on <strong>lablab.ai</strong>, with Fireworks AI used as the production narrative-inference provider.
+</p>
+
+> [!IMPORTANT]
+> **AMD usage is documented transparently.** The production application uses Fireworks AI access provided through the AMD hackathon ecosystem. The event documentation states that the Fireworks-accessed models are hosted on AMD hardware. The current release does **not** claim custom ROCm kernels, direct AMD Developer Cloud execution, or model training on an AMD GPU pod unless those components are later implemented and verified.
+
+---
+
+## Quick Links
+
+| Resource | URL |
+|---|---|
+| 🌐 Production frontend | [radiant-cobbler-afcae6.netlify.app](https://radiant-cobbler-afcae6.netlify.app) |
+| ⚙️ Production backend | [leaklogicai-backend.vercel.app](https://leaklogicai-backend.vercel.app) |
+| 💚 API health check | [Backend `/health`](https://leaklogicai-backend.vercel.app/health) |
+| 💻 Source code | [github.com/builtbyrehan/leaklogic-ai](https://github.com/builtbyrehan/leaklogic-ai) |
+| 🏆 Hackathon | [AMD Developer Hackathon: ACT II](https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-ii) |
+
+---
+
 ## Table of Contents
 
-- [Overview](#overview)
-- [Problem Statement](#problem-statement)
-- [Solution](#solution)
-- [Core Features](#core-features)
-- [Supported Profit-Leak Categories](#supported-profit-leak-categories)
-- [How the System Works](#how-the-system-works)
-- [Architecture](#architecture)
+- [Why LeakLogic AI](#why-leaklogic-ai)
+- [What the Platform Detects](#what-the-platform-detects)
+- [Core Capabilities](#core-capabilities)
+- [Production Architecture](#production-architecture)
+- [How the Analysis Works](#how-the-analysis-works)
+- [AMD Architecture and Hackathon Usage](#amd-architecture-and-hackathon-usage)
 - [Technology Stack](#technology-stack)
 - [Repository Structure](#repository-structure)
 - [Input Data Requirements](#input-data-requirements)
-- [Installation and Local Setup](#installation-and-local-setup)
+- [Local Development](#local-development)
 - [Environment Variables](#environment-variables)
-- [Running with Docker](#running-with-docker)
-- [API Documentation](#api-documentation)
-- [Frontend Workflow](#frontend-workflow)
-- [Example Analysis Output](#example-analysis-output)
-- [Detection Logic](#detection-logic)
-- [AI Narrative Layer](#ai-narrative-layer)
-- [Fallback and Reliability](#fallback-and-reliability)
-- [Testing](#testing)
+- [Docker](#docker)
+- [API Reference](#api-reference)
+- [Example Response](#example-response)
 - [Deployment](#deployment)
-- [Production CORS Configuration](#production-cors-configuration)
-- [Security and Data Privacy](#security-and-data-privacy)
+- [Deployment Fixes and Lessons Learned](#deployment-fixes-and-lessons-learned)
+- [Reliability and AI Safety](#reliability-and-ai-safety)
+- [Security and Privacy](#security-and-privacy)
+- [Testing](#testing)
 - [Troubleshooting](#troubleshooting)
 - [Known Limitations](#known-limitations)
-- [Hackathon Alignment](#hackathon-alignment)
 - [Roadmap](#roadmap)
-- [Demo Script](#demo-script)
-- [Contributing](#contributing)
+- [Team](#team)
+- [Acknowledgements](#acknowledgements)
 - [License](#license)
-- [Author](#author)
 
 ---
 
-## Overview
+## Why LeakLogic AI?
 
-Businesses often lose profit through small operational inefficiencies that are difficult to detect in ordinary reports. These losses may come from:
+Businesses do not always lose money through one major failure. Profit often disappears through smaller, recurring operational issues:
 
-- discounts that reduce revenue without generating meaningful sales lift;
-- abnormal refund patterns;
-- supplier cost increases that compress margins;
-- slow-moving or stagnant inventory;
-- disconnected business data stored across multiple CSV files.
+- promotions that reduce revenue without meaningful sales lift;
+- products with abnormal refund patterns;
+- supplier-cost increases that quietly compress margin;
+- slow or accumulating inventory that locks up working capital;
+- disconnected files that make cross-functional analysis difficult.
 
-LeakLogic AI brings these data sources together into one analysis pipeline.
+Traditional dashboards usually show **what happened**. LeakLogic AI focuses on:
 
-The platform:
+> **Where is profit leaking, how much is at risk, what evidence supports the finding, and what should be reviewed next?**
 
-1. accepts business CSV files;
-2. normalizes the uploaded data;
-3. runs deterministic profit-leak detectors;
-4. calculates estimated financial impact;
-5. ranks findings by importance;
-6. generates an executive narrative using Fireworks AI;
-7. displays the results in an interactive dashboard.
+### Value in 30 Seconds
 
-The analytical calculations are completed before any large language model is used. This keeps the financial findings explainable, traceable, and less dependent on generative AI.
-
----
-
-## Problem Statement
-
-Many small and medium-sized businesses have data but lack a practical way to turn that data into actionable financial insight.
-
-Common challenges include:
-
-- sales, refunds, suppliers, and inventory are stored separately;
-- spreadsheet review is slow and error-prone;
-- managers may notice losses only after they become significant;
-- generic dashboards show what happened but not where profit is leaking;
-- AI summaries may sound convincing while inventing unsupported explanations.
-
-LeakLogic AI addresses these problems by combining deterministic analytics with a grounded narrative layer.
+| Challenge | LeakLogic AI response |
+|---|---|
+| Disconnected business data | Combines sales, refunds, suppliers, and inventory |
+| Slow spreadsheet auditing | Runs four automated leak detectors |
+| Unclear financial priority | Ranks findings by estimated dollar impact |
+| Black-box AI output | Calculates findings deterministically before using an LLM |
+| Technical results are hard to present | Generates an executive-ready narrative |
+| AI provider temporarily fails | Returns a deterministic fallback summary |
 
 ---
 
-## Solution
+## What the Platform Detects
 
-LeakLogic AI acts as an AI-assisted business auditor.
-
-It uses rule-based Python and pandas detectors to identify measurable profit leaks, then sends only the structured findings to Fireworks AI for executive explanation.
-
-This hybrid design provides:
-
-- accurate calculations;
-- transparent evidence;
-- actionable recommendations;
-- readable management summaries;
-- graceful fallback when the AI provider is unavailable.
+| Detector | What it analyzes | Example signal |
+|---|---|---|
+| ↩️ **Refund Anomalies** | Refund volume, rate, and financial impact | A product or category experiences a material refund spike |
+| 🏷️ **Discount Leakage** | Discount cost, revenue per unit, and sales lift | A promotion lowers revenue without generating enough incremental sales |
+| 📦 **Supplier Pressure** | Supplier unit-cost changes and margin exposure | Costs rise while selling-price behavior does not compensate |
+| 🧊 **Inventory Drag** | Stock movement, accumulation, and tied-up value | Inventory grows or remains stagnant while sales movement is weak |
 
 ---
 
-## Core Features
+## Core Capabilities
 
-### CSV-Based Business Audit
+### Explainable Profit-Leak Findings
 
-Upload:
-
-- sales data;
-- refund or return data;
-- supplier or cost-of-goods data;
-- inventory data.
-
-Only the sales file is required. The remaining files are optional.
-
-### Deterministic Profit-Leak Detection
-
-The backend runs four analytical detectors:
-
-- refund anomalies;
-- discount leakage;
-- supplier margin compression;
-- inventory drag.
-
-### Financial Impact Estimation
-
-Each finding includes an estimated dollar impact so users can prioritize the largest issues first.
-
-### Explainable Evidence
-
-Every finding contains:
+Every finding can include:
 
 - category;
-- affected entity;
-- title;
+- affected product, supplier, or segment;
 - metric change;
-- dollar impact;
+- estimated dollar impact;
 - confidence score;
-- time window;
-- evidence;
+- analysis time window;
+- supporting evidence;
 - likely cause;
-- suggested action.
+- recommended action.
 
-### Fireworks AI Executive Narrative
+### Grounded Executive Narrative
 
-The platform uses Fireworks AI to transform structured findings into a professional management summary.
+Fireworks AI receives the **structured detector output**, not raw permission to invent a business story. The narrative prompt explicitly prevents unsupported:
 
-### Deterministic Fallback
+- figures;
+- causes;
+- dates;
+- thresholds;
+- recovery estimates;
+- findings;
+- recommendations.
 
-When the LLM is unavailable, the backend generates a basic summary without blocking the analysis.
+### Resilient Fallback
 
-### Interactive Dashboard
+The application still completes an audit when the LLM is unavailable. Deterministic findings and a fallback summary are returned instead of failing the entire request.
 
-The frontend presents:
+### Interactive Web Experience
 
-- total estimated leak;
-- ranked findings;
-- source statistics;
-- revenue trend chart;
-- executive summary;
-- narrative source badge;
-- system status;
-- sample-data workflow.
+The frontend includes:
 
-### Docker Support
+- file upload cards;
+- sample-data analysis;
+- total leak summary;
+- ranked forensic findings;
+- revenue-over-time charts;
+- source-record statistics;
+- AI narrative source badge;
+- responsive report layout.
 
-The frontend and backend can be built and run together using Docker Compose.
+### Portable Delivery
 
----
+The repository contains:
 
-## Supported Profit-Leak Categories
-
-| Category | Description | Example |
-|---|---|---|
-| Refund Anomaly | Detects unusual refund behavior | A product shows a sharp increase in refund rate |
-| Discount Leakage | Finds promotions that reduce revenue per unit without useful lift | Heavy discounting produces no measurable incremental revenue |
-| Supplier Pressure | Identifies supplier cost increases that compress margins | Unit cost rises while sale price remains unchanged |
-| Inventory Drag | Detects stock tying up working capital | Inventory grows while product movement remains low |
-
----
-
-## How the System Works
-
-### Step 1: Upload
-
-The user uploads one or more CSV files through the frontend.
-
-### Step 2: Validation
-
-The backend checks that the required sales file exists and that uploaded files are readable.
-
-### Step 3: Schema Mapping
-
-Common column names are normalized into the internal schema.
-
-### Step 4: Detection
-
-Each available data source is passed to the relevant detector.
-
-### Step 5: Prioritization
-
-Findings are sorted by estimated dollar impact.
-
-### Step 6: Narrative Generation
-
-The structured findings are sent to Fireworks AI with strict grounding instructions.
-
-### Step 7: Dashboard Rendering
-
-The frontend displays the results, evidence, actions, and charts.
+- backend Dockerfile;
+- frontend Dockerfile;
+- Docker Compose configuration;
+- `.dockerignore` files;
+- dynamic backend port support;
+- deployment-specific environment configuration.
 
 ---
 
-## Architecture
+## Product Preview
+
+<div align="center">
+  <img src="docs/assets/leaklogic-audit-console.png" alt="LeakLogic AI audit console" width="78%">
+</div>
+
+---
+
+## Production Architecture
 
 ```mermaid
-flowchart TD
-    U[User] --> F[Next.js Frontend]
+flowchart LR
+    U[Business User] --> N[Netlify Frontend<br/>Next.js Static Export]
 
-    F -->|Multipart CSV Upload| A[FastAPI Backend]
+    N -->|HTTPS multipart request| V[Vercel Backend<br/>FastAPI ASGI Function]
 
-    A --> L[CSV Loader]
+    V --> L[CSV Loader]
     L --> M[Schema Mapper]
 
     M --> R[Refund Detector]
@@ -240,89 +219,169 @@ flowchart TD
     M --> S[Supplier Detector]
     M --> I[Inventory Detector]
 
-    R --> P[Ranked Findings]
-    D --> P
-    S --> P
-    I --> P
+    R --> F[Ranked Findings]
+    D --> F
+    S --> F
+    I --> F
 
-    P --> N[Fireworks AI Narrative]
-    P --> B[Deterministic Fallback]
+    F --> FW[Fireworks AI<br/>Executive Narrative]
+    F --> FB[Deterministic Fallback]
 
-    N --> O[Analysis Response]
-    B --> O
+    FW --> API[AnalysisResponse]
+    FB --> API
 
-    O --> F
+    API --> N
 ```
 
-### Backend Responsibility
+### Deployed Flow
 
-The backend handles:
+```text
+Netlify Next.js Frontend
+        ↓ HTTPS
+Vercel FastAPI Backend
+        ↓
+Python + pandas Deterministic Detectors
+        ↓
+Fireworks AI Narrative Generation
+        ↓
+Executive Audit Dashboard
+```
 
-- file upload;
-- CSV parsing;
-- schema normalization;
-- detector execution;
-- chart aggregation;
-- Fireworks AI integration;
-- fallback summary generation;
-- API response validation.
+### Production Services
 
-### Frontend Responsibility
+| Layer | Platform | Responsibility |
+|---|---|---|
+| Frontend | Netlify | Hosts the exported Next.js interface |
+| Backend | Vercel | Runs the FastAPI ASGI application |
+| AI inference | Fireworks AI | Generates the grounded executive narrative |
+| Source control | GitHub | Stores code and drives deployments |
+| Local parity | Docker Compose | Runs the frontend and backend consistently |
 
-The frontend handles:
+---
 
-- file selection;
-- upload state;
-- sample-data execution;
-- audit submission;
-- result rendering;
-- chart visualization;
-- executive narrative formatting;
-- error display.
+## How the Analysis Works
+
+1. **Upload**  
+   The user uploads a required sales CSV and optional refund, supplier, and inventory files.
+
+2. **Validate**  
+   FastAPI validates the multipart request and ensures a usable sales file is present.
+
+3. **Normalize**  
+   The schema mapper converts supported column-name variations into a consistent internal format.
+
+4. **Detect**  
+   Each available dataset is sent to its relevant deterministic detector.
+
+5. **Estimate impact**  
+   The pipeline calculates the estimated financial impact of each finding.
+
+6. **Rank findings**  
+   Results are sorted by financial importance.
+
+7. **Generate narrative**  
+   Fireworks AI turns the structured results into an executive summary.
+
+8. **Fallback safely**  
+   If AI generation fails, a deterministic summary is returned.
+
+9. **Visualize**  
+   The frontend renders findings, evidence, actions, source counts, and charts.
+
+---
+
+## AMD Architecture and Hackathon Usage
+
+### Verified Use in the Current Build
+
+| AMD-related component | How it is used |
+|---|---|
+| AMD Developer Hackathon: ACT II | LeakLogic AI was developed for the hackathon's Unicorn Track |
+| AMD AI Developer Program | Provided access to hackathon learning resources and AI credits |
+| Fireworks AI credits | Used for the production executive-narrative layer |
+| AMD-hosted inference path | The event documentation describes Fireworks-accessed models as hosted on AMD hardware |
+| Containerization | The project is Dockerized in alignment with the hackathon submission requirement |
+
+### What Runs Where
+
+```text
+Deterministic analytics:
+Python + pandas inside the FastAPI backend
+
+Executive narrative:
+Fireworks AI API using the configured GPT-OSS model
+
+Production frontend:
+Netlify
+
+Production backend:
+Vercel
+
+Local container validation:
+Docker Desktop + Docker Compose
+```
+
+### Honest Scope Disclosure
+
+The current production release does **not** claim:
+
+- custom ROCm kernel development;
+- direct training or fine-tuning on AMD Developer Cloud;
+- a self-hosted model on an AMD GPU pod;
+- GPU acceleration of pandas detectors;
+- that Netlify or Vercel themselves run this application on AMD hardware.
+
+These are valid future extensions and are tracked in the roadmap.
+
+> The “AMD Powered” product messaging refers to the hackathon ecosystem and AMD-backed AI inference access—not to every deployed service in the stack.
 
 ---
 
 ## Technology Stack
 
-### Backend
-
-- Python 3.12
-- FastAPI
-- pandas
-- NumPy
-- Pydantic
-- pydantic-settings
-- OpenAI-compatible Python SDK
-- Uvicorn
-- python-multipart
+<div align="center">
 
 ### Frontend
 
-- Next.js 16
-- React 19
-- TypeScript
-- Tailwind CSS
-- Recharts
-- React Markdown
-- remark-gfm
-- Lucide React
-- Spline
+<img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind" alt="Next.js, React, TypeScript and Tailwind CSS" />
 
-### AI
+### Backend and Analytics
 
-- Fireworks AI
-- Model: `accounts/fireworks/models/gpt-oss-120b`
-- OpenAI-compatible chat completions
-- Optional OpenRouter provider support
-- Deterministic fallback summary
+<img src="https://skillicons.dev/icons?i=python,fastapi" alt="Python and FastAPI" />
 
-### DevOps
+<p>
+  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas">
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+  <img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white" alt="Pydantic">
+</p>
 
-- Docker
-- Docker Compose
-- GitHub
-- Environment-based configuration
-- Dynamic deployment port support
+### AI, DevOps and Deployment
+
+<img src="https://skillicons.dev/icons?i=docker,github,vercel,netlify" alt="Docker, GitHub, Vercel and Netlify" />
+
+<p>
+  <img src="https://img.shields.io/badge/Fireworks_AI-GPT--OSS--120B-FF6B35?style=for-the-badge" alt="Fireworks AI">
+  <img src="https://img.shields.io/badge/OpenAI--Compatible-SDK-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI-compatible SDK">
+</p>
+
+</div>
+
+### Detailed Stack
+
+| Area | Technologies |
+|---|---|
+| Frontend | Next.js 16, React 19, TypeScript, Tailwind CSS |
+| Visualization | Recharts |
+| Markdown | React Markdown, remark-gfm |
+| UI | Lucide React, Spline |
+| Backend | Python 3.12, FastAPI, Uvicorn |
+| Data | pandas, NumPy |
+| Validation | Pydantic, pydantic-settings |
+| AI | Fireworks AI, OpenAI-compatible client |
+| Containerization | Docker, Docker Compose |
+| Frontend deployment | Netlify |
+| Backend deployment | Vercel |
+| Version control | GitHub |
 
 ---
 
@@ -349,6 +408,7 @@ profit-leak-hunter/
 │   │   │   ├── narrative.py
 │   │   │   ├── pipeline.py
 │   │   │   └── schema_mapper.py
+│   │   ├── app.py
 │   │   ├── main.py
 │   │   └── schemas.py
 │   ├── tests/
@@ -371,8 +431,13 @@ profit-leak-hunter/
 │   └── package-lock.json
 │
 ├── docs/
+│   └── assets/
+│       ├── leaklogic-dashboard.png
+│       ├── leaklogic-hero-dashboard.png
+│       └── leaklogic-audit-console.png
 ├── scripts/
 ├── compose.yml
+├── netlify.toml
 ├── .env.example
 ├── .gitignore
 └── README.md
@@ -382,9 +447,10 @@ profit-leak-hunter/
 
 ## Input Data Requirements
 
-### Sales CSV — Required
+Only the **sales CSV** is mandatory.
 
-Recommended fields:
+<details>
+<summary><strong>Sales CSV — required</strong></summary>
 
 | Column | Type | Description |
 |---|---|---|
@@ -395,15 +461,16 @@ Recommended fields:
 | `discount` | Numeric | Discount amount or rate |
 | `supplier` | Text | Supplier, when available |
 
-Example:
-
 ```csv
 date,product,quantity,unit_price,discount,supplier
 2019-01-01,Sports and travel,4,95.00,5.00,Global Sports Ltd
 2019-01-02,Electronic accessories,2,40.00,0.00,TechWholesale Inc
 ```
 
-### Refunds CSV — Optional
+</details>
+
+<details>
+<summary><strong>Refunds CSV — optional</strong></summary>
 
 | Column | Type | Description |
 |---|---|---|
@@ -412,14 +479,15 @@ date,product,quantity,unit_price,discount,supplier
 | `quantity` | Numeric | Refunded units |
 | `amount` | Numeric | Refund amount |
 
-Example:
-
 ```csv
 date,product,quantity,amount
 2019-02-05,Sports and travel,2,180.00
 ```
 
-### Suppliers CSV — Optional
+</details>
+
+<details>
+<summary><strong>Suppliers CSV — optional</strong></summary>
 
 | Column | Type | Description |
 |---|---|---|
@@ -428,15 +496,16 @@ date,product,quantity,amount
 | `unit_cost` | Numeric | Supplier cost per unit |
 | `date` | Date | Cost record date |
 
-Example:
-
 ```csv
 supplier,product,unit_cost,date
 TechWholesale Inc,Electronic accessories,34.00,2019-01-01
 TechWholesale Inc,Electronic accessories,40.00,2019-03-01
 ```
 
-### Inventory CSV — Optional
+</details>
+
+<details>
+<summary><strong>Inventory CSV — optional</strong></summary>
 
 | Column | Type | Description |
 |---|---|---|
@@ -445,72 +514,52 @@ TechWholesale Inc,Electronic accessories,40.00,2019-03-01
 | `unit_cost` | Numeric | Cost per unit |
 | `snapshot_date` | Date | Inventory snapshot date |
 
-Example:
-
 ```csv
 product,stock_level,unit_cost,snapshot_date
 Home and lifestyle,650,44.00,2019-03-31
 ```
 
+</details>
+
 ---
 
-## Installation and Local Setup
+## Local Development
 
 ### Prerequisites
 
-Install:
-
 - Git
-- Python 3.12 or later
-- Node.js 22 or later
+- Python 3.12+
+- Node.js 22+
 - npm
 - Docker Desktop, for containerized execution
 
-### Clone the Repository
+### Clone
 
 ```bash
 git clone https://github.com/builtbyrehan/leaklogic-ai.git
 cd leaklogic-ai
 ```
 
----
-
-## Backend Setup
-
-### Windows PowerShell
+### Backend
 
 ```powershell
 cd backend
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
-```
-
-Create a private environment file:
-
-```powershell
 Copy-Item .env.example .env
-```
-
-Start the backend:
-
-```powershell
 python -m uvicorn app.main:app --reload
 ```
 
-Backend URLs:
+Available locally:
 
 ```text
 API:      http://127.0.0.1:8000
 Health:   http://127.0.0.1:8000/health
-API Docs: http://127.0.0.1:8000/docs
+Swagger:  http://127.0.0.1:8000/docs
 ```
 
----
-
-## Frontend Setup
-
-Open another terminal:
+### Frontend
 
 ```powershell
 cd frontend
@@ -524,31 +573,11 @@ Open:
 http://localhost:3000
 ```
 
-The frontend uses the following backend URL by default:
-
-```text
-http://127.0.0.1:8000
-```
-
-To override it, create:
-
-```text
-frontend/.env.local
-```
-
-with:
-
-```env
-NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
-```
-
 ---
 
 ## Environment Variables
 
-### Backend
-
-Create `backend/.env`.
+### Backend — `backend/.env`
 
 ```env
 APP_ENV=development
@@ -565,32 +594,39 @@ OPENROUTER_API_BASE_URL=https://openrouter.ai/api/v1
 OPENROUTER_MODEL=nvidia/nemotron-3-nano-30b-a3b:free
 ```
 
-### Frontend
-
-Create `frontend/.env.local`.
+### Frontend — `frontend/.env.local`
 
 ```env
 NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
 ```
 
-### Security Rules
+### Production Values
 
-Never commit:
+Vercel backend:
 
-- `backend/.env`
-- `frontend/.env.local`
-- API keys
-- deployment secrets
+```env
+APP_ENV=production
+LLM_PROVIDER=fireworks
+ENABLE_LLM_NARRATIVE=true
+FIREWORKS_API_KEY=stored_as_a_private_platform_secret
+FIREWORKS_API_BASE_URL=https://api.fireworks.ai/inference/v1
+FIREWORKS_MODEL=accounts/fireworks/models/gpt-oss-120b
+```
 
-The repository `.gitignore` already excludes these files.
+Netlify frontend:
+
+```env
+NEXT_PUBLIC_API_URL=https://leaklogicai-backend.vercel.app
+```
+
+> [!CAUTION]
+> Never commit `.env`, `.env.local`, API keys, or production secrets.
 
 ---
 
-## Running with Docker
+## Docker
 
-### Start the Full Application
-
-From the project root:
+### Run the Full Application
 
 ```bash
 docker compose up --build
@@ -601,57 +637,39 @@ Open:
 ```text
 Frontend: http://localhost:3000
 Backend:  http://localhost:8000
-Docs:     http://localhost:8000/docs
+Swagger:  http://localhost:8000/docs
 ```
 
-### Stop
+Stop:
 
 ```bash
 docker compose down
 ```
 
-### Build the Backend Image Only
+### Build Separately
 
 ```bash
 docker build -t leaklogic-backend ./backend
-```
-
-### Build the Frontend Image Only
-
-```bash
 docker build -t leaklogic-frontend ./frontend
 ```
 
-### Run the Backend Image
+### Cloud-Compatible Backend Command
 
-```bash
-docker run --rm \
-  --name leaklogic-backend \
-  --env-file backend/.env \
-  -p 8000:8000 \
-  leaklogic-backend
+```dockerfile
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
 ```
 
-### Run the Frontend Image
-
-```bash
-docker run --rm \
-  --name leaklogic-frontend \
-  -p 3000:3000 \
-  leaklogic-frontend
-```
+This allows the container to use a cloud-provided port while defaulting to `8000` locally.
 
 ---
 
-## API Documentation
+## API Reference
 
 ### Health Check
 
 ```http
 GET /health
 ```
-
-Response:
 
 ```json
 {
@@ -661,22 +679,22 @@ Response:
 }
 ```
 
-### Get Sample Data
+### Sample Data
 
 ```http
 GET /sample-data/{filename}
 ```
 
-Examples:
+Supported demo files:
 
 ```text
-/sample-data/sales.csv
-/sample-data/refunds.csv
-/sample-data/suppliers.csv
-/sample-data/inventory.csv
+sales.csv
+refunds.csv
+suppliers.csv
+inventory.csv
 ```
 
-### Analyze Business Data
+### Analyze
 
 ```http
 POST /analyze
@@ -688,13 +706,11 @@ Content type:
 multipart/form-data
 ```
 
-Form fields:
-
 | Field | Required | Description |
 |---|---:|---|
 | `sales` | Yes | Sales CSV |
 | `refunds` | No | Refund CSV |
-| `suppliers` | No | Supplier or cost CSV |
+| `suppliers` | No | Supplier-cost CSV |
 | `inventory` | No | Inventory CSV |
 
 ### cURL Example
@@ -709,27 +725,10 @@ curl -X POST "http://localhost:8000/analyze" \
 
 ---
 
-## Frontend Workflow
+## Example Response
 
-1. Open the homepage.
-2. Scroll to the Data Input Console.
-3. Upload a sales CSV.
-4. Optionally upload refund, supplier, and inventory files.
-5. Click **Start Audit**.
-6. Wait for the analysis to complete.
-7. Review:
-   - total estimated leak;
-   - ranked findings;
-   - supporting evidence;
-   - suggested actions;
-   - AI executive narrative;
-   - charts and source statistics.
-
-The **Try Sample Data** button automatically loads bundled sample files and runs a demonstration analysis.
-
----
-
-## Example Analysis Output
+<details>
+<summary><strong>View sample API response</strong></summary>
 
 ```json
 {
@@ -774,93 +773,162 @@ The **Try Sample Data** button automatically loads bundled sample files and runs
 }
 ```
 
----
-
-## Detection Logic
-
-### Refund Anomaly Detector
-
-The refund detector compares refund behavior by product or category.
-
-It may identify:
-
-- increased refund rate;
-- unusual refund volume;
-- financially material changes;
-- products requiring operational review.
-
-The detector returns supporting evidence and an estimated impact.
-
-### Discount Leakage Detector
-
-The discount detector compares revenue per unit between discounted and regular transactions.
-
-It looks for:
-
-- lower revenue per unit during discounts;
-- high discount cost;
-- insufficient incremental revenue;
-- weak sales lift.
-
-A campaign may be flagged when discounting reduces revenue without generating enough additional business to justify the reduction.
-
-### Supplier Margin Compression Detector
-
-The supplier detector analyzes changes in unit cost over time.
-
-It may flag:
-
-- supplier cost increases;
-- selling prices that did not adjust;
-- potential margin compression;
-- supplier-product combinations requiring renegotiation.
-
-### Inventory Drag Detector
-
-The inventory detector evaluates stock movement and value.
-
-It may identify:
-
-- slow-moving inventory;
-- stagnant stock;
-- inventory accumulation;
-- cash tied up in unsold products.
+</details>
 
 ---
 
-## AI Narrative Layer
+## Deployment
 
-### Provider
+### Current Production Deployment
 
-The current primary provider is Fireworks AI.
+| Component | Status | Platform | Address |
+|---|---|---|---|
+| Frontend | ✅ Live | Netlify | [Open frontend](https://radiant-cobbler-afcae6.netlify.app) |
+| Backend | ✅ Live | Vercel | [Open backend](https://leaklogicai-backend.vercel.app) |
+| Health endpoint | ✅ Verified | Vercel | [Check health](https://leaklogicai-backend.vercel.app/health) |
+| AI narrative | ✅ Connected | Fireworks AI | Configured through private environment variables |
+| Source repository | ✅ Active | GitHub | [Open repository](https://github.com/builtbyrehan/leaklogic-ai) |
 
-```text
-Provider: Fireworks AI
-Model: accounts/fireworks/models/gpt-oss-120b
+### Frontend Deployment — Netlify
+
+The frontend is exported as a static Next.js site.
+
+`frontend/next.config.ts`:
+
+```typescript
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  output: "export",
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
+};
+
+export default nextConfig;
 ```
 
-### Purpose
+Root `netlify.toml`:
 
-The AI layer does not calculate findings.
+```toml
+[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = "out"
 
-It only converts detector output into a readable executive summary.
+[build.environment]
+  NODE_VERSION = "22"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+```
 
-### Grounding Rules
+Netlify environment variable:
 
-The prompt instructs the model not to invent:
+```env
+NEXT_PUBLIC_API_URL=https://leaklogicai-backend.vercel.app
+```
 
-- figures;
-- findings;
-- evidence;
-- causes;
-- time periods;
-- thresholds;
-- recovery amounts;
-- recommendations not present in the findings.
+### Backend Deployment — Vercel
 
-### Narrative Source
+Vercel project configuration:
 
-The API returns one of:
+```text
+Framework Preset: FastAPI
+Root Directory: backend
+```
+
+Supported FastAPI entrypoint:
+
+```python
+from app.main import app
+```
+
+The deployed backend health response is:
+
+```json
+{"status":"ok","service":"profit-leak-hunter-api","version":"0.1.0"}
+```
+
+### Production CORS
+
+The backend allowlist includes the Netlify production domain:
+
+```python
+allow_origins=[
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:3001",
+    "http://127.0.0.1:3001",
+    "https://radiant-cobbler-afcae6.netlify.app",
+]
+```
+
+---
+
+## Deployment Fixes and Lessons Learned
+
+The final deployment required several real-world fixes.
+
+| Problem | Cause | Resolution |
+|---|---|---|
+| Docker API connection failed | Docker Desktop Linux engine was stopped | Started Docker Desktop and verified the server with `docker info` |
+| Backend Dockerfile build issue | PowerShell backtick was used inside a Dockerfile | Replaced it with Docker-compatible `\` line continuation |
+| Frontend container could not bind port 3000 | Local `npm run dev` already occupied the port | Stopped the local process before running Docker Compose |
+| Fireworks returned HTTP 412 | Provider account was temporarily suspended or restricted | Resolved the account state and retested the API connection |
+| Fireworks test returned `None` | Reasoning model consumed a very small token budget | Increased `max_tokens` and used low reasoning effort |
+| Vercel returned `404: NOT_FOUND` | Wrong framework/root configuration produced no Python function | Selected FastAPI, set root to `backend`, added a supported entrypoint, and redeployed without cache |
+| Netlify showed “Page not found” | The repository source was published instead of a built website | Enabled Next.js static export and published `frontend/out` |
+| Netlify frontend could not target production API | Backend URL was not embedded during the build | Added `NEXT_PUBLIC_API_URL` with Build scope and rebuilt |
+| Browser blocked frontend API calls | Production frontend origin was missing from CORS | Added the Netlify domain to the FastAPI CORS allowlist |
+| Old deployment behavior persisted | Cached framework/build settings | Triggered a clear-cache deployment |
+
+### Netlify Build Verification
+
+A correct static build should satisfy:
+
+```powershell
+cd frontend
+npm run build
+Test-Path out\index.html
+```
+
+Expected:
+
+```text
+True
+```
+
+A correct Netlify publish directory contains:
+
+```text
+index.html
+404.html
+_next/
+```
+
+It should not publish the repository's `backend/` and `frontend/` source directories directly.
+
+---
+
+## Reliability and AI Safety
+
+### Separation of Concerns
+
+```text
+Financial calculations → deterministic Python/pandas
+Narrative generation    → Fireworks AI
+Fallback summary        → deterministic Python
+```
+
+### Why This Matters
+
+- The LLM does not calculate the financial findings.
+- The narrative can be regenerated without changing the detector results.
+- Temporary AI downtime does not disable the audit.
+- Every finding contains traceable evidence.
+- The response identifies whether the narrative came from Fireworks, OpenRouter, or fallback mode.
+
+### Narrative Sources
 
 ```text
 fireworks
@@ -868,29 +936,42 @@ openrouter
 fallback
 ```
 
-The frontend displays the source in the result badge.
-
 ---
 
-## Fallback and Reliability
+## Security and Privacy
 
-LeakLogic AI is designed to continue working when the LLM is unavailable.
+### Implemented Practices
 
-The application:
+- Secrets are stored in `.env` files locally.
+- Production secrets are stored in Vercel or Netlify environment settings.
+- `.env` files are excluded from Git.
+- The Fireworks key is never exposed to the frontend.
+- CORS uses an origin allowlist.
+- Uploaded files are processed by the backend analysis pipeline.
+- No production database is currently required.
 
-1. runs all deterministic detectors;
-2. calculates findings and impact;
-3. attempts AI narrative generation;
-4. retries temporary failures;
-5. falls back to a deterministic summary if needed.
+### Production Hardening Recommended
 
-This means the core business analysis does not depend on Fireworks AI availability.
+- authentication and authorization;
+- file-size limits;
+- strict MIME and extension validation;
+- CSV formula-injection protection;
+- request rate limiting;
+- audit logging;
+- data-retention controls;
+- encrypted storage if persistence is added;
+- secret rotation;
+- dependency scanning;
+- private deployments for confidential financial data.
+
+> [!WARNING]
+> Do not upload real confidential business records to an untrusted public demo environment.
 
 ---
 
 ## Testing
 
-### Run Backend Tests
+### Backend Tests
 
 ```powershell
 cd backend
@@ -898,247 +979,110 @@ cd backend
 pytest
 ```
 
-### Recommended Test Scenarios
+### Validated Scenarios
 
 - sales only;
-- sales and refunds;
-- sales and suppliers;
-- sales and inventory;
-- all four data sources;
-- empty sales file;
-- malformed CSV;
+- sales + refunds;
+- sales + suppliers;
+- sales + inventory;
+- all four datasets;
 - missing optional files;
-- missing Fireworks key;
-- Fireworks API failure;
-- fallback summary;
-- Docker end-to-end execution.
+- empty sales input;
+- Fireworks connection;
+- deterministic fallback;
+- Docker backend;
+- Docker Compose end-to-end flow;
+- deployed `/health` endpoint;
+- Netlify-to-Vercel production connection.
 
-### Manual API Test
-
-Open:
+### Manual Production Test
 
 ```text
-http://127.0.0.1:8000/docs
+Open the Netlify frontend
+→ Click Try Sample Data
+→ Start Audit
+→ Confirm findings render
+→ Confirm FIREWORKS AI NARRATIVE appears
 ```
-
-Use the interactive Swagger interface to call `/analyze`.
-
-### Health Test
-
-```powershell
-Invoke-RestMethod http://127.0.0.1:8000/health
-```
-
----
-
-## Deployment
-
-The project is container-ready.
-
-### Backend Deployment Requirements
-
-The backend platform must support:
-
-- Docker;
-- environment variables;
-- outbound HTTPS requests;
-- a public port;
-- at least enough memory for Python, pandas, FastAPI, and request processing.
-
-The backend Dockerfile supports a dynamic deployment port:
-
-```dockerfile
-CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
-```
-
-Set:
-
-```env
-APP_ENV=production
-LLM_PROVIDER=fireworks
-ENABLE_LLM_NARRATIVE=true
-FIREWORKS_API_KEY=your_private_key
-FIREWORKS_API_BASE_URL=https://api.fireworks.ai/inference/v1
-FIREWORKS_MODEL=accounts/fireworks/models/gpt-oss-120b
-```
-
-### Frontend Deployment Requirements
-
-Deploy the Next.js frontend and configure:
-
-```env
-NEXT_PUBLIC_API_URL=https://your-public-backend-domain
-```
-
-Rebuild the frontend after changing `NEXT_PUBLIC_API_URL`, because public Next.js environment variables are embedded during build.
-
-### Possible Hosting Options
-
-Backend:
-
-- Docker-compatible cloud host;
-- Hugging Face Docker Space;
-- Render;
-- Railway;
-- Fly.io;
-- VPS.
-
-Frontend:
-
-- Vercel;
-- Netlify;
-- Docker-compatible host;
-- VPS.
-
-Hosting plans and free-tier availability may change, so verify current limits before deployment.
-
----
-
-## Production CORS Configuration
-
-The backend currently allows local frontend origins.
-
-For production, update `backend/app/main.py`.
-
-Example:
-
-```python
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "https://your-frontend-domain.example",
-    ],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-```
-
-Avoid using unrestricted origins for a production system that handles private business data.
-
----
-
-## Security and Data Privacy
-
-LeakLogic AI may process commercially sensitive information.
-
-### Current Safeguards
-
-- API keys are loaded from environment variables.
-- `.env` files are excluded from Git.
-- deterministic findings are generated before LLM usage;
-- no database is required in the current version;
-- uploaded data is processed in memory by the API pipeline.
-
-### Production Recommendations
-
-Before using real confidential data, add:
-
-- authentication;
-- authorization;
-- TLS-only access;
-- rate limiting;
-- file-size limits;
-- MIME-type validation;
-- CSV sanitization;
-- malware scanning;
-- audit logs;
-- retention rules;
-- private storage;
-- encrypted backups;
-- secret rotation;
-- security monitoring.
-
-### API Key Safety
-
-Never:
-
-- commit keys;
-- paste keys into README files;
-- expose keys in screenshots;
-- include keys in frontend code.
-
-Revoke and replace any exposed key immediately.
 
 ---
 
 ## Troubleshooting
 
-### Docker Cannot Connect to the Engine
-
-Error:
-
-```text
-failed to connect to the docker API
-```
-
-Start Docker Desktop:
+<details>
+<summary><strong>Docker daemon is unavailable</strong></summary>
 
 ```powershell
 docker desktop start
 docker info
 ```
 
-### Port 3000 Is Already in Use
+</details>
 
-Stop the existing frontend process:
+<details>
+<summary><strong>Port 3000 is already in use</strong></summary>
 
-```text
-Ctrl + C
-```
-
-Then restart Docker Compose:
+Stop the local Next.js process with `Ctrl + C`, then:
 
 ```bash
 docker compose down
 docker compose up --build
 ```
 
-### Port 8000 Is Already in Use
+</details>
 
-Stop the local backend or change the mapped port.
+<details>
+<summary><strong>Frontend cannot reach backend</strong></summary>
 
-Example:
-
-```yaml
-ports:
-  - "8001:8000"
-```
-
-### Frontend Cannot Reach Backend
-
-Check:
+Local:
 
 ```env
 NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
 ```
 
-Then restart or rebuild the frontend.
+Production:
 
-### Fireworks Returns an Empty Response
-
-Use a larger output token limit and low reasoning effort for reasoning models.
-
-### Fireworks Account Error
-
-Check:
-
-- account status;
-- monthly spending limit;
-- billing verification;
-- available credits;
-- API key validity.
-
-### Narrative Falls Back
-
-Check backend logs for:
-
-```text
-narrative attempt failed
+```env
+NEXT_PUBLIC_API_URL=https://leaklogicai-backend.vercel.app
 ```
 
-Then verify:
+Rebuild after changing a `NEXT_PUBLIC_*` value.
+
+</details>
+
+<details>
+<summary><strong>Netlify returns 404</strong></summary>
+
+Confirm:
+
+```text
+Base directory: frontend
+Build command: npm run build
+Publish directory: out
+```
+
+Then run a clear-cache deployment.
+
+</details>
+
+<details>
+<summary><strong>Vercel returns 404</strong></summary>
+
+Confirm:
+
+```text
+Framework Preset: FastAPI
+Root Directory: backend
+```
+
+Verify the supported entrypoint exists and redeploy without cache.
+
+</details>
+
+<details>
+<summary><strong>Narrative falls back</strong></summary>
+
+Verify:
 
 ```env
 LLM_PROVIDER=fireworks
@@ -1146,76 +1090,24 @@ ENABLE_LLM_NARRATIVE=true
 FIREWORKS_API_KEY=...
 ```
 
-### Docker Compose File Not Found
+Then inspect backend logs for the failed narrative attempt.
 
-Run from the repository root:
-
-```powershell
-Get-ChildItem compose.yml
-docker compose -f compose.yml up --build
-```
-
-### Old Frontend Still Appears
-
-Delete the local Next.js build cache:
-
-```powershell
-Remove-Item -Recurse -Force frontend\.next -ErrorAction SilentlyContinue
-```
-
-Then rebuild.
+</details>
 
 ---
 
 ## Known Limitations
 
-- CSV is currently the only supported upload format.
-- The schema mapper supports common columns but not every possible enterprise schema.
-- Detector thresholds are rule-based.
-- Dollar impact is an estimate, not an audited accounting figure.
-- Recommendations should be reviewed by a business or finance professional.
-- No user authentication is implemented yet.
-- No persistent report history is stored.
-- No database is included in the current version.
-- Free cloud services may sleep after inactivity.
-- Direct AMD Developer Cloud or ROCm execution is not yet implemented.
-- The current system is designed for analysis and decision support, not automated financial control.
-
----
-
-## Hackathon Alignment
-
-LeakLogic AI was created for the **AMD Developer Hackathon ACT II** under an open innovation track.
-
-The project demonstrates:
-
-- a real-world business problem;
-- explainable AI-assisted analytics;
-- deterministic financial calculations;
-- Fireworks AI integration;
-- frontend and backend architecture;
-- Docker portability;
-- graceful fallback;
-- actionable executive reporting.
-
-### Current AMD Usage Status
-
-The current implementation uses Python, pandas, FastAPI, Next.js, Docker, and Fireworks AI.
-
-Direct AMD Developer Cloud and ROCm execution should not be claimed unless it has been implemented and tested.
-
-### Future AMD Integration
-
-Possible extensions include:
-
-- running large analytical workloads on AMD Developer Cloud;
-- benchmarking CPU and GPU performance;
-- using ROCm-compatible libraries;
-- hosting an open model on AMD infrastructure;
-- recording verifiable AMD workload metrics;
-- comparing local and AMD-accelerated execution.
-
-This documentation intentionally separates current functionality from planned AMD integration.
+- CSV is the only supported upload format.
+- The schema mapper does not support every enterprise naming convention.
+- Detector thresholds are rule-based and may need industry calibration.
+- Financial impact is an analytical estimate, not an audited accounting result.
+- Recommendations require professional review.
+- Authentication and user accounts are not yet implemented.
+- Analysis history is not persisted.
+- The current public deployment is designed for demonstration.
+- Direct AMD Developer Cloud and custom ROCm execution are not part of the current production release.
+- The system supports decision-making; it does not automate financial controls.
 
 ---
 
@@ -1223,85 +1115,75 @@ This documentation intentionally separates current functionality from planned AM
 
 ### Completed
 
-- [x] CSV upload pipeline
-- [x] schema normalization
-- [x] refund anomaly detector
-- [x] discount leakage detector
-- [x] supplier pressure detector
-- [x] inventory drag detector
-- [x] financial impact ranking
-- [x] Fireworks AI integration
-- [x] OpenRouter provider support
+- [x] CSV ingestion
+- [x] schema mapping
+- [x] four deterministic leak detectors
+- [x] financial-impact ranking
+- [x] grounded Fireworks AI narrative
+- [x] OpenRouter-compatible provider option
 - [x] deterministic fallback
 - [x] FastAPI backend
-- [x] Next.js frontend
-- [x] Markdown narrative rendering
-- [x] charts and dashboard
-- [x] Docker backend
-- [x] Docker frontend
+- [x] Next.js dashboard
+- [x] Markdown report rendering
+- [x] Dockerized frontend and backend
 - [x] Docker Compose
+- [x] Vercel backend deployment
+- [x] Netlify frontend deployment
+- [x] production CORS
+- [x] production environment configuration
 
-### Planned
+### Next
 
-- [ ] public backend deployment
-- [ ] public frontend deployment
-- [ ] production CORS configuration
-- [ ] authentication
-- [ ] user accounts
-- [ ] persistent report history
+- [ ] authentication and user accounts
+- [ ] persistent audit history
 - [ ] PostgreSQL integration
 - [ ] downloadable PDF reports
 - [ ] downloadable CSV findings
-- [ ] customizable detector thresholds
-- [ ] data-quality score
-- [ ] scheduled audits
-- [ ] email alerts
-- [ ] role-based access
-- [ ] CI/CD
-- [ ] expanded test coverage
-- [ ] AMD Developer Cloud integration
-- [ ] ROCm benchmark
-- [ ] multi-tenant architecture
+- [ ] configurable detector thresholds
+- [ ] automated data-quality score
+- [ ] scheduled audits and alerts
+- [ ] role-based access control
+- [ ] CI/CD test gates
+- [ ] dependency and container scanning
+- [ ] AMD Developer Cloud workload
+- [ ] ROCm acceleration benchmark
+- [ ] production observability
+- [ ] custom domain
 
 ---
 
-## Contributing
+## Team
 
-Contributions are welcome.
+<div align="center">
 
-### Workflow
+| Team Member | Contribution |
+|---|---|
+| **Muhammad Rehan** | Project leadership, backend, AI integration, deployment |
+| **Ehtisham Tahir** | Core project team |
+| **Gul-e-Zara** | Core project team |
+| **Neha** | Core project team |
+| **Zokirjanov Jasurbek** | Core project team |
 
-1. Fork the repository.
-2. Create a branch:
+</div>
 
-```bash
-git checkout -b feature/your-feature
-```
+> Update the contribution labels above with each member's final verified responsibilities before submission.
 
-3. Make changes.
-4. Run tests.
-5. Commit:
+---
 
-```bash
-git commit -m "Add your feature"
-```
+## Acknowledgements
 
-6. Push:
+LeakLogic AI acknowledges:
 
-```bash
-git push origin feature/your-feature
-```
+- **AMD** for the AI Developer Program, hackathon ecosystem, cloud and AI resources;
+- **lablab.ai** for hosting and organizing the AMD Developer Hackathon: ACT II;
+- **Fireworks AI** for the production inference API;
+- **Netlify** for frontend hosting;
+- **Vercel** for FastAPI backend hosting;
+- the open-source communities behind FastAPI, Next.js, pandas, React, Tailwind CSS, Docker, and the supporting libraries used in this project.
 
-7. Open a pull request.
+### Trademark Notice
 
-### Contribution Rules
-
-- Do not commit secrets.
-- Keep financial calculations deterministic.
-- Add tests for detector changes.
-- Document environment variables.
-- Keep AI narratives grounded in structured findings.
-- Update this README when behavior changes.
+AMD, lablab.ai, Fireworks AI, Netlify, Vercel, and all other product names and logos are trademarks of their respective owners. Their appearance in this README identifies technologies, platforms, event participation, or acknowledgements and does not imply additional endorsement beyond the documented relationship.
 
 ---
 
@@ -1309,33 +1191,20 @@ git push origin feature/your-feature
 
 No open-source license is currently declared.
 
-Until a `LICENSE` file is added, the repository remains under the default copyright rights of the owner.
-
----
-
-## Authors
-
-**MUHAMMAD REHAN**
-
-**EHTISHAM TAHIR**
-
-**GUL-E-ZARA**
-
-**NEHA**
-
-**ZOKIRJANOV JASURBEK**
-
-
-GitHub: [builtbyrehan](https://github.com/builtbyrehan)
-
-Repository: [LeakLogic AI](https://github.com/builtbyrehan/leaklogic-ai)
+Until a `LICENSE` file is added, the repository remains under the copyright rights of its owner. Add a license before inviting unrestricted external reuse.
 
 ---
 
 <div align="center">
 
-## LeakLogic AI
+### Ready to see where the money is leaking?
 
-### Find every leak. Protect every profit.
+<a href="https://radiant-cobbler-afcae6.netlify.app">
+  <img src="https://img.shields.io/badge/LAUNCH_LEAKLOGIC_AI-7C3AED?style=for-the-badge&logo=netlify&logoColor=white" alt="Launch LeakLogic AI">
+</a>
+
+<br><br>
+
+**LeakLogic AI — Find every leak. Protect every profit.**
 
 </div>
