@@ -8,6 +8,7 @@ import {
   Cpu,
   ExternalLink,
   FileText,
+  GitBranch,
   Github,
   Sparkles,
   TrendingDown,
@@ -31,18 +32,22 @@ const teamMembers = [
   {
     name: "Ehtisham Tahir",
     role: "Frontend Developer",
+    github: "github.com/1ehtishamtahir",
   },
   {
     name: "Gul-e-Zara",
-    role: "Full Stack Developer"
+    role: "Full Stack Developer",
+    github : "https://github.com/gulglitch",
   },
   {
     name: "Neha",
     role: "Full Stack Developer",
+    github : "https://github.com/flash-source",
   },
   {
     name: "Zokirjanov Jasurbek",
     role: "Full Stack Developer",
+    github: "https://github.com/shavkatjonboyboboyev31-glitch"
   },
 ];
 
